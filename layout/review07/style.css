@@ -1,0 +1,55 @@
+*{margin: 0;padding: 0;}
+ul,ol,li{list-style: none;}
+img{vertical-align: top;}
+body{
+	padding-top:100px;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size:12px;
+	font-weight:bold;
+} 
+
+.movie-list{
+	width: 925px;
+	margin: 0 auto;
+	background: #ffc;
+}
+
+.movie-list li{
+	float : left;
+	margin-right : 53px;
+	height : 197px;
+	width : 110px;
+	background-color : #cfc;
+}
+
+.movie-list li:last-child{
+	margin-right : 0px;
+}
+
+.movie-list li p{
+	background-color : #fcc;
+	width : 80px;
+	text-align : center;
+	margin : 0px auto;
+	margin-top : 10px;
+	
+	overflow : hidden;
+	white-space : nowrap;
+	text-overflow : ellipsis;
+	/*
+		지정한 영역을 넘어서는 글자를 생략기호/말줄임표(...)로 표기해주는 것은 아래의 3가지 프로퍼티가 세트로 다녀야함.
+		overflow : hidden;
+		white-space : nowrap;
+		text-overflow : ellipsis;
+			
+	*/
+}
+
+.movie-list ul::after{
+	content:'';
+	clear: both;
+	display : block;
+	width : 0;
+	height : 0;
+	visibility : hidden;
+}

@@ -1,0 +1,59 @@
+
+@charset "utf-8";
+h3{
+	text-align : center;
+}
+
+p{
+	text-align : center;
+	font-weight : bold;
+}
+
+.wrapper{
+	width : 600px;
+	height : 300px;
+	margin : 0 auto 20px;
+	
+	border : 2px solid black;
+	background : #ccc;
+	
+	display : flex;
+	flex-wrap : wrap;
+}
+
+.wrapper div{
+	width : 210px;
+	background-color : #f3f3f3;
+	border : 2px solid #cfc;
+}
+
+#con1{
+	align-content : flex-start;
+	/*시작점(기본값)*/
+}
+
+#con2{
+	align-content : flex-end;
+	/*끝점*/
+}
+
+#con3{
+	align-content : center;
+	/*중앙 기준*/
+}
+
+#con4{
+	align-content : space-between;
+	/*사이즈에 맞게 알아서 정렬*/
+}
+
+#con5{
+	align-content : space-around;
+	/*여백 포함해서 맞춰서 정렬*/
+}
+
+/*
+	align-content
+	- 여러줄(행)일 경우 배치 방법을 지정해줌
+	- 교차축(세로축, y축, 열) 방햐으이 배치 방법을 지정
+*/

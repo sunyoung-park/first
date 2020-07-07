@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+*{
+	margin : 0;
+	padding : 0;
+}
+
+html, body {
+	font-size : 12pt;
+}
+/*rem 단위로 사용할 기준이 될 폰트 크기*/
+
+li{
+	list-style : none;
+}
+
+.container{
+	width : 960px;
+	margin : 0 auto;
+	border : 1px solid #e7e7e7;
+}
+
+header{
+	height : 280px;
+	background-image: url('./images/header_bg.png');
+	background-repeat : no-repeat;
+	background-position : left top;
+	position : relative;
+}
+
+header h1, header h2{
+	position : absolute;
+}
+
+header h1{
+	right : 20px;
+	bottom : 80px;
+	font-size : 3rem; /*기준 잡아둔 12pt의 3배 크기의 텍스트*/
+	color : #ffffcc;
+	text-shadow : 2px 2px 2px #000;
+}
+
+header h2{	
+	right : 20px;
+	bottom : 30px;
+	color : #ff0;
+	text-shadow : 2px 2px 2px #000;
+}
+
+.gnb{
+	background : darkred;
+	height : 60px;
+	
+}
+
+.gnb ul li{
+	float : left;
+}
+
+.gnb ul li a{/*참고*/
+	display : block;
+	padding : 0 30px;
+	line-height : 60px;
+	color : #fff;
+	text-decoration : none;
+}
+
+.content{
+	height : 550px;
+	width : 720px;/*padding 포함 730*/
+	padding-left : 10px;
+	float : left;
+}
+
+.content h2{
+	font-size : 2em;
+	margin : 20px 0;
+}
+
+.content h3{
+	margin : 20px 0;
+}
+
+.content p{3
+	font-size : 0.8rem;
+	line-height : 1.2rem;
+	margin : 20px 0;
+}
+
+.banner{
+	margin-top : 20px; 
+}
+
+
+
+aside{
+	float : right;
+	width : 200px;/*padding  포함 220*/
+	padding : 0 10px 0;
+	background : #cfc;
+	height : 550px;
+}
+
+aside>h3{
+	margin-top : 20px;
+	font-size : 1.5rem;
+}
+
+aside>p{
+	font-size : 0.9rem;	
+}
+
+aside>p>span{
+	color:blue;
+	font-size:1.2rem;
+	font-weight : bold;
+}
+
+aside>img{
+	opacity : 0.5;
+}
+aside>img:hover{
+	opacity : 1;
+}
+
+footer{/*참고*/
+	clear:both;
+	background : #030;
+	padding : 20px 0;
+	text-align : center;
+	color : #fff
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

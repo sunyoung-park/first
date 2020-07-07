@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+*{
+	margin : 0;
+	padding : 0;
+	list-style : none;
+}
+
+a{
+	text-decoration : none;
+}
+
+#wrapper{
+	width : 960px;
+	margin : 0 auto;
+	position : relative;
+}
+
+/*헤더 영역*/
+header{
+	height : 280px;
+	background : url('./images/header_bg.png') no-repeat;
+	position : relative;
+}
+
+header>h1, header>h2{
+	position : absolute;
+}
+
+header>h1{
+	font-size : 40pt;
+	top : 140px;
+	left : 700px;
+	color : lightyellow;
+	text-shadow : 2px 2px 3px rgba(0,0,0,0.7);
+}
+
+header>h2{
+	font-size : 24pt;
+	top : 210px;
+	left : 590px;
+	color : yellow;
+	text-shadow : 2px 2px 3px rgba(0,0,0,0.7);
+}
+
+/*네비게이션 영역*/
+nav{
+	height : 60px;
+	background : #333;
+}
+
+nav ul{
+	float : left;
+	color : #fff;
+	text-align : center;
+	margin : 20px;
+	margin-left : 40px;
+	
+}
+
+nav ul li{
+	float : left;
+	color : #fff;
+	text-align : center;
+	margin-right : 100px;
+	
+}
+
+
+nav ul li:after{
+	content : '';
+	clear : both;
+	visibility : hidden;
+	display : block;
+	width : 0;
+	height : 0;
+	
+}
+nav ul li  a:link{color : #fff;}
+nav ul li  a:hover{color : #fff;}
+nav ul li  a:visited{color : #fff;}
+nav ul li  a:active{color : #fff;}
+
+/*본문 영역*/
+
+#sec_wrap{
+	height : 550px;	
+}
+
+#sec01{
+	width : 720px;
+	float : left;
+	padding : 10px 10px;
+}
+
+#sec01 h2{
+	font-size : 24pt;
+	margin-bottom : 20px;
+}
+
+#sec01 h3{
+	font-size : 12pt;
+	margin-bottom : 20px;
+}
+
+#sec01 p{
+	font-size : 9pt;
+	line-height : 20px;
+	margin-bottom : 20px;
+}
+
+
+
+/*사이드 박스 영역*/
+
+aside{
+	width : 200px;	
+	float : right;
+	background : #ddffdd;
+	padding : 10px 10px 48px;
+	
+	display : flex;
+	flex-wrap : wrap;
+}
+
+aside img{
+	width : 100%;
+	margin-bottom  : 10px;
+	
+}
+
+aside h3{
+	font-size : 18pt;
+}
+
+aside p{
+	font-size : 11pt;
+	margin-bottom : 10px;
+}
+
+aside p strong{
+	font-size : 14pt;
+	color : blue;
+	font-weight : bold;
+}
+
+
+/*푸터 영역*/
+footer {
+	width : 960px;
+	background : #003300;
+	color : #fff;
+	position : absolute;
+	top : 890px;
+	text-align : center;
+	padding : 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

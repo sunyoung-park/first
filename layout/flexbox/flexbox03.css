@@ -1,0 +1,57 @@
+
+@charset "utf-8";
+h3{
+	text-align : center;
+}
+
+p{
+	text-align : center;
+	font-weight : bold;
+}
+
+.wrapper{
+	width : 600px;
+	height : 300px;
+	margin : 0 auto 20px;
+	
+	border : 2px solid black;
+	background : #ccc;
+	
+	display : flex;
+	flex-wrap : wrap;
+}
+
+.wrapper div{
+	width : 210px;
+	background-color : #f3f3f3;
+	border : 2px solid #cfc;
+}
+
+#con1{
+	justify-content : flex-start;
+	/*시작점 왼쪽부터(기본값)*/
+}
+
+#con2{
+	justify-content : flex-end;
+	/*끝점 오른쪽부터*/
+}
+
+#con3{
+	justify-content : center;
+	/*중앙 기준*/
+}
+
+#con4{
+	justify-content : space-between;
+	/*사이즈에 맞게 알아서 정렬*/
+}
+
+#con5{
+	justify-content : space-around;
+	/*여백 포함해서 맞춰서 정렬*/
+}
+
+/*
+	x축 시작은 왼쪽-> 끝은 오른쪽
+*/

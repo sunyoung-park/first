@@ -1,0 +1,302 @@
+@charset "utf-8";
+/* 초기화 CSS */
+*{
+	margin : 0;
+	padding : 0;
+}
+
+body{
+	font-family : 'Arial', serif;
+}
+
+a{
+	text-decoration : none;
+}
+
+a:link{color : red;}
+a:visited{color : red;}
+a:hover{color : green;}
+a:active{color : pink;}
+
+li, ol{
+	list-style : none;
+}
+
+/*헤더영역 CSS*/
+
+
+
+#title>h1{
+	width : 0;
+	height : 0;
+	display :none;
+	visibility : hidden;
+	z-index : -9999;
+}
+
+#main_header{
+	width : 960px;
+	margin : 0 auto;
+	height : 160px;
+	
+	position : relative;
+	/*
+	안쪽에 있는 nav 2개를 배치하기 위해  position:relative로 기준점을 잡아줌
+	
+	헤더영역 위치 기준점
+	*/	
+}
+
+#main_header>#title{
+	position : absolute;
+	left : 20px;
+	top : 30px;
+}
+
+#main_gnb{
+	position : absolute;
+	top : 0;
+	right : 0;
+}
+
+#main_lnb{	
+	position : absolute;
+	bottom : 0;
+	right : 0;
+}
+
+/*nav CSS*/
+
+#main_gnb>ul{
+	overflow :hidden;	
+}
+
+#main_gnb>ul>li{
+	float : left;	
+}
+
+#main_gnb>ul>li a{
+	display : block;
+	/*인라인요소인 a를 블록요소로 바꿈*/
+	padding : 2px 10px;
+	/*a태그는 인라인요소라 가지고 있는 텍스트 및 요소의크기만 가질 수 있지만  블록으로 바꿔줬기 때문에 padding 으로 사이즈 변경이 가능해짐. 글자수 등이 다르기 때문에 여백의 상자를 만들기 위함.*/
+	border : 1px solid #ccc;
+}
+
+#main_gnb>ul>li a:hover{
+	background : coral;
+}
+
+#main_gnb>ul>li:first-child>a{
+	border-radius : 10px 0 0 10px;
+}
+
+#main_gnb>ul>li:last-child>a{
+	border-radius : 0 10px 10px 0;
+}
+
+#main_lnb{	
+	bottom : 10px;
+}
+
+#main_lnb>ul{
+	overflow : hidden;
+}
+
+#main_lnb>ul>li{
+	float : left;
+}
+
+#main_lnb>ul>li a{
+	display : block;
+	padding : 10px 20px;
+	border : 1px solid #ccc;
+}
+
+#main_lnb>ul>li a:hover{
+	background : lightgreen;
+}
+
+#main_lnb>ul>li:first-child>a{
+	border-radius : 20px 0 0 20px;
+}
+
+#main_lnb>ul>li:last-child>a{
+	border-radius : 0 20px 20px 0;
+}
+
+/*본문영역 content 레이아웃 CSS*/
+
+#content{
+	width : 960px;
+	margin : 0 auto;
+	/*블록요소 가운데 정렬*/
+	overflow : hidden;
+}
+
+#main_section{
+	width : 750px;
+	float : left;
+}
+
+#main_aside{
+	width : 200px;
+	float : right;
+}
+
+#main_section>article.main_article{
+	margin-bottom : 10px;
+	padding : 20px;
+	border : 1px solid #ccc;
+}
+
+/*사이드영역 CSS*/
+
+input:nth-of-type(1){
+	display : none;
+}
+
+input:nth-of-type(1)~div:nth-of-type(1){
+	display : none;
+/*
+	첫번째 라디오 버튼의 형제위치에 있는 div 중 가장 첫번째 div를 안보이게 함.
+*/
+}
+
+input:nth-of-type(1):checked~div:nth-of-type(1){
+	
+	/*
+	input:nth-of-type(1):checked
+	 - 첫번째 라디오 버튼이 체크되었을때!
+	
+	~div:nth-of-type(1)
+	 - 첫번째 라디오 버튼과 동위(형제위치)에 있는 첫번째 div를 선택
+	*/
+	display : block;
+}
+
+input:nth-of-type(2){/*두번째 라디오 버튼*/
+	display : none;
+}
+
+
+
+input:nth-of-type(2)~div:nth-of-type(2){
+	display : none;
+}
+
+
+input:nth-of-type(2):checked~div:nth-of-type(2){
+	display : block;
+}
+
+
+/*탭 버튼 모양*/
+
+section.buttons{
+	overflow : hidden;
+}
+
+section.buttons>label{
+	display : block;
+	float : left;
+	height : 30px;
+	line-height : 30px;
+	text-align : center;
+	border : 1px solid #ccc;
+	width : 100px;
+	box-sizing : border-box;
+	/*
+	보더까지 박스 사이즈 내에 포함시켜주는
+	
+	가로 100px만 줄 경우 보더가 양옆으로 1px(총2px) 들어가 있기 때문에 각 요소당 가로 사이즈는 102px이 된.
+	감싸고 있는 aside가 가로 200px 이기 때문에 요소 사잊가 커져서 아래로 내려감.
+	*/
+	
+}
+
+input:nth-of-type(1):checked~section.buttons>label:nth-of-type(1),input:nth-of-type(2):checked~section.buttons>label:nth-of-type(2){
+	/*
+	FIRST(레이블)을 클릭하면 for 속성으로 라디오 버튼이 체크 되어짐.	section.buttons>label:nth-of-type(1)
+	- 동위(형제요소)로 있는 레이블 중첫번 째 레이블을 선택.
+	*/
+	background : coral;
+	color: #fff;
+}
+
+/*aside 목록 CSS*/
+
+.tab_item{
+	background : coral;
+}
+
+.item{
+	overflow : hidden;
+	padding : 10px;
+	border-bottom : 1px solid #fff;
+}
+
+.thumbnail{
+	float : left;
+}
+
+
+.description{
+	float : left;
+	margin-left : 10px;
+	
+}
+
+
+.description>strong{
+	display : block;
+	width : 120px;
+	/*말줄임표 표시 세트*/
+	overflow : hidden;
+	white-space : nowrap;
+	text-overflow : ellipsis;	
+	/*말줄임표 표시 세트*/
+}
+
+#main_footer{
+	width : 960px;
+	margin : 0 auto;
+	padding : 10px;
+	background-color : #366;
+	text-align : center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

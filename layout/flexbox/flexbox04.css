@@ -1,0 +1,70 @@
+
+@charset "utf-8";
+h3{
+	text-align : center;
+}
+
+p{
+	text-align : center;
+	font-weight : bold;
+}
+
+.wrapper{
+	width : 700px;
+	height : 400px;
+	margin : 0 auto 20px;
+	
+	border : 2px solid black;
+	background : #ccc;
+	
+	display : flex;
+	flex-wrap : wrap;
+}
+
+.wrapper div{
+	width : 100px;
+	height : 50px;
+	background-color : #f3f3f3;
+	border : 2px solid #fcc;
+}
+
+#con1{
+	align-items :  stretch;
+	/*
+	기본값
+	stretch : 플렉스(display:flex 해준 곳) 높이가 감싸준 박스의 높이와 같이 변경되어 배치
+	wrapper의 높이만큼 차지함
+	*/
+}
+
+#con2{
+	align-items : flex-start;
+	/*
+	flex-start : wrap  기준으로 가장 위쪽에 배치
+	*/
+}
+
+#con3{
+	justify-content : flex-end;
+	/*
+	flex-end : wrap  기준으로 가장 아래쪽에 배치
+	*/
+}
+
+#con4{
+	justify-content : center;
+	/*
+	center : 세로 기준으로 중앙에 배치
+	*/
+}
+
+#con5{
+	justify-content : baseline;
+	/*
+	기준선에 배치
+	*/
+}
+
+#con4 div:nth-child(2){
+	height : 200px;
+}

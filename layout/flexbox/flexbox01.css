@@ -1,0 +1,38 @@
+
+@charset "utf-8";
+
+#container{
+	width : 420px;
+	height : 300px;
+	background-color : skyblue;
+	border : 1px solid blue;
+	margin : 0 auto;
+	
+	display : flex;
+	flex-wrap : wrap-reverse;
+	/*
+	display : flex;
+	- 요소를 감싸고 있는 곳에 flex 선언
+	- 자식요소들이 모두 flex 박스로 변경됨.
+	- 다른 속성을 지정하지 않으면 세로사이즈는 100%로 들어감.
+	- 가로 사이즈는 컨텐츠의 개수에 따라 열을 기준으로 배치.
+	
+	flex-wrap : 플렉스 항목을 한줄 또는 여러줄로 배치할 때 쓰는 프로퍼티
+	- nowrap : 기본값, 플렛스 항목을 한줄에 표시
+	- wrap :  플렉스 항목을 여러줄에 걸쳐서 표시
+	- wrap-reverse : 플렉스 항목을 여러줄에 거쳐서 표시하되 기존 방향과는 반대로 표시
+	
+	flex-direction : 플렉스의 방향을 지정하지
+	- column : 세로를 주축으로 배치
+	- row :  가로를 주축으로 배치
+	- column-reverse : 세로 주축 역순 배치
+	- row-reverse : 가로 주축 역순 배치
+	*/
+}
+
+#container div{
+	width : 200px;
+	border : 1px solid  red;
+	background-color : rgba(0,0,0,0.5);
+	color : 0 auto;
+	
