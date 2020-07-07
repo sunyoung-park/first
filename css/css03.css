@@ -1,0 +1,71 @@
+@charset "utf-8";
+#sp01 {
+	background-color : gold;
+	border-radius : 10px;
+	width : 300px;
+	height : 300px;
+	text-align : center;
+	padding : 20px;
+	/*
+	padding : 요소의 안쪽 여백
+		- 박스 크기에 더해져서 동작
+			박스크기에 더해져서 동작
+			박스크기 : 340 x 340 (상하좌우 20씩 더해져서)
+			
+	*/
+	margin : 50px;
+	/*
+	margin : 요소의 바깥쪽 여백
+		- 박스 크기에 변화가 없음
+	*/
+}
+
+div#box01,#box02 {
+	width : 200px;
+	height : 200px;
+}
+
+#box01 {
+	background-color : tomato;
+	padding : 20px;
+}
+
+#box02 {	
+	background-color : steelblue;
+	margin : 100px 10px 30px 5px;
+}
+	/*
+		위 margin과 같음
+		margin-top : 100px;
+		margin-right : 10px;
+		margin-bottom : 30px;
+		margin-left : 5px;
+	*/
+/*
+	paddin, margin 모두
+			px값을
+			1개 쓴 경우 : 상우하좌
+			2개 쓴 경우 : 상하 좌우
+			3개 쓴 경우 : 상 좌우 하
+			4개 쓴 경우 : 상 우 하 좌
+			
+	margin-top, bottom, left, right
+	padding-top, bottome, left, right
+*/
+#box03 {
+	 background-color : pink;
+	 width : 100px; height : 100px;
+	 box-shadow : -5px -4px 10px 10px #0000ff;
+}
+/*
+	-5px : 그림자의 수평거리를 나타냄(x축)
+		(양수 : 오른쪽, 음수 : 왼쪽)
+	-4px : 그림자의 수직거리를 나타냄(y축)
+		(양수 : 아래쪽, 음수 : 위쪽)
+	10px : 양수만 가능. 그림자의 번짐 거리(정도) 블러값
+	2px : 그림자의 크기를 나타냄
+		(양수 : 기본크기에서 확장, 음수 : 기본크기에서 축소)
+		
+	box-shadow 사용 시 inset을 적용하면 그림자가 박스의 안쪽으로 적용됨.
+	기본값(아무것도 안썼을 때)은 바깥쪽으로 그림자가 생김.
+*/

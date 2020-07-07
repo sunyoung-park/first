@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+body{
+	background-image : url('../images/flight3.png'),  url('../images/pattern3.png'), url('../images/pattern1.png');
+	background-repeat : no-repeat, repeat-y, repeat;
+	/*첫번째 url에 첫번째 리피트값이 적용됨. 두번째는 두번재 세번째는 세번째에*/
+	background-position : center top, right top, left top;
+	/*띄어쓰기로 구분(left^top)*/
+}
+
+.sample01{
+	border : 1px solid #666;
+	background-image : url('../images/flight3.png');
+	background-repeat : no-repeat;
+}
+
+.sample02{
+	border : 1px solid #666;
+	background-image : url('../images/flight3.png');
+	background-repeat : no-repeat;
+	background-size : 100px 300px;
+}
+
+.sample03{
+	 border : 2px solid red;
+	 width : 1000px;
+	 height : 300px;
+	 background-image : url('../images/flower.jpg');
+	 background-repeat : no-repeat;
+	 background-size : contain;
+	 /*이미지 잘림 없이 사이즈 자동맞춤(가로세로 유지하면서)*/
+}
+
+.sample04{
+	 border : 2px solid red;
+	 height : 400px;
+	 background-image : url('../images/cupcake.png');
+	 background-repeat : no-repeat;
+	 background-size : cover;
+}
+
+.sample05{	
+	 border : 2px solid red;
+	 width : 400px;
+	 height : 600px;
+	 background-image : url('../images/cupcake.png');
+	 background-repeat : no-repeat;
+	 background-size : 50% 100%;
+	 /*background-size : x축(50%) y축(100%)*/
+}
+
+/*
+	background-size : contain, cover, x% y%, x축px y px
+		- contain : 박스 내에서 이미지가 완전하게(가로세로 비율에 맞추어) 보이도록 사이즈를 맞춰 조정해줌
+		- cover : 이미지가 내용 영역을 완전하게 덮도록 크기를 조정해줌
+		- 숫자값(단위) 숫자값(단위) :
+		 ex) 50% 100%(x축% y축%)
+			50% : 이미지의 가로가이즈가 박스 안 50% 차지
+			100% : 이미지의 세로사이즈가 박스 안 100% 차지
+*/

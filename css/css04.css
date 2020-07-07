@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+body {
+	background-color :#ffc;
+}
+
+.cupcake {
+	float : left;
+	/*
+		float 프로퍼티값 : right, left;
+		
+		float 속성을 사용하면 웹문서의 기본 흐름에 영향을 받지 않고 요소를 배치 시킬 수 있다.
+	*/
+}
+
+
+
+
+
+
+
+.menu { /*ul 태그를 선택한 것*/
+		background-color : teal;
+}
+
+.menu>li { /*menu클래스 바로 아래(자식 위치)에 있는 모든 li태그 선택*/
+		color : #fff;
+		list-style : none;
+		background-color : tomato;
+		float : left;
+		padding: 5px 10px;
+		/*
+		★float 속성을 사용하여 목록태그를 가로 정렬하기
+		
+		float : right를 할 경우 리스트 목록이 반대로 출력되므로 네비게이션 등에 사용할 때에는 left 속성으로 가로 배치 해준다.
+		*/
+}
+
+#box1{
+	width :600px;
+	height : 200px;
+	border : 1px solid #000;
+	overflow : auto;
+		/*
+		overflow :
+		scroll, auto, hidden, visible
+		 - scroll : 무조건 스크롤 생성(요소의 오른쪽 부분에 스크롤 영역이 잡힘)
+		 - auto : 감싸고 있는 요소가 내용물보다 작을 경우 알아서 스크롤 해주거나 안해주거나 함. (스크롤 x)
+		 - hidden : 영역 밖으로 나가면 가려줌(내용물이 안보임)
+		 - visible : 기본값! 감싸고 있는 요소
+		 영역 밖으로 나간 것까지 다 보여줌.
+		*/
+}
+
+#box1>.box_img{
+	float : right;
+	width : 300px;
+	
+}
+
+.ds01, .ds02{
+	width : 400px;
+	height : 300px;
+	border : 5px dotted yellowgreen;
+	border-radius : 40px;
+	display : inline-block;
+	visibility : hidden;
+		/*
+		display : inline, block, inline-block, none
+		- inline : 요소를 인라인(한줄로) 배치
+		- block : 요소를 블록요소(수직)으로)로
+		- inline-block : 요소의 사이즈를 유지하면서 인라인 속성의 가로로 배치되는 것까지 사용할 수 있음. 하지만 가로재치 시 여백없이 배열되는 게 아니기 때문에 여백의 오차범위가 존재함. 
+		- none : 요소를 처음부터 없었던 것처럼 감춰 줌.
+		
+		visibility : hidden; 
+		- 요소가 원래 있었던 위치만큼 영역을 차지하면서 감춰 줌.
+		*/
+}
+
+.ds01{
+	background-color : red;
+}
+
+.ds02{
+	background-color : green;
+}

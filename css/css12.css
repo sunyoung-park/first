@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+table, th, td {
+	border : 1px solid black;
+	border-collapse : collapse;
+	/*
+		- collapse : 테이블의 각 셀의 여백을 없애 선만 보여주게 함.
+		- separate : 기본값(분리)
+	*/
+}
+
+table {
+	width : 50%;
+}
+
+th {
+	background-color : lime;
+	height : 60px;
+	border-bottom : 1px dotted #333;
+}
+
+td {
+	background-color : pink;
+	height : 40px;
+	text-align : center;
+	font-size : 11pt;
+	border-bottom : 1px dotted #333;
+	vertical-align : top;
+	
+}
+
+/*
+	vertical-align
+		* 인라인 요소나 인라인 블록 요소에만 적용 가능
+		
+		- tio : 수직 기준 상단에 배치
+		- middel : 수직 기준 중앙에 배치
+		- bottom : 수직 기준 하단에 배치
+*/

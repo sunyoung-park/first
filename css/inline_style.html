@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>인라인 스타일시트</title>
+<link href="./style/.css" rel="stylesheet" type="text/css" />
+<style>
+	#p_tag {
+		color : green;
+	}
+	#p_tag {
+		color : red;
+	}
+</style>
+</head>
+<body>
+<!--
+	스타일시트(CSS) 적용 방법
+	1. 인라인 
+	2. 내부 스타일시트
+	3. 외부 스타일시트
+		-> 아래에 기술된 내용이 가장 우선순위가 높음.
+-->
+	<p style="color:#00f; background-color:pink;">단락태그 입니다. 인라인 스타일을 적용하였습니다.</p>
+	<p id="p_tag" style="color:yellow;">단락태그입니다. 내부 스타일을 적용하였습니다.</p>
+</body>
+</html>

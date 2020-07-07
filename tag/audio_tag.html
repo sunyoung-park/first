@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>오디오 태그</title>
+<link href="./style/.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<h3>오디오 태그</h3>
+		<audio src="../media/guitar.mp3"  controls>사용중인 브라우저가 해당 오디오를 재생하지 못합니다.</audio>
+<!--
+	src 속성: 오디오 파일의 경로를 지정
+	audio 태그는 반드시 autopaly 또는 controls 속성 중
+	둘중 하나는 반드시 기술해야함
+-->
+
+<hr />
+
+	<audio controls autoplay>
+		<source src="../media/guitar.mp3" type="audio/mp3" />
+		<source src="../media/guitar.ogg" type="audio/ogg" />
+		<source src="../media/guitar.wav" type="audio/wav" />
+	</audio>
+	<!--
+		controls 속성 : 재생버튼, 볼륨, 음소거, 일시중지 이동 등의
+		오디오 콘트롤 표시
+		
+		autoplay 속성 : 자동재생.
+		 - autopaly ="autopaly"
+	-->
+</body>
+</html>

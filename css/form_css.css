@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+input[type='text'], input[type='email']{
+	width : 200px;
+	height : 45px;
+	border : 0;
+	border-bottom : 1px solid red;
+	outline : 0;
+}
+
+input[type='data']{
+	height : 45px;
+	border : 0;
+	outline : 0;
+}
+
+textarea{
+	width : 50%;
+	height : 200px;
+	outline : 0;
+}
+
+textarea:focus{
+	/*
+	:focus
+	앞에 있는 선택자가 활성화 되었을 때!
+	*/
+	background : #ffc;
+}
+
+textarea:hover{
+	background : pink;
+}
+
+select{
+	height : 45px;
+	border : 0;
+	border-bottom : 1px solid red;
+	width : 60px;
+}
+
+input[type="button"], input[type='submit'], input[type='reset']{
+	padding : 10px 30px;
+	border-radius : 10px;
+	border : 1px solid #ddd;
+	outline : 0;
+	/*
+	outline 
+	활성화 시 아웃라인 설정 속성
+	*/
+}
+
+input:disabled{
+	/*
+		input 태그 중 비활성화 시켜둔 것을 선택
+		(입력 불가능한 필드)
+	*/
+	background : yellow;
+}
+
+input:enabled{
+	/*
+		input 태그 중 활성화 시켜둔 것을 선택
+		(입력 가능한 필드)
+	*/
+	background : cyan;
+}

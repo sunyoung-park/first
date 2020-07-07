@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+div{
+	width : 80px;
+	height : 50px;
+	line-height : 50px;/*수직정렬(장문에는 맞지 않음)*/
+
+	
+	background : #ffc;
+	border : 1px solid orange;
+	text-align : center;/*수평정렬*/
+	/*
+	vertical-align : middle;
+	text-align과 기능이 같지만 line-height 속성을 사용할 수 없음.
+	*/
+	transition :  width 2s, background-color 2s;
+	/*
+		width 2s, background 2s;
+		
+		transition-property
+		- 변환이 되는 속성값을 입력하는 프로퍼티
+		
+		transition-duration
+		- 변환되는 시간을 지정하는 프로퍼티
+		- 초를 입력할때는 s를 반드시 붙이고 
+		- .25s 라고 0을 생략한 채 입력할 수 있다.
+		
+		
+		transition 축약방식으로 쓸 경우
+		- transition-property
+		- transition-duration
+		- transition-timing-function
+		- transition-delay
+		
+	*/
+	position : absolute;
+}
+
+a{
+	text-decoration : none;
+	color : #333;
+}
+
+div:hover{
+	width : 160px;
+	background-color : #fcc;
+	font-size : 2em;
+}

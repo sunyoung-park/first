@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+*{
+	margin : 0;
+	padding : 0;
+	box-sizing : border-box;
+}
+
+#container{
+	width : 800px;
+	height : 600px;
+	border : 1px solid red;
+	margin : 0 auto; /*박스 가운데 정렬*/
+	position : relative;
+}
+
+.ab_box1{
+	background-color : steelblue;
+	width : 80px;
+	height : 80px;
+	position : absolute;
+	left : 200px;
+	top : 50px;
+}
+.ab_box2{
+	background-color : orange;
+	width : 80px;
+	height : 80px;
+	position : absolute;
+	left : 50%; top : 50%; /*왼쪽 위 모서리가 정중앙..*/
+	margin-top : -40px;
+	margin-left : -40px;/*margin으로 도형을 가운데로 맞출 수 있다.*/
+}
+	
+.ab_box3{
+	background-color : skyblue;
+	width : 80px;
+	height : 80px;
+	position : absolute;
+	bottom : 0;
+}
+
+.rt_in1{
+	background-color : pink;
+}
+
+.rt_in2{
+	background-color : lightgreen;
+	position : relative;
+	left: 0; top : 500px;
+}
+
+.rt_in3{
+	background-color : teal;
+	position : fixed;
+	bottom : 50px; left : 100px;
+	
+}
+
+
+.rt_box1{
+	background-color : yellow;
+	width : 80px;
+	height : 80px;
+	position : relative;
+	right : -600px; top : 40px;
+}
+
+/*
+	position 속성
+	
+	- absolute : 절대위치로 상위요소에 relative가 적용되어 있지 않으면 본문(body)를 기준으로 하여 위치를 가질 수 있게 된다.
+	
+	- relative : 상대위치로 요소가 원래 있던 위치를 기준으로 하여 위치가 변경된다.
+	
+	- fixed :  고정위치로 지정해둔 위치가 유지됨.(상위요소가 relative로 감싸져 있어도 무조건 body(본문)기준으로 위치가 잡힌다.)
+	
+	- static(기본값) : 기본흐름
+	
+	- inherit : 상위 요소의 position 속성을 상속 받아옴.

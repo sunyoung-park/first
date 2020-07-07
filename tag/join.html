@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>회원가입 양식</title>
+<link href="./style/.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<form method="get" action="" name="join_frm">
+	<table border="1" width="700" align="center">
+		<tr>
+		<th width="20%"><label for="uname">이름</label></th>			
+			<td>
+				<input type="text" name="username" id="uname" />
+			</td>
+		</tr>
+		<tr>
+			<th><label for="uid">아이디</label></th>
+			<td>
+				<input type="text" name="uid" id="uid" />
+				<input type="button" value="아이디 중복확인" />
+			</td>
+		</tr>
+		<tr>
+			<th><label for="pwd">비밀번호</label></th>
+			<td>
+				<input type="password" name="pwd" id="pwd" />
+			</td>
+		</tr>
+		<tr>
+			<th><label for="pwd1">비밀번호 확인</label></th>
+			<td>
+				<input type="password" name="pwd" id="pwd1" />
+			</td>
+		</tr>
+		<tr>
+			<th><label for="unname">닉네임</label></th>
+			<td>
+				<input type="text" name="unname" id="unname" />
+				<input type="button" value="닉네님 중복확인" />
+			</td>
+		</tr>
+		<tr>
+			<th><label for="uemail">이메일</label></th>
+			<td>
+				<input type="text" name="uemailid" id="uemail" />@
+				<select>
+					<option>네이버</option>
+					<option>네이트</option>
+					<option>지메일</option>
+				</select>
+				<input type="checkbox" value="open" checked="checked" />공개
+				<input type="checkbox" value="agree" checked="checked" />수신동의
+			</td>
+		</tr>
+		<tr>
+			<th><label for="pnum">휴대폰</label></th>
+			<td>
+				<select>
+					<option>010</option>
+					<option>011</option>
+					<option>017</option>
+				</select>
+				- <input type="text" name="tel" size="4" id="pnum">
+				- <input type="text" name="tel" size="4">
+			</td>
+		</tr>
+		<tr>
+			<th><label for="addrnum1">주소</label></th>
+			<td>
+				<input type="text" name="tel" size="3" id="addrnum1">
+				-
+				<input type="text" name="tel" size="3" >				
+				<input type="button" value="우편번호 검색"/> <br />
+				<input type="text" name="addr1">
+				<input type="text" name="addr2">
+				
+			</td>
+		</tr>
+		<tr>
+			<th><label for="comm">코멘트</label></th>
+			<td>
+				<textarea rows="4" cols="40" id="comm"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<th colspan="2" align="center">
+				<input type="submit" value="회원가입" />
+				<input type="reset" value="다시 입력" />
+			</th>
+		</tr>
+	</table>
+
+</body>
+</html>

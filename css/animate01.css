@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+
+.sample01{
+	width : 100px;
+	height : 100px;
+	background-color : coral;
+	
+	transition : width 4s;
+}
+
+.sample01:hover{
+	width : 400px;
+}
+
+.sample02{
+	width : 100px;
+	height : 100px;
+	background-color : yellow;
+	
+	transition : width 2s, height 8s;	
+}
+
+.sample02:hover{
+	width : 200px;
+	height : 200px;
+}
+
+.sample03{
+	width : 100px;
+	height : 100px;
+	background : teal;
+	border-radius : 50%;
+	transition : width 5s;
+	transition-timing-function : linear;
+	/*처음부터 끝까지 동일한 속도로 변함*/
+	transition-timing-function : ease-in;
+	/*끝으로 갈 수록 빨라짐*/
+	transition-timing-function : ease-out;
+	/*끝으로 갈 수록 느려짐*/
+	
+	/*
+		transition-timing-function
+		- ease : 느리게 시작, 빠르게 진행, 느리게 끝남(기본값)
+		- ease-in : 느리게 시작 -> 정상속도
+		- ease-out : 정상속도 -> 느리게 끝까지
+		- ease-in-out :  느리게 시작-> 정상속도 -> 느리게 끝
+	*/
+}
+
+.sample03:hover{
+	width : 600px;
+}
+
+.sample04{
+	width : 100px;
+	height : 100px;
+	background : green;
+	transition : width 2s; 
+	transition-delay : 2s;
+	/*마우스 올린 후 2초 뒤 설정*/
+}
+
+.sample04:hover{
+	width : 300px;
+}
+
+.sample05, .sample06{
+	width : 100px;
+	height : 100px;
+	background : orange;
+	
+	transition : width 1s, height 1s, transform 1s;
+}
+
+.sample05:hover{
+	width : 200px;
+	height : 200px;
+	transform : rotate(180deg);
+}
+
+.sample06:hover{
+	width : 200px;
+	height : 200px;
+	transform : skewX(45deg);
+	transform : translate(50px, 40px);
+}
+
+/*
+transform - 요소의 변형을 주는 프로퍼티
+- translate(x축, y축) : x축과 y축으로 '이동'
+- rotate(숫자 deg) : deg(degree) 단위로 기술하며, 양수로 각도를 기술하면 시계반향 회전.
+음스로 각도를 기술하면 반시계방향으로 회전
+- scale(가로 배수값, 세로 배수값) : 1보자 작은 값을 입력하면 원본보다 작아지고, 1보자 큰 숫자를 입력하면 원본보다 커짐.
+-skew(x축 기울기 각도deg, y축 기울기 각도deg)
+	skew(x축기울기 각도deg)
+	skew(y축기울기 각도deg)
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

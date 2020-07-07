@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+*{
+	margin : 0;
+	padding : 0;
+}
+
+#wrap{
+	width : 250px;
+	height : 250px;
+	border : 1px solid #333;
+	background-color : red;
+	position : relative;
+}
+
+#wrap div{
+	position : absolute;
+	width : 100px;
+	height : 100px;
+}
+
+#wrap div.box1{
+	background :aqua;
+	top : 10px; left : 10px;
+	opacity : 0.7;
+	z-index : 5;
+}
+
+.box2{	
+	background :green;
+	top : 20px; left : 20px;
+	opacity : 0.7;
+	z-index : 6;
+}
+
+.box3{
+	background :gold;
+	top : 30px; left : 30px;
+	opacity : 0.7;
+	
+}
+
+.box4{
+	background :pink;
+	top : 40px; left : 40px;
+	opacity : 0.7;
+	z-index : 9999;
+	
+}
+
+.box5{
+	background :steal;
+	top : 50px; left : 50px;
+	opacity : 0.7;
+	z-index : -9989;
+	
+}
+
+/*
+	z-index : 숫자(양수음수가능) 숫자가 높을 수록 앞으로 배치됨.
+	- 인 음수값이 들어가면 뒤로 
+*/

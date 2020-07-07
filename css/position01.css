@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+*{
+	margin : 0;
+	padding : 0;
+}
+
+#wrap{
+	width : 800px;
+	margin : 0 auto;
+	background-color : #ddd;
+}
+
+#top{
+	height : 100px;
+	background-color : #fcf;
+}
+
+#content{/*con1~3을 감싸고 있는 div*/
+	height : 600px;
+	background-color : #00f;
+	position : relative;
+}
+
+#content div{
+	/*
+	content라는 아이디를 가진 요소 안에 위치한 모든 div를 선택함.
+	(후손선택자)
+	*/
+	width : 400px;
+	height : 300px;
+}
+
+.con1{
+	position : absolute;/*절대위치*/
+	background-color : yellow;
+	left : 30px; top : -60px;
+}
+.con2{	
+	position : absolute;
+	background-color : skyblue;
+	text-align : center;
+	right : 0; top : 0;
+	/*left, right, top, bottom*/
+}
+.con3{	
+	position : absolute;
+	background-color : purple;
+	text-align : right;
+	left : 0; bottom : 0;
+}
+.con4{
+	position : absolute;
+	background-color : green;
+	opacity : 0.3;
+	right : 0; bottom : 0;
+}

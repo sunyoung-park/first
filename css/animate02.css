@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+.bluebox{
+	width : 100px;
+	height : 100px;
+	background : blue;
+	animation-name : example01;
+	animation-duration : 3s;
+}
+
+@keyframes example01{
+	form{
+		background : blue;
+		margin-left : 0;
+	} to {
+		background : yellow;
+		margin-left : 200px;		
+	}
+}
+
+.redbox{
+	width : 100px;
+	height : 100px;
+	background-color : red;
+	border-radius : 60px;
+	animation-name : ex02;
+	/*실행할 애니메이션 이름 설정(필수)*/
+	animation-duration : 10s;
+	/*애니메이션의 지속시간 설정(몇초동안 실행될지)*/
+	animation-delay : 2s;
+	/*지연시간 : n초 후에 애니메이션 실행*/
+	animation-iteration-count : infinite;
+	animation-iteration-count : 3;
+	/*
+	- 숫자를 입력하면 지정한 숫자만큼 반복
+	infinite; - 무한반복
+	*/
+	animation-direction : reverse;
+	/*
+	애니메이션 방향 설정
+	- normal(기본값) : 지정한 순서대로 진행
+	- reverse : 지정한 순서의 역순 진행
+	- alternate : 지정한 순서로 진행 -> 반대순서로 진행
+	- alternate-reverse : 역순진행 -> 지정순서 진행
+	*/
+}
+
+@keyframes ex02{
+	0%{
+		background : red;
+		border-radius : 60px;
+	}
+	25%{
+		background : yellow;
+		border-radius : 40px;
+	}
+	50%{
+		background : green;
+		width : 200px;
+		border-radius : 0px;
+	}
+	75%{
+		background : pink;
+		border-radius : 30px;
+	}
+	100%{
+		background : red;
+		border-radius : 60px;
+	}
+}

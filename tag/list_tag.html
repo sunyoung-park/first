@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>목록 태그</title>
+<link href="./style/.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<h2>순서 없는 기본 목록태그</h2>
+	<ul>		
+		<li>커피</li>
+		<li>우유</li>
+		<li>홍차</li>
+	</ul>
+	
+	<ul style="list-style-type: circle;">		
+		<li>커피</li>
+		<li>우유</li>
+		<li>홍차</li>
+	</ul>
+	
+	<ul style="list-style-type: square;">		
+		<li>커피</li>
+		<li>우유</li>
+		<li>홍차</li>
+	</ul>
+	
+	<ul style="list-style-type: none;">		
+		<li>커피</li>
+		<li>우유</li>
+		<li>홍차</li>
+	</ul>
+
+	<h2>순서 있는 기본 목록태그</h2>
+	<ol type="1" reversed>		
+		<li>커피</li>
+		<li>우유</li>
+		<li>홍차</li>
+	</ol>
+	
+	<ol start="10">		
+		<li>커피</li>
+		<li value="30">우유</li>
+		<li>홍차</li>
+	</ol>
+	
+	<ol type="a">		
+		<li>커피</li>
+		<li>우유</li>
+		<li>홍차</li>
+	</ol>
+	
+	<ol type="I">		
+		<li>커피</li>
+		<li>우유</li>
+		<li>홍차</li>
+	</ol>
+	
+	<ol type="i">		
+		<li>커피</li>
+		<li>우유</li>
+		<li>홍차</li>
+		<li>홍차</li>
+		<li>홍차</li>
+		<li>홍차</li>
+		<li>홍차</li>
+		<li>홍차</li>
+		<li>홍차</li>
+		<li>홍차</li>
+	</ol>
+	
+	
+	<h2>목록태그 안에 목록태그 사용하기</h2>
+	<h4>순서 없는 목록</h4>
+	<ul>
+		<li>커피
+			<ul>
+				<li>아메리카노</li>
+					<ul>
+						<li>케냐AA</li>
+						<li>과테말라</li>
+					</ul>
+				<li>카페라떼</li>
+				<li>카푸치노</li>
+			</ul>
+		</li>
+		<li>우유</li>
+			<ul>
+				<li>바나나맛</li>
+				<li>딸기맛</li>
+				<li>초코맛</li>
+			</ul>
+		<li>차</li>
+		<li>아이스크림</li>
+	</ul>	
+	
+	<h4>순서 있는 목록</h4>
+	<ol>
+		<li>커피
+			<ol type="a">
+				<li>아메리카노</li>
+					<ul>
+						<li>케냐AA</li>
+						<li>과테말라</li>
+					</ul>
+				<li>카페라떼</li>
+				<li>카푸치노</li>
+			</ol>
+		</li>
+		<li>우유</li>
+			<ul>
+				<li>바나나맛</li>
+				<li>딸기맛</li>
+				<li>초코맛</li>
+			</ul>
+		<li>차</li>
+		<li>아이스크림</li>
+	</ol>
+	
+	<h2>정의 목록 태그</h2>
+	<dl>
+		<dt>커피</dt>
+			<dd>현대인의 필수품</dd>
+		<dt>우유</dt>
+			<dd>단백질이 풍부한 음료</dd>
+	</dl>
+	
+	
+</body>
+</html>

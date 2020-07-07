@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>NEW</title>
+<link href="./form_css.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<form method="post" action="">
+<fieldset>
+		<legend>
+			<h1>개인 정보 입력</h1>
+		</legend>
+		<p>
+		<label for="uid">아 이 디:</label>
+		<input type="text" required autofocus id="uid" value="userid1234" disabled>
+		<input id="uid_ck" type="button" value="ID중복검사">
+		</p>
+		<p>
+		<label for="brith">생년월일:</label>
+		<input type="date" required id="brith">
+		</p>
+		<p>
+		성 별:
+		<input id="mgen" type="radio" name="gender" value="male"><label for="mgen">남성</label>
+		<input id="fgen" type="radio" name="gender" value="female"><label for="fgen">여성
+		</label></p>
+		<p>
+		<label for="em">E-mail:</label>
+		<input type="email" required id="em" disabled><br>
+		메일수신:
+		<input id="agr" type="radio" name="mail" value="agree"><label for="agr">수신동의</label>
+		<input id="dagr" type="radio" name="mail" value="degree"><label for="dagr">수신거부</label>
+		</p>
+		<p>
+		핸드폰:
+		<select>
+			<option value="010">010</option>
+			<option value="016">016</option>
+			<option value="011">011</option>
+		</select>
+		- <input id="add2" type="text"> - <input id="add3" type="text">
+		</p>
+		<p>
+		직업:
+		<select>
+			<option value="학생">학생</option>
+			<option value="회사원">회사원</option>
+			<option value="주부">주부</option>
+			<option value="공무원">공무원</option>
+		</select>
+		</p>
+		<p>
+		<label>취미:</label>
+		<input id="check1" type="checkbox" name="hobby"><label for="check1">쇼핑</label>
+		<input id="check2" type="checkbox" name="hobby"><label for="check2">인터넷</label>
+		<input id="check3" type="checkbox" name="hobby"><label for="check3">음악감상</label>
+		<input id="check4" type="checkbox" name="hobby"><label for="check4">독서</label>
+		<input id="check5" type="checkbox" name="hobby"><label for="check5">스포츠</label>
+		</p>
+		<p>
+		<label>자기 소개:</label>
+		<textarea ></textarea>
+		</p>
+</fieldset>
+		<br>
+	<input id="bu1" type="submit" value="등록">
+	<input id="bu2" type="reset" value="초기화">
+</form>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>FORM 태그</title>
+<link href="./style/.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<form method="post" action="" name="frm1">
+		아이디 : <br />
+		<input type="text" name="uid" size="40"/><br />
+		비밀번호 : <br />
+		<input type="password" name="pwd" /><br />
+		주소 : <br />
+		<input type="text" name="addr" value="미리입력" maxlength="10" /><br />
+		<!--
+			value 속성 : 입력된 대로 미리 출력되어있음
+			maxleght 속성 : 최대 글자 수(한글 영문 숫자마다 다름)
+			
+			유효성검사 : 이 데이터(값)이 정확한 정보인지 검사
+						전화번호 자리수, 중복값(비밀번호 한번더 쓰는 경우) 
+		-->
+	<h3>문의할 내용을 입력하세요</h3>
+		<textarea cols="60" rows="10">미리입력할 수 있음</textarea>
+		
+<hr />
+	<h4>라디오버튼</h4>	
+	<p>스마트폰을 선택하세요</p>
+		<label>
+			<input type="radio" value="g" name="phone" checked="checked" />
+			갤럭시
+		</label>
+		<label>
+			<input type="radio" value="i" name="phone" />
+			아이폰
+		</label>
+		<label>
+			<input type="radio" value="b" name="phone" />
+			블랙베리
+		</label>
+			
+	<p>통신사를 선택해 주세요.</p>
+		<input type="radio" value="kt" name="tel" /> KT
+		<input type="radio" value="sk" name="tel" checked /> SK
+		<input type="radio" value="lg" name="tel" /> LG
+		
+	<h4>체크박스</h4>
+	<p>취미를 선택해주세요.</p>
+		<input type="checkbox" name="hobby" value="game" checked="checked"/>게임<br />
+		<input type="checkbox" name="hobby" value="movie" checked="checked"/>영화<br />
+		<input type="checkbox" name="hobby" value="music" checked="checked"/>음악<br />
+		<input type="checkbox" name="hobby" value="clibing" checked="checked"/>등산<br />
+		<input type="checkbox" name="hobby" value="travel" />여행<br />
+	<p>복수 선택 가능합니다.</p>
+	
+	<hr />
+	<h4>버튼</h4>	
+		<input type="button" value="일반버튼"/>
+		<input type="reset" value="다시작성"/>
+		<input type="submit" value="회원가입"/>
+		
+		<button>버튼태그로 만든버튼</button>
+	</form>
+</body>
+</html>

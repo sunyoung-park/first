@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>NEW</title>
+<link href="./style/.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<h2>원하는 알파벳을 클릭하세요.</h2>
+	<a href="./a.html">A</a>
+	<a href="b.html#bb">B</a>
+	<a href="./c.html">C</a>
+	<a href="../d.html#aa">D</a>
+	<!--
+		href 속성에 "문서이름.html#아이디명" 형식으로 지정해주면 
+		#아이디명 위치로 스크롤이 이동되어 그 부분(#아이디명)부터 보여줌
+	-->
+	
+	<h3>a태그의 target 속성</h3>
+	<a href="../d.html" target="_blank">새탭으로 D문서를 열어줌</a><br>
+	<a href="./b.html" target="_self">현재탭이 B문서로 바뀜</a><br>
+	<!--
+		a태그의 target 속성
+		_blank : 새창으로 (새탭)
+		_self : 현재 문서와 동일한 (탭)창에 표시(기본값)
+		
+		_parent : 현재 문서 상위 탭이나 창에 표시. 없으면 현재탭이나 창에 표시
+		_top : 최상위 탭이나 창에 표시. 없으면 현재탭이나 창에 표시
+		_framename : 지명된 프레임으로 표시
+	-->
+
+</body>
+</html>

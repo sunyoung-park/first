@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+.bg01, .bg02, .bg03{
+	width : 150px;
+	height : 150px;
+	border : 10px solid rgba(255,0,0,0.3);
+	
+	/*
+		가로 : 170px 세로 : 170px
+		테두리가 10px 사방으로 들어가 있어서
+		크기가 변경됨.
+	*/
+	
+	background-image : url('../images/pattern1.png');
+	background-repeat : no-repeat;
+	padding : 30px;
+	
+/*
+	가로 : 170+60 = 230
+	세로 : 170+60 = 230
+*/
+	margin : 30px;
+}
+
+.bg02{
+	background-origin : border-box;
+}
+
+.bg03{
+	background-origin : content-box;
+}
+/*
+	background-origin : 지정안함, border-box, content-box
+		- background-origin을 사용하지 않으면 배경의 위치는 기본위치부터 적용됨.
+		- border-box : 박스 테두리 선 왼쪽 위부터 배경이 적용됨
+		- content-box :  적용된 패딩값에 따라 이후에 왼쪽 위부터 배경이 적용
+*/
+
+.bgc01, .bgc02, .bgc03{
+	border : 10px double darkred;
+	padding : 20px;
+	background-color : pink;
+}
+
+.bgc02{
+	background-clip : padding-box;
+}
+
+.bgc03{
+	background-clip : content-box;
+}
+
+/*
+	background-clip : 요소 내에서 배경의 '색'이 적용되는 범위를 지정해줌
+		- border-box (기본값, 아무것도 속성을 지정하지 않았을 때) : 바깥쪽테두리 선까지 배경색 적용됨. 
+		- padding-box :  테두리 선에는 배경색이 지정되지 않음. 테두리 선이 끝나는 시점에서 부터 배경색 적용됨.
+		- content-box : 내용 영역에 '만' 색상 적용됨(패딩값 제외한 곳에 색상 적용)
+*/

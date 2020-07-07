@@ -1,0 +1,25 @@
+@charset "utf-8";
+h1 {
+	background-color : gold;
+}
+
+p{
+	background-color : teal;
+}
+
+div {
+	background-color : rgba(255,0,0,0.7)
+}
+
+body {
+	background-image : url('../images/bg01.jpg');
+	background-repeat : repeat-x;
+	/*
+		background-repeat : 
+		배경 반복 구간을 설정함
+		
+			- repeat : 기본값이면 x축 y축 둘다 반복
+			- repeat-x : x축으로만 반복(수평)
+			- repeat-y : y축으로만 반복(수직)
+	*/
+}

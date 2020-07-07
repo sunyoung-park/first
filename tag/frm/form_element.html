@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>다양한 폼태그 요소</title>
+<link href="./style/.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<h2>폼태그 요소</h2>
+		<form method="post" action="" name="frm1">
+		<!--
+		 폼의 속성
+		 name="이름" : 폼의 이름을 자바스크립트 등에서
+		 사용할 수 있도록 정의할 때 쓴다.
+		 method="전송방식" : get/post 전송방식을 지정해줄 때 쓴다.
+		 action="파일명/주소" : 전송을 받아서 처리할 서버 쪽 
+		 프로그램 파일 이름을 쓴다. 클릭시 넘어가는 페이지 파일명이 들어간다.
+		-->		
+		
+		<p>히든(hidden) : 
+			<input type="hidden" name="hid" value="userid"/>
+		</p>
+		<!--
+		hidden : 사용자에게는 보이지 않음.
+			- value="서버로 넘길 값"
+		-->
+		
+		<p>텍스트(text) : 
+			<input type="text" name="txt"/>
+		</p>
+		<!--
+		text : 한줄짜리 텍스트 입력 필드 
+		-->
+		
+		<p>비밀번호(password) : 
+			<input type="password" name="pwd"/>
+		</p>
+		<!--
+		password : 입력 필드로 *이나 원문자(·)로 표기가 된다. 
+		-->
+		
+		<p>라디오 버튼(radio) : 
+			<input type="radio" name="rd" checked="checked"/>
+		</p>
+		<!--
+		radio : name 속성을 통해 그룹을 지어 줄 수 있음
+		그룹이 지어진 라디오 버튼은 중복체크 불가능.
+			- value의 속성값이 서버로 전송되어짐.
+			- checked 속성을 사용하면 선택된 상태로 출력.
+		-->
+		
+		<p>체크박스(checkbox) :
+			<input type="checkbox" value="apple" />
+		</p>
+		<!--
+		체크박스의 경우 name 속성을 통해 그룹을 지어 줄 수 있음
+		그룹이 지어져 있더라도 '중복체크'가 가능함.
+			- value의 속성값이 서버로 전송되어짐.
+			- checked 속성을 사용하면 선택된 상태로 출력.
+		-->
+		
+		<p>기본 콤보박스(select) :
+			<select>
+				<option value="1">첫번째</option>
+				<option value="2">두번째</option>
+				<option value="3" selected>세번째</option>
+			</select>
+		</p>
+		<!--
+		목록 중에서 단 하나만 선택할 때 쓰임.
+		콤보박스라고도 부르며 드롭박스라는 명칭도 있다.
+		-->
+		
+		<p>다중 선택 콤보박스(multiple) :
+			<select size="3" multiple>
+				<option value="1">첫번째</option>
+				<option value="2">두번째</option>
+				<option value="3" selected>세번째</option>
+				<option value="4">네번째</option>
+				<option value="5">다섯번째</option>
+			</select>
+		</p>
+		<!--
+		selct 태그에 multiple 속성을 사용하면 ctrl이나 shift 키를 이용하여 다중 선택이 가능해짐
+		-->
+		
+		<p>선택 옵션 그룹 지어주기</p>
+			<select>
+				<optgroup label="섹션1">
+					<option value="1">첫번째</option>
+					<option value="2">두번째</option>
+				<optgroup label="섹션2">
+					<option value="3" selected>세번째</option>
+					<option value="4">네번째</option>
+				<optgroup label="섹션3">
+					<option value="5">다섯번째</option>
+					<option value="6">여섯번째</option>
+			</select>
+		<!--
+		optgroup태그를 이용하여 선택박스(콤보박스) 내 항목들을 그룹화 시켜줄 수 있다.
+		이 때 label 속성에 들어간 값은 분류만 해줄 뿐 선택되지 않는다.
+		-->
+		
+<hr />
+		<h2>다양한 폼태그의 버튼</h2>
+			<input type="button" value="일반버튼" /><br />
+				<button>버튼태그</button>
+				<br /><br />
+				전송버튼 : <input type="submit" value="전송" />
+				<br /><br />
+				취소버튼 : <input type="reset" value="다시작성" onclick="alert('정말 취소하시겠습니까?')" />
+			
+		<p>1개의 파일 선택 : 
+			<input type="file" /><br />
+		</p>
+		<p>여러개의 파일 선택 :
+			<input type="file" multiple />
+		</p>
+	<!--
+	 file :파일 선택 필드와 업로드를 위한 버튼을 출력해줌
+		- multiple 속성을 사용하면 여러개의 파일을 첨부할 수 있다.
+	-->
+	<br /><br /><br /><br />
+	
+	<h1>HTML5 부터 사용 가능한 type 속성값</h1>
+	
+		<p>컬러 피커창 불러오기(color) :
+			<input type="color" value="#669966" />
+		</p>
+	<!--
+	 value 값에 16진수 컬러코드를 넣어주면 해당 컬러가 선택되어진 채로 컬러피커창 출력.
+	-->
+	
+		<p>날짜 (date) :
+			<input type="date" value="2000-10-10" />
+		</p>
+	<!--
+	 value 속성 작성시 yyyy-mm-dd으로 작성해준다.
+	-->
+	
+		<p>로컬 날짜 (datetime-local) :
+			<input type="datetime-local" value="2000-10-10T18:00"/>
+		</p>
+	<!--
+	 사용자의 지역을 기준으로 한 날짜와 시간.
+	 value 속성을 지정하면 그 값을 출력해준다.
+	 작성 규칙 :  yyyy-mm-ddT18:00
+	 날짜를 먼저 입력하고, T 작성 후 시간을 24시간제로 입력해야함.
+	-->
+	
+		<p>월 month :
+			<input type="month" value="2000-10"/>
+		</p>
+	<!--
+	 월별 선택 도구를 보여줌
+	 	- value : yyyy-mm함
+	-->
+	
+		<p>주 week :
+			<input type="week"/>
+		</p>
+	<!--
+	 날짜 년도와 주수(몇째주)인지 보여줌
+	 * firefox, safari, explore11 이하에서 지원하지 않음.
+	-->
+	
+		<p>시간 time :
+			<input type="time"/>
+		</p>
+	<!--
+	사용자 지역을 기준으로 시간(시,분,초,분할초) 출력
+	-->
+	<hr />
+	
+			<p>
+				이메일 email : 
+				<input type="email" />
+			</p>
+			<p>
+				웹주소 url : 
+				<input type="url" />
+			</p>
+	<!--
+	일부 스마트폰에서 이메일 주소나 웹주소를 입력하기 편하도록 키보드를 함께 보여줌.
+	익스플로러 10부터 사용가능.
+		- email : 이메일 양식(@를 입력하고 그 뒤에 닷(.)이 들어가지 않으면)
+		골뱅이, 닷 반드시 있어야하고 골뱅이 앞에는 몇자를 반드시 써야하고 골뱅이 뒤에 바로 닷이 있음 안되고 골뱅이 뒤에 반드시 1자 이상 있어야함.
+		- url : http://www.naver.com 형식으로 주소 앞에 프로토콜을 포함하여 입력해야함.
+	-->
+	
+			<p>
+				전화번호 tel : 
+				<input type="tel" />
+			</p>
+	<!--
+	safari에서만 지원(전화번호 입력양식)
+	-->
+	
+			<p>
+				숫자 number : 
+				<input type="number" min="2" max="30" step="2" />
+			</p>
+	<!--
+	숫자만 들어감
+		- min(최소값), max(최대값), step(숫자간격)
+	-->
+	
+			<p>
+				검색 search : 
+				<input type="search" />
+			</p>
+	<!--
+	검색상자 필드 : 출력형태는 일반 text 필드와 동일하나 해당 필드에 마우스를 올리거나 검색어를 입력하면 전체 입력값을 삭제할 수 있는 x표시가 생긴다.
+	-->
+	
+			<p>
+				슬라이드 range : 
+				<input type="range" min="0" max="30" step="10" value="20" />
+			</p>
+	<!--
+	슬라이드 막대 출력
+		- min(최소값), max(최대값), step(간격), value(초기값)
+	-->
+	
+			<p>
+				상태바 progress : 
+				<progress type="progress" max="100" value="30"></progress>
+			</p>
+	<!--
+	진행 상태의 값을 보여줌
+		- 속성 max가 최대값(종료값)
+		value의 경우 현재 얼마나 진행되어 있는지 알려줌.
+	-->
+	
+			<p>
+				meter 태그 : 
+				<meter min="0" max="100" value="50" low="20" high="95"></meter>
+				<meter min="0" max="100" value="10" low="20" high="95"></meter>
+				<meter min="0" max="100" value="98" low="20" high="95"></meter>
+			</p>
+	<!--
+	meter : value값이 차지하는 크기를 보여줌
+		- min(최소값), max(최대값)
+		- value(사용값)
+		- low(적정 수준보다 낮은 값.)
+		- high(적정 수준보다 높은 값.)
+	-->
+	
+	<hr />
+	
+		<h3>다양한 폼 태그 '속성'</h3>
+			<fieldset>
+				<legend>필수 입력 사항</legend>
+					<p>
+						<label for="user">아이디 : </label>
+						<input type="text" id="user" required="required" placeholder="아이디를 입력하세요(4~12자 이내로 입력하세요)" />
+					</p>
+					<p>
+						비밀번호 :
+						<input type="password" required />
+					</p>
+					<p>
+						주소 :
+						<input type="text" value="주소를 입력하세요" autofocus required />
+					</p>
+					<p>
+						이메일 :
+						<input type="email" required />
+					</p>
+					<p>
+						<input type="submit" value="전송" />
+					</p>
+			</fieldset>	
+	<!--
+	required : 필수 입력해야하는 필드를 지정할 때 사용하는 속성. 입력되지 않은 상태에서 전송할 경우 경고 메세지가 뜬다.
+	placeholder : 사용자가 필드에 입력할 때 도움이 되로록 힌트를 표시해 주는 것.
+	(해당 필드에 어떤 값을 입력하는지 설명할 때 씀)
+	autofocus :  자동으로 입력 커서가 지정되게 한다.(활성화 시켜준다!)
+	-->		
+		</form>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+@charset "utf-8";
+div {
+	margin : 10px;
+	background-color : #eeeeee;
+}
+
+.solid{
+	border-style : solid;
+}
+
+.double{
+	border-style : double;
+}
+
+.dashed{
+	border-style : dashed;
+}
+
+.groove{
+	border-style : groove;
+}
+
+.inset{
+	border-style : inset;
+}
+
+.outset{
+	border-style : outset;
+}
+
+.none{
+	border-style : none;
+}
+
+.mix1{/*보더 스타일 한줄로 쓰는 방법(상 우 하 좌)*/
+	border-style : solid double dotted dashed;
+}
+
+.mix2{/*프로퍼티, 값 따로 나눠 쓰는 방법*/
+	border-top-style : solid;
+	border-bottom-style : dotted;
+	border-left-style : dashed;
+	border-right-style : double;
+}
+
+.mix3{/*상 좌우 하(값을 3개만 쓰는 경우 적용값 )*/
+	border-style : solid double dotted;
+}
+
+.mix4{/*상하 좌우(값을 2개만 쓰는 경우 적용값 )*/
+	border-style : solid dotted;
+}
+
+/*
+border-style 프로퍼티에서 프로퍼티 값의 개수에 따라 
+적용되어 지는 선의 위치가 달라짐.
+4개 : 상 우 하 좌
+3개 : 상 좌우 하
+2개 : 상하 좌우
+1개 : 상하좌우(전체)
+
+4개 기준
+top right bottom left
+*/
+
+.bw01 {
+	border-style : solid;
+	border-width : thin;
+}
+
+.bw02 {
+	border-style : solid;
+	border-width : 20px;
+}
+
+/*테두리에 색상 적용하기*/
+
+.bc01 {
+	border-style : solid;
+	border-width : 5px;
+	border-color : teal;
+}
+
+.bc02 {
+	border-style : solid;
+	border-width : 7px;
+	border-color : #E3B1C0;
+}
+
+.bc03 {
+	border-style : solid;
+	border-width : 7px;
+	border-color : rgb(0,0,255);
+}
+
+.bc04 {
+	border-style : solid;
+	border-width : 7px;
+	border-color : rgba(0,0,255,0.5);
+	/*
+	rgba(10진수,10진수,10진수, 0~1사이 소수점)
+	*/
+	
+}
+
+.bt01 {
+	border : solid;
+}
+
+.bt02 {
+	border : solid 10px;
+}
+
+.bt03 {
+	border : dotted 10px #f00;
+}
+
+.br01{
+	height : 100px;
+	border : 2px solid violet;
+	border-top-left-radius : 10px;
+	border-top-right-radius : 60px;
+	border-bottom-left-radius : 10px;
+	border-bottom-right-radius : 10px;
+}
+
+.br02{	
+	height : 100px;
+	border : 2px solid violet;
+	border-radius : 10px 20px 30px 40px;
+	/*
+		border-radius
+		(왼쪽 위, 오른쪽 위, 오른쪽 아래, 왼쪽아래(시계방향))
+	*/
+}
+
+.br03{	
+	height : 100px;
+	border : 2px solid violet;
+	border-radius : 10px 20px 40px;
+	/*
+		border-radius
+		(왼쪽 위, 오른쪽 위 왼쪽 아래, 오른쪽 아래)
+	*/
+}
+
+.br04{	
+	height : 100px;
+	border : 2px solid violet;
+	border-radius : 20px 50px;
+	/*
+		border-radius
+		(- 왼쪽 위, 오른쪽 아래
+		 - 오른쪽 위, 왼쪽 아래)
+	*/
+}
+
+.br05{	
+	height : 100px;
+	width : 100px;
+	border : 2px solid violet;
+	border-radius : 50%;
+	
+	/*
+		border-radius
+		(모든 모서리에 적용)
+	*/
+}

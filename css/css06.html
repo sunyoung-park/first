@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>텍스트 관련</title>
+<link href="./css06.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<h2>폰트 적용하기</h2>
+		<p class="ff01">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<p class="ff02">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	
+	<h2>텍스트 크기 지정하기</h2>
+		<p class="fs01">텍스트 크기px</p>
+		<p class="fs02">텍스트 크기pt</p>
+		<p class="fs03">텍스트 크기em(배수)</p>
+		
+	<h2>em과 rem 비교</h2>
+	<h3>em단위 사용</h3>
+		<div class="wrapper">
+			<div>1.5em 크기의 텍스트
+			<!--20px * 1.5 = 30px-->
+				<div>1.5em 크기의 텍스트
+				<!--30px * 1.5 = 45px-->
+					<div>1.5em 크기의 텍스트</div>
+					<!--45px * 1.5 = 67.5px-->
+				</div>
+			</div>
+		</div>
+	<h3>rem단위 사용</h3>
+		<div class="wrapper_r"><!--20px-->
+			<div>1.5rem 크기의 텍스트
+			<!--20px * 1.5 = 30px-->
+				<div>1.5rem 크기의 텍스트
+				<!--20px * 1.5 = 30px-->
+					<div>1.5rem 크기의 텍스트</div>
+					<!--20px * 1.5 = 30px-->
+				</div>
+			</div>
+		</div>
+		
+	<h3>텍스트에 그림자 넣기</h3>
+		<p class="ts">본래는 프랑스어로 '식사를 끝마치다' 또는 '식탁 위를 치우다'의 뜻이다.
+		</p>
+		
+	<h3>폰트 스타일 한번에 작성하기</h3>
+		<p class="tt01">식사를 끝마치다</p>
+		<p class="tt02">식사를 끝마치다-한꺼번에 쓰기</p>
+		
+	<h3>폰트 변형</h3>
+		<p class="fv01">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+		<p class="fv02">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+		<p class="fv03">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+		<p class="fv04">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+</body>
+</html>

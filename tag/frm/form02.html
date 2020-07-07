@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>FORM 태그2</title>
+<link href="./style/.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<h3> select태그 기본 </h3>
+		<form method="post" action="">
+			<select name="city">
+				<option value="busan">부산</option>
+				<option value="daegu" selected="selected">대구</option>
+				<option value="mokpo">목표</option>
+			</select>
+		</form>
+<hr />		
+	<h3> multiple 콤보박스 다중 선택</h3>
+		<form method="post" action="">
+			<select name="city2" size="5" multiple>
+				<option value="b">부산</option>
+				<option value="d">대구</option>
+				<option value="m">목포</option>
+				<option value="i">인천</option>
+				<option value="g">광주</option>
+			</select>
+		</form>
+<hr />		
+	<h3> optgroup을 이용한 항목 그룹 지정</h3>
+		<form method="post" action="">
+			<select name="city3" size="10" multiple>
+				<optgroup label="알파벳">
+				<option value="a">AAAA</option>
+				<option value="b">BBBB</option>
+				<option value="c">CCCC</option>
+				<option value="d">DDDD</option>
+				<optgroup label="한글">
+				<option value="ga">가가가가</option>
+				<option value="na">나나나나</option>
+				<option value="da">다다다다</option>
+				<option value="la">라라라라</option>
+			</select>
+		</form>
+</body>
+</html>

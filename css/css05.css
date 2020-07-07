@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+.txt01{
+	color : red;
+	text-align : center;
+	/*문단 정렬*/
+	background-color : #ffc;
+	width : 500px;
+	
+}
+
+.txt02{
+	color : green;
+	text-align : left;
+	/*문단 정렬 기본값*/
+	background-color : lime;
+	width : 500px;
+	
+}
+
+.txt03{
+	color : blue;
+	text-align : right;
+	background-color : steelblue;
+	width : 300px;
+}
+
+.txt04{
+	text-align : justify;
+	/*
+		양쪽맞춤
+		행별로 간격이 같도록 맞춰줌
+	*/
+}
+
+.txt05{
+	text-transform : uppercase;
+	text-decoration : overline;
+}
+
+.txt06{
+	text-transform : lowercase;
+	text-decoration : underline;
+}
+
+.txt07{
+	text-transform : capitalize;
+	text-decoration : line-through;
+}
+
+/*
+text-transform
+	- uppercase : 모든 문자를 대문자로 만들어 줌 (영문텍스트기준)
+	- lowercase : 모든 문자를 소문자로 만들어 줌
+	- capitalize : 단어의 첫글자(띄어쓰기 기준)만 대문자로 만들어 줌.
+
+text-decoration
+	- ovweline : 텍스트 위에 선 긋기
+	- underline : 텍스트 아래에 선 긋기
+	- line-through :텍스트 중간에 선 긋기 (취소선)
+*/
+
+
+.txt08{
+	text-indent : 160px;
+	/*문단 앞쪽에 쓰는 들여쓰기*/
+}
+
+.txt09{
+	line-height : 3.5;
+	/*줄간격(행간) 숫자만 쓸 경우 배수가 됨*/
+	letter-spacing : 10px;
+	/*문자와 문자 사이 간격 (자간)*/
+}
+
+.txt10{
+	line-height : 200%;
+	letter-spacing : -5px;
+	white-space : nowrap;
+	/*띄어쓰기의 간격...자동 줄바꿈이 되지 않음*/
+}
+
+.txt11{
+	line-height : 4;
+	word-spacing : 10px;
+	white-space : -10px;
+}
+
+.txt12{
+	line-height : 25px;
+	word-spacing : -10px;
+	white-space : pre-line;
+}
+
+
+/*
+	line-height : 줄간격을 적용해줌(숫자나 다누이를 합하여 작성함)
+	letter-spacing : 자간(글자와 글자 사이의 간격)
+	word-spacing : 띄어쓰기 기준의 단어간 간격 지정
+	white-space : normal, pre, pre-line, pre-wrap, nowrap
+		- nomal : 공백, 들여쓰기(병합) / 줄바꿈(병합) / 자동줄바꿈OK 
+		- pre : 공백, 들여쓰기(보존) / 줄바꿈(보존) / 자동줄바꿈NO 
+		- pre-line : 공백, 들여쓰기(병합) / 줄바꿈(보존) / 자동줄바꿈OK
+		- pre-wrap : 공백, 들여쓰기(보존) / 줄바꿈(보존) / 자동줄바꿈OK
+		- nowrap : 공백, 들여쓰기(병합) / 줄바꿈(병합) / 자동줄바꿈NO
+*/
+
+.txt13, .txt14, .txt15{
+	width : 100px;
+	white-space : nowrap;
+	border : 1px solid #666;
+	overflow : hidden;
+}
+
+.txt13{
+	text-overflow : clip;
+	/*기본값*/
+}
+
+.txt14{
+	text-overflow : ellipsis;
+	/*넘치는 텍스트를 말줄임표(...)로 보여줌.*/
+}
+
+.txt15{
+	text-overflow : "---";
+	/*말줄임표를 커스텀(사용자 정의) 해서도 쓸 수 있음.
+	★파이어폭스 웹브라우저에서만 사용가능함.*/
+}

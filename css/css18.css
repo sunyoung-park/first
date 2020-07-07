@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+#box1, #box2{
+	width : 200px;
+	height : 200px;
+}
+
+#box1{
+	background : red;
+	padding : 20px;
+	border : 10px solid yellow;
+	box-sizing : border-box;
+	
+	/*
+		box-sizing - 박스의 크기를 어떤 것을 기준으로 하여 계산할지 결정해주는 프로퍼티
+		
+		- content-box(기본값)
+		- border-box : 박스의 테두리를 기준으로 하여 크기를 정해줌.(원래 사이즈의 영향을 끼쳤던 패딩, 보더 등이 안쪽으로 들어가면서 사이즈 결정됨.)
+	*/
+}
+
+#box2{
+	background : green;
+}
+
+img {
+	border : 5px solid pink;
+}
+
+.img1 {
+	margin : 20px;
+}
+
+.img2 {
+	padding : 20px;
+}

@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+ body {
+	 background-image : url('../images/cupcake.png');
+	 background-repeat : no-repeat;
+	 background-size : 200px 200px;
+	 background-attachment : fixed;
+	 background-position : center center;
+ }
+ 
+ /*
+	background-attachment
+		- fixed : 스크롤을 이동시키면 배경 이미지도 같이 스크롤 되어 움직임.
+		- scroll(기본값) : 스크롤을 이동시켜도 배경 이미지는 스크롤이 되지 않음.
+		
+	background-position 배경 이미지의 위치 지정
+		- left top, left center, left bottom
+		- right top, right center, light bottom
+		- center top, center center, center bottom
+		
+		- inherit....많이는 안씀.
+ */
