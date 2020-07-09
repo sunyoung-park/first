@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+li{
+	list-style : none;
+	float : left;
+	padding : 15px;
+	background : #ffc;
+}
+
+li:first-child{
+	background : teal;
+	border-radius : 10px 0 0 10px;
+}
+
+li:last-child{
+	background : lightgreen;
+	border-radius : 0 10px 10px 0;
+}
+
+hr{
+	clear:both;
+}
+
+/*형제 구조 선택자*/
+
+h3:first-of-type{
+	color : red;
+	
+}
+
+h4:last-of-type{
+	color : green;
+	
+}
+
+h5:first-of-type{
+	color : blue;
+	
+}
+
+/*
+	:first-of-type: 형제 관계 중에서 첫번째로 등장하는 특정 태그를 선택
+	:last-of-type: 형제 관계 중에서 마지막으로 등장하는 특정태그를 선택
+*/
+
+
+
+/*문자선택자*/
+
+p::first-letter{
+/*첫번째 문자 1개 선택*/
+	font-size : 3em;
+	color : blue;
+}
+
+p::first-line{
+/*첫번째 줄(행) 선택*/
+	background : cyan;
+}
+
+#sel_p::selection{
+/*
+선택된 요소 안의 문자를 드래그 했을 때의 스타일 지정(블록을 잡을 때)
+*/
+	background : yellow;
+	color : teal;
+	
+}
+
+input:not([type='password']){
+/*
+	input 태그 중에서 type 속성이 password가 아닌걸 선택
+*/
+	background : skyblue;
+}
+
+
+/*::after, ::before*/
+#sel_p::before{
+/*
+	css에서 강제로 삽입한 콘텐츠 내용
+*/
+	content : '-insert text';
+	color : red;
+	font-size : 16pt;
+	background : lime;
+/*
+	선택한 요소 전후로 텍스트를 추가하여 사용할 수 있다.
+	HTML에 직접 넣은 것이 아니고 가상으로 만들어진 것이므로 드래그(블록) 지정이 안됨.
+*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

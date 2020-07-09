@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+body{
+	font-family : 'NanumSquare'
+}
+
+table, th, td {
+  border : 1px solid #aaa;
+  border-collapse : collapse;
+}
+
+th {		
+  background-color: lightyellow;
+  border-bottom : 2px solid yellowgreen;
+  color : green;
+}
+
+td {
+	text-align : center;
+}

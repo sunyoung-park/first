@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+p.text1{
+	/*
+	p태그 중에 text1 클래스를 가진 p태그만 선택
+	
+	※ .text1만 쓴 선택자와 같음
+	
+	*/
+	font-size : 20px;
+	color : red;
+}
+
+p.bg1{
+	background : pink;
+}
+
+input[type='text']{
+	/*
+	input 태그 중에 type 속성이 text인 태그를 선택
+	*/
+	background : red;
+}
+
+input[type='password']{
+	/*
+	input 태그 중에 type 속성이 text인 태그를 선택
+	*/
+	background : blue;
+}

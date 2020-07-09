@@ -1,0 +1,106 @@
+@charset "utf-8";
+*{
+	margin:0; padding:0;
+	list-style:none;
+	text-align:center;
+}
+
+body{
+	background-image : url('./pt.jpg');
+}
+
+li:nth-child(odd/*짝수(인덱스'0' 기준)*/){
+	background-color:#ffc;
+}
+
+li:nth-child(even/*홀수*/){
+	background-color:#fcc;
+}
+
+#wrapper{
+	width : 600px;
+	margin : 100px auto;/*위아래 양옆*/
+}
+
+#gnb:after{
+	content : '';
+	clear : both;
+	visibility : hidden;
+	width : 0;
+	height : 0;
+	display : block;
+}
+
+#gnb li {
+	width : 100px;
+	height : 20px;
+	float : left;
+}
+
+#content{	
+	width : 600px;
+	height : 240px;
+	position : relative;
+}
+
+#content section {
+	position : absolute;
+}
+
+.sec01, .sec02{
+	width : 300px;
+	height : 100px; 
+}
+
+.sec01{
+	background-color : #fa5858;
+	
+}
+
+.sec02{
+	background-color : #faac58;
+	left : 300px;
+}
+
+.sec03, .sec04, .sec05{
+	width : 200px;
+	height : 80px;
+}
+
+.sec03{
+	background-color : #ffffcc;
+	top : 100px;
+}
+
+.sec04{
+	background-color : #acfa58;
+	top : 100px;
+	left : 200px;
+}
+
+.sec05{
+	background-color : #58faac;
+	top : 100px;
+	left : 400px;
+}
+
+.sec06{
+	background-color : #58d3f7;
+	width : 200px;
+	height : 60px;
+	top : 180px;
+}
+
+.sec07{
+	background-color : #d8cef6;
+	width : 400px;
+	height : 60px;
+	top : 180px;
+	left : 200px;
+}
+
+footer{
+	width : 600px;
+	height : 60px;
+	background-color : #666;
+}

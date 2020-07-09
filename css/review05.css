@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+*{
+	margin : 0;
+	padding : 0;
+}
+
+#wrap{
+		width : 1000px;
+		height : auto;
+		/*
+			높이를 auto로 주면 안쪽 요소의 크기에 따라 자동으로 변경됨.
+			*/
+		background-color : #f3f3f3;
+		margin : 0 auto;
+}
+
+header{
+	height : 90px;
+	background-color : lightyellow;
+}
+
+#content{
+	height : 500px;
+	background-color :skyblue;
+	position : relative;
+}
+
+footer{
+	height : 80px;
+	background-color : pink;
+	
+}
+
+span{
+	background-color : #f6f6f6;
+}
+
+.con1 {
+	position : absolute;
+	top : 30px; left :30px;
+}
+
+.con2 {
+	position : absolute;
+	top : -30px; left : -80px;
+}
+
+.con3 {
+	position : absolute;
+	top : 60px; right : 80px;
+}
+
+.con4 {
+	position : absolute;
+	top : -30px; right : -80px;
+}
+
+.con5 {
+	position : absolute;
+	bottom : 30px; left : 30px;
+}
+
+.con6 {
+	position : absolute;
+	bottom : -20px; left : -80px;
+}
+
+.con7 {
+	position : absolute;
+	bottom : 100px; right : 80px;
+}
+
+.con8 {
+	position : absolute;
+	bottom : -20px; right : -80px;
+}

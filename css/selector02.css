@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+#wrap01 ul{
+	/*
+		id가 wrap01인 것 안에 들어가 있는 모든 ul 태그에 적용되어 짐.
+	*/
+	background : pink;
+	border : 1px solid red;
+}
+
+#title01>li{
+	/*
+		id가  title01인 것 바로 아래 있는 li태그만 선택
+	*/
+	background : #ffc;
+}
+
+#title02 li{
+	background : #ccf;
+}
+
+
+
+
+/*동위선택자*/
+
+
+h3 + h4{
+	/*
+		h3 태그 바로 뒤(형제요소)에 위치하는 h4를 선택(Depth가 똑같아야 함)
+	*/
+	background : yellow;
+}
+
+h3 ~ h4{
+	/*
+		h3 태그 바로 뒤(형제요소)에 위치하는 모든! h4를 선택(Depth가 똑같아야 함)
+	*/
+	color : green;
+}
+
+
+.mou{
+	width : 400px;
+	height : 100px;
+	background : skyblue;
+}
+
+.mou:hover{
+	/*
+	 :hover
+		마우스를 해당 요소에 올렸을 때 적용할 스타일을 지정해줌.
+	*/
+	background : lightgreen;
+	font-size : 20pt;
+	font-weight : bold;
+}
+
+.mou:active{
+	/*
+		:active 
+		마우스로 해당 요소를 클릭하고 잇는 '동안'
+	*/
+	color : red;
+}
+
