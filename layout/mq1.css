@@ -1,0 +1,21 @@
+@charset "utf-8";
+body{
+	background : pink;
+}
+
+@media screen and (orientation:landscape){
+	body{
+		background : green;
+	}
+	/*
+	orientation:landscape
+	디바이스의 가로모드
+		- 모바일이나 태블릿이 넓은 크기의 화면
+	*/
+	
+}
+@media screen and (orientation:portrait){
+	body{
+		background : yellow;
+	}
+}

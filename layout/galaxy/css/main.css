@@ -1,0 +1,262 @@
+@charset "utf-8";
+
+/*reset css*/
+*{margin : 0; padding : 0;}
+li{list-style : none;}
+img{border:none;}
+a{text-decoration : none;}
+
+
+/*공통 사용 css*/
+
+header #menu{
+	position : absolute;
+	top : 0; 
+	right : 0;
+}
+
+#movie ul li{
+	position : relative;
+}
+
+#movie ul li p{
+	color : #fff;
+	font-weight : bold;
+	position : absolute;
+}
+
+/*PC용 CSS*/
+
+@media all and (min-width:801px){
+	.wrap{
+		width : 1200px;
+		margin : 0 auto;
+		position : relative;
+	}
+	
+	#main p:first-child{
+		position : absolute;
+		right : 100px;
+		top : 30px;
+		font-size : 36px;
+		font-weight  : bold;
+	}
+	
+	#main img{
+		width : 600px;
+		margin-left : 50px;
+	}
+	
+	#main p:last-child{
+		position : absolute;
+		right : 100px;
+		top : 200px;
+		font-size : 30px;
+		font-weight : bold;
+	}
+	
+	#movie{
+		margin-top : 50px;
+	}
+	
+	#movie ul:after{
+		content : '';
+		clear : both;
+		visibility : hidden;
+		display : block;
+		width : 0;
+		height : 0;
+	}
+	
+	#movie ul li{
+		float : left;
+		width : 600px;
+	}
+	
+	#movie ul li img{
+		width : 100%;
+	}
+	
+	#movie ul li p{
+		left : 20px;
+		top : 10px;
+		font-size : 20px;
+	}
+	
+	#product>p{
+		
+		/*
+		#product>p : product 섹션 바로 하위요소에 있는 p태그만 잡음
+		#product p : product 섹산  안 모든 p 태그를 선택함
+		*/
+		font-size : 24px;
+		font-weight : bold;
+		padding : 20px;
+	}
+	
+	#product ul:after{
+		content : '';
+		clear : both;
+		visibility : hidden;
+		display : block;
+		width : 0;
+		height : 0;		
+	}
+	
+	#product ul li{
+		float : left;
+		width : 300px;
+		position : relative;
+		
+	}
+	
+	#product ul li img{
+		width : 100%;		
+	}
+	
+	#product ul li p{
+		position : absolute;
+		left : 0;
+		bottom : 30px;
+		text-align : center;
+		font-size : 18px;
+		font-weight : bold;
+		width : 100%;
+	}
+	
+	footer{
+		padding : 70px 0 50px;
+	}
+	
+	footer address{
+		font-style : normal;
+		color : #666;
+		font-size : 12px;
+		position : absolute;
+		left : 100px;
+		top : 70px;
+	}
+	
+}
+
+/*테블릿, 모바일 모드 800px 이하*/
+
+@media all and (max-width: 800px){
+	#main p{
+		text-align : center;
+		font-weight : bold;		
+	} 
+	
+	#main p:first-child{
+		font-size : 1.8em;
+		margin : 7% 0;
+	} 
+	
+	#main img{
+		width : 100%;
+	}
+	
+	#movie ul{
+		margin-top : 20%;
+	}
+	
+	#movie ul li img{
+		width : 100%;
+		display : block;
+	}
+	
+	#movie ul li p{
+		left : 4%;
+		top : 5%;
+	} 
+	
+	#product ul:after{		
+		content : '';
+		clear : both;
+		visibility : hidden;
+		display : block;
+		width : 0;
+		height : 0;	
+	}
+	
+	#product ul li{
+		float : left;
+		width : 50%;
+		position : relative;
+	}
+	
+	#product ul li img{
+		width : 100%;
+		display : block;
+	}
+	
+	#product>p{
+		font-size : 1.2em;
+		padding : 3%;
+		font-weight : bold;
+	}
+	
+	#product ul li p{
+		position : absolute;
+		width : 100%;
+		text-align : center;
+		left: 0;
+		bottom : 10%;
+		font-weight : bold;
+	}
+	
+	footer{
+		padding : 10% 3% 5%;
+	}
+	
+	footer address{
+		font-size : 0.7em;
+		font-style : normal;
+		color : #666;
+		line-height : 1.6;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
