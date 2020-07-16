@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+*{
+	margin : 0;
+	padding : 0;
+	list-style : none;
+	font-family: 'NanumBarunGothic'; 
+	font-style: normal; 
+	font-weight: 400;
+}
+
+a{text-decoration : none;}
+
+body{
+	background : #E8E8E8;
+}
+
+#wrapper{
+	width : 945px;
+	height : 926px;
+	margin : 100px auto;
+}
+
+ul li{
+	width : 295px;
+	height : 433px;
+	margin : 10px;
+	background : #fff;
+	float : left;
+}
+
+ul li h3{
+	font-size : 18px;
+	font-weight : bold;
+	margin : 10px 20px;
+}
+
+ul li p{
+	font-size : 15px;
+	color : #999;
+	margin : 10px 20px;
+	line-height : 20px;
+}
+
+ul li .btn{
+	width : 50px;
+	background : #80726A;
+	text-align : center;
+	margin : 20px;
+	padding : 8px 30px;
+}
+
+ul li .btn a{
+	color : #fff;
+	font-size : 10pt;
+}

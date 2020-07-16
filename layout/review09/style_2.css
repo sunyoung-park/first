@@ -1,0 +1,190 @@
+@charset "utf-8";
+*{margin:0;padding:0;}
+ul,ol,li{list-style:none;}
+img{vertical-align:top;}
+body{font:16px/1/*사이즈(font-size)/줄간격(line-height)*/ Arial,sans-serif;color:#676767;}
+
+.guide-wrap{
+	width : 1080px;
+	margin : 0 auto;
+}
+
+.buying{/*section.buying*/
+	padding : 82px 0 100px;
+	/*상 좌우 하*/
+	background : #f3f3f3;
+	text-align : center;	
+}
+
+.buying>h1{
+	font-size : 34px;
+	color : #546220;
+	margin-bottom : 70px;
+}
+
+.buying>ul>li{
+	width : 50%;
+	float : left;
+	padding : 177px 85px 20px;
+	box-sizing : border-box;
+	background : url() 50% 0 no-repeat;
+}
+
+.buying>ul:after{
+	content : '';
+	display : block;
+	clear : both;
+	visibility : hidden;
+	width : 0;
+	height : 0;
+}
+
+.buying>ul>li:nth-of-type(1){
+	background-image : url('./images/purchase_img_01.png');
+	border-right : 1px solid #333;
+}
+
+
+.buying>ul>li:nth-of-type(2){
+	background-image : url('./images/purchase_img_02.png');
+}
+
+.buying dt{
+	font-size : 27px;
+	color : #333;
+	margin-bottom : 15px;
+}
+
+.buying dd{
+	line-height : 26px;
+	margin-bottom : 15px;
+}
+
+.buying dd strong{
+	font-size : 25px
+}
+
+
+/*process CSS*/
+
+.process{
+	padding : 82px 0;
+	background : #ddd;
+}
+
+.process>h1{	
+	font-size : 34px;
+	color : #546220;
+	text-align : center;
+}
+
+.process>ol:after{
+	content : '';
+	display : block;
+	clear : both;
+	visibility : hidden;
+	width : 0;
+	height : 0;
+	
+}
+
+
+.process>ol li{
+	float : left;
+	width : 240px;
+	height : 240px;
+	margin-right : 40px;
+	text-align : center;
+	line-height :	24px;
+	background : url() 50% 40px no-repeat;
+	box-sizing : border-box;
+	padding : 160px 20px 0;
+	position : relative;
+}
+
+
+.process>ol>li:nth-of-type(1){
+	background-image: url('./images/mileag_procedure_01.png');
+}
+
+.process>ol>li:nth-of-type(2){
+	background-image : url('./images/mileag_procedure_02.png');
+}
+
+.process>ol>li:nth-of-type(3){
+	background-image : url('./images/mileag_procedure_03.png');
+}
+
+.process>ol>li:nth-of-type(4){
+	background-image : url('./images/mileag_procedure_04.png');
+	margin-right : 0;
+}
+
+.process>ol>li:after{
+	content : '';
+	display : block;
+	/*가로 세로 사이즈 입력 가능하게 블록처리*/
+	width : 44px;
+	height : 28px;
+	background : url('./images/ico_arrow_03.png') 0 0 no-repeat;
+	position : absolute;
+	top : 50%;
+	right : -30px;
+	transform : translateY(-50
+	%)
+}
+
+.process>ol>li:nth-of-type(4):after{
+	display : none;
+}
+
+
+.process>a{
+	display : block;
+	width : 245px;
+	padding : 25px 0;
+	font-size : 18px;
+	text-align : center;
+	background : #333;
+	margin : 60px auto 60px;
+	color : #fff;
+}
+
+
+.process>h2{
+	margin-left : 30px;
+	font-size : 24px;
+	color : #333;
+}
+
+.process>ul{
+	margin-top : 29px;
+	margin-left : 30px;
+}
+
+.process>ul>li{
+	margin-top : 15px;
+	font-size : 15px;
+}
+
+.process>ul>li:before{
+	content : '- ';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
