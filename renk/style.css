@@ -1,0 +1,306 @@
+@charset "utf-8";
+/*
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css); .nanumgothic * { font-family: 'Nanum Gothic', sans-serif; }
+*/
+*{
+	margin : 0;
+	padding : 0;
+	text-decoration : none;
+	list-style : none;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+a:active{color : #333;}
+a:hover{color : #c93;}
+a:link{color : #333;}
+a:visited{color : #333;}
+
+nav h2, #visual_bnr h2, #content_wrap h2, #more_menu_btn h2, footer h2{
+	position : absolute;
+	left : -9999;
+	overflow : hidden;
+	line-height : 0;
+	width : 0;
+	height : 0;
+}
+
+#wrapper{
+	width : 100%;
+}
+
+/*헤더영역*/
+
+header{
+	width : 1100px;
+	margin : 0 auto;
+	text-align : center;
+}
+
+header h1{
+	margin : 30px 0 20px;
+}
+
+
+/*네비게이션*/
+
+nav{
+	width : 1100px;
+	margin : 0 auto;	
+}
+
+nav ul:after, #sec01:after, #sec02 ul:after, #sec04 ul:after, footer:after{
+	content : '';
+	clear : both;
+	visibility : hidden;
+	display : block;
+	width : 0;
+	height : 0;
+}
+
+nav ul{
+	margin : 0 auto;
+}
+
+nav li{
+	float : left;
+	margin-right : 45px;	
+	text-align : center;
+}
+
+nav li:last-child{
+	margin-right : 0;	
+}
+
+nav li a{
+	display : block;
+	font-weight : bold;
+}
+
+
+nav li a:hover{
+	color : #c93;
+}
+
+
+/*비주얼 배너*/
+
+#visual_bnr{
+	width : 100%;
+	height : 600px;
+	background : url('./images/mainimg.jpg') no-repeat;
+	background-size : cover;
+	background-position : center;
+	position : relative;
+}
+
+#visual_bnr li{
+	position : absolute;
+}
+
+#visual_bnr li:nth-of-type(1){
+	right : 25%;
+	top : 15%
+}
+
+#visual_bnr li:nth-of-type(2){
+	right : 26%;
+	top : 40%
+}
+
+#visual_bnr li:nth-of-type(3){
+	right : 31%;
+	top : 85%
+}
+
+#content_wrap{
+	width : 1100px;
+	margin : 0 auto;
+}
+
+#sec01 div{
+	float : left;
+}
+
+#b_college, #club_renk, #b_story, #sec02{	
+	border-top : 3px solid #000;
+}
+
+#b_college, #club_renk{
+	width : 255px;
+	height : 400px;
+	margin-top : 20px;
+	margin-right : 20px;
+}
+
+#b_college img, #club_renk img{
+	width : 100%;
+	margin-top : 20px;
+}
+
+.con_title{
+	display : block;
+	font-weight : bold;
+	margin-top : 20px;
+	font-size : 15px;
+}
+
+#b_story img{
+	margin-top : 20px;
+}
+
+#b_story>img{
+	width : 305px;
+	margin-right : 20px;
+	float : left;
+}
+
+#b_story hr, #sec02 hr{	
+	width : 50px;
+	border-top : 5px solid #000;
+	margin-top : 20px;
+}
+
+#b_story>ul>img{
+	width : 225px;
+}
+
+#b_story{
+	width : 550px;
+	margin-top : 20px;
+}
+
+#sec02{
+	margin-top : 30px;
+}
+
+#sec02 ul{
+	width : 255px;
+	float : left;
+	margin-right : 20px;
+}
+
+#sec02 img{	
+	margin-top : 20px;
+	margin-right : 20px;
+}
+
+.con_text{
+	display : block;
+	font-size : 13px;
+	margin-top : 20px;
+}
+
+.more_btn{
+	display : block;
+	font-size : 13px;
+	margin-top : 30px;
+	font-weight : bold;	
+}
+
+#more_menu_btn{
+	width : 1100px;
+	margin : 20px auto;
+	text-align : center;
+}
+
+footer{
+	width : 1100px;
+	margin : 0 auto;
+	padding-bottom: 30px;
+	padding-top: 20px;
+	border-top : 5px solid #000;
+}
+
+address{
+	font-style : normal;
+	font-size : 12px;
+	line-height : 20px;
+}
+
+address strong{
+	color : #D1900F;
+}
+
+address small{
+	color : #999;
+	letter-spacing : 2px;
+}
+
+#sec03{
+	width : 550px;
+	height : 100px;
+	float : left;
+	
+}
+
+#sec04{	
+	width : 550px;
+	height : 100px;
+	position : relative;
+	margin-bottom : 80px;
+	float : left;
+}
+
+#sec04 ul{
+	position : absolute;
+	top : 10px;
+	right : 20px;
+}
+
+#sec04 ul li{
+	float : left;
+	font-size : 12px;
+	margin-right : 10px;
+}
+
+#sec04 img{
+	position : absolute;
+	top : 5px;
+	left : 20px;
+}
+
+#sec04 a{
+	position : absolute;
+	top : 40px;
+}
+
+#sec04 a:nth-of-type(1){	
+	left : 85px;
+}
+
+#sec04 a:nth-of-type(2){	
+	left : 185px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

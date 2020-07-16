@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+*{
+	margin : 0;
+	padding : 0;
+}
+
+body{
+	color : #666;
+	font-size : 14px;
+	line-height : 1.8;
+	
+}
+
+#main_nav h2, #main_banner h2, #main_content h2, #main_footer h2 { /*숨기기*/
+	position : absolute;
+	left : -99999;
+	height : 0;
+	width : 0;
+	overflow : hidden;
+	line-height : 0;	
+}
+
+li{list-style : none;}
+a{text-decoration : none;}
+
+#wrap{
+	width : 960px;
+	margin : 0 auto;
+}
+
+#main_header{
+	margin:0;
+	padding : 0;
+	text-align : center;
+	padding-top : 20px;
+}
+
+#main_nav ul:after, #content_wrap:after{
+	clear : both;
+	content : '';
+	display : block;
+	visibility : hidden;
+	width : 0;
+	height : 0;
+}
+
+#main_nav{
+	font-size : 20px;
+	text-align : center;
+	line-height : 50px;
+}
+
+#main_nav a{
+	color : #fff;
+	text-decoration : none;
+	font-weight : bold;
+}
+
+.gnb>li{
+	float : left;
+	height : 50px;
+	width : 192px;
+	background : #1e3269;
+	transition : all 0.3s; /*서서히 바뀌게*/
+}
+
+.gnb>li:hover{
+	background : #20b2aa;
+}
+
+.gnb_sub{
+	position : absolute;
+	background : #20b2aa; /*hover와 같은 배경색, 너비*/
+	width : 192px;
+}
+
+.gnb_sub>li:hover{ /*마우스 오버시 색 변화*/
+	background : #1e3269;
+	transition : all 0.3s;	
+}
+
+#main_banner{
+	line-height : 0; /*p태그 img 태그의 기본 높이가 있어서 여백 리셋*/
+}
+
+#content_wrap{
+	border-left : 1px solid #ccc;
+}
+
+#sub_nav{
+	float : left;
+	width : 199px;
+}
+
+#sub_nav h1{
+	color : #fff;
+	background-color : #1e3269;
+	font-size : 18px;
+	padding : 15px;
+	text-align : center;
+}
+
+.lnb>li{
+	text-align : center;
+	border-bottom : 1px solid #ccc;
+	height : 50px;
+	line-height : 50px;
+}
+
+.lnb>li>a{color : #333;}
+
+#main_content{
+	float : right;
+	position : relative;
+	border-left : 1px solid #ccc;
+	border-right : 1px solid #ccc;
+	padding : 30px;/*758-60*/
+	width : 698px;
+	text-align : justify;
+}
+
+.greeting_header p{
+	color : #00f;
+	font-size : 20px;
+}
+
+.ceon_name{
+	text-align : right;
+	color : #fff;
+	font-size : 18px;
+}
+
+.story li>p{
+	display : inline-block;
+	width : 100px;
+	font-weight : bold;
+}
+
+#main_footer{
+	background : #eee;
+	text-align : center;
+	padding : 20px;
+	height : 50px;
+}
+
+#main_footer address{
+	font-style : normal;
+	font-weight : bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

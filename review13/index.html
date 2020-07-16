@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>NEW</title>
+<link href="./style.css" rel="stylesheet" type="text/css" />
+<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<div id="wrap">
+
+<header id="main_header">
+	<h1><a href="#"><img src="./images/toplogo.png" alt="logo" /></a></h1>
+</header>
+<nav id="main_nav">
+	<h2>메인 네비게이션</h2>
+	<ul class="gnb">
+		<li><a href="#">Menu1</a>
+			<ul class="gnb_sub">
+				<li><a href="#">sub1</a></li>
+				<li><a href="#">sub2</a></li>
+				<li><a href="#">sub3</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Menu2</a>
+			<ul class="gnb_sub">
+				<li><a href="#">sub1</a></li>
+				<li><a href="#">sub2</a></li>
+				<li><a href="#">sub3</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Menu3</a>
+			<ul class="gnb_sub">
+				<li><a href="#">sub1</a></li>
+				<li><a href="#">sub2</a></li>
+				<li><a href="#">sub3</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Menu4</a>
+			<ul class="gnb_sub">
+				<li><a href="#">sub1</a></li>
+				<li><a href="#">sub2</a></li>
+				<li><a href="#">sub3</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Menu5</a>
+			<ul class="gnb_sub">
+				<li><a href="#">sub1</a></li>
+				<li><a href="#">sub2</a></li>
+				<li><a href="#">sub3</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+<section id="main_banner">
+	<h2>비주얼 배너</h2>
+	<figure>
+		<p><img src="./images/v_banner.jpg" alt="비주얼 배너 " /></p>
+	</figure>
+</section>
+<section id="content_wrap">
+	<nav id="sub_nav">
+		<h1>SUB MENU</h1>
+		<ul class="lnb">
+			<li><a href="#">sub menu1</a></li>
+			<li><a href="#">sub menu2</a></li>
+			<li><a href="#">sub menu3</a></li>
+		</ul>
+	</nav>
+	<article id="main_content">
+		<h2>인사말</h2>
+		<header class="greeting_header">
+			<p>안녕하십니까</p>
+		</header>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		<p class="ceon_name">- 홍 길 동 -</p>
+		<ul class="story">
+			<li><p>TITLE</p>text text text text text</li>
+			<li><p>TITLE</p>text text text text text</li>
+			<li><p>TITLE</p>text text text text text</li>
+			<li><p>TITLE</p>text text text text text</li>
+			<li><p>TITLE</p>text text text text text</li>
+			<li><p>TITLE</p>text text text text text</li>
+		</ul>
+	</article>
+</section>
+<footer id="main_footer">
+	<h2>푸터</h2> <!--h2 감춰야할 것-->
+	<address>주소 : 00시 00구 0000로 00 tel : 010-000-0000</address>
+	<p><small>Copyright &copy; 2020<i>THE</i>All Right Reserved.</small></p>
+</footer>	
+</div>
+<script>
+$(document).ready(function(){
+	$(".gnb_sub").css("display","none") // gnb 서브 가려놓기
+	$(".gnb>li").mouseover(function(){
+		$(this).children(".gnb_sub").stop().slideDown(100);
+	}); // 마우스 오버시.gnb_sub가 슬라이드로 내려오기
+	$(".gnb>li").mouseleave(function(){
+		$(this).children(".gnb_sub").stop().slideUp(100);
+	}); // 마우스가 올라가지 않았을 때 .gnb_sub가 슬라이드로 올라가기
+});
+</script>
+</body>
+</html>

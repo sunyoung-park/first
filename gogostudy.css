@@ -80,7 +80,7 @@ caption{
 	border-radius : 20px;
 }
 
-#sec01, #sec02, #sec03 {
+#sec01, #sec02, #sec03, #sec04, #sec05 {
 	color : #ffffff;
 	text-align : left;
 	padding : 50px 0;
@@ -98,8 +98,20 @@ caption{
 	background-color : #42A0F6;
 }
 
+#sec04{
+	background-color : #2A3632;
+}
+
+#sec05{
+	background-color : #E85559;
+}
+
 
 footer{
 	background-color :#F4E0E1;
 	padding : 20px 0;
+}
+
+footer h3{
+	color : #000;
 }

@@ -1,0 +1,281 @@
+@charset "utf-8";
+
+/*reset CSS*/
+
+*{margin : 0;	padding : 0;}
+li{list-style : none;}
+img{border:none;}
+
+body{font-family : 'Nanumsquare', sans-serif;}
+
+/*a link CSS*/
+
+a{text-decoration : none;}
+a:hover{color : #0f0;}
+a:link{color : #333;}
+a:active{color : #333;}
+a:visited{color : #333;}
+
+/*전체 레이아웃 CSS*/
+
+.wrap{
+	width : 960px;
+	margin : 0 auto;
+	position : relative;
+}
+
+body{
+	font-size : 14px;
+	color : #666;
+}
+
+/*헤더영역 CSS*/
+
+header{
+	padding : 20px 0 10px;
+}
+
+header p{
+	font-size : 14px;
+	color : darkgreen;
+	position : absolute;
+	right : 0;
+	bottom : 20px;
+}
+
+/*비주얼 배너 영역 CSS*/
+
+#visual{
+	padding : 40px 0;
+	background-image : url('../images/pattern.png'); 
+}
+
+#visual figure:nth-child(2){
+	position : absolute;
+	right : 0;
+	top : 0;
+}
+
+#visual figure:nth-child(3){
+	position : absolute;
+	right : 0;
+	bottom : 0;
+}
+
+#visual figure:nth-child(1) figcaption{
+	position : absolute;
+	left : 0;
+	top : 0;
+	padding : 50px;
+	height : 292px;/*패딩 포함 세로 total:392*/
+	background : rgba(0,0,0,0.5);
+	color : #fff;
+	width : 200px;
+}
+
+#visual figure:nth-child(1) figcaption p{
+	margin-bottom : 30px;
+}
+
+#visual figure:nth-child(1) figcaption p:first-child{
+	font-size : 30px;
+	font-weight : bold;
+}
+
+/*story 영역 CSS*/
+
+#story{
+	background: #000;
+}
+
+#story img{
+	display : block;
+}
+
+#story p:nth-of-type(1){
+	position : absolute;
+	top : 40px;
+	left : 380px;
+	font-size : 18px;
+	font-weight : bold;
+	color : #fff;
+}
+
+#story p:nth-of-type(2){
+	position : absolute;
+	text-align : right;
+	font-size : 12px;
+	right : 0;
+	top : 40px;
+	color : #fff;
+}
+
+#story p:nth-of-type(2) span{
+	font-size : 20px;
+	font-weight : bold;
+}
+
+
+/* gallery 영역 CSS*/
+
+#gallery{
+	background-color : #fff4e7;
+	padding : 40px 0;
+	border-bottom : 1px solid #ccc;
+}
+
+.title{
+	font-size : 16px;
+	background-image : url('../images/line.png');
+	background-repeat : repeat-x;
+	margin-bottom : 25px;
+}
+
+#gallery .title span{
+	background-color : #fff4e7;
+	font-weight : bold;
+	color : #8560a8;
+	padding-right : 10px;
+}
+
+#gallery ul:after{
+	content : '';
+	clear : both;
+	display : block;
+	visibility : hidden;
+	width : 0;
+	height : 0;
+}
+
+#gallery ul li{
+	float : left;
+	margin : 0 45px 20px 0;
+}
+
+#gallery ul li:nth-child(3n){
+	/*li 태그 중 3의 배수 번째에 위치한 것만 선택*/
+	margin-right : 0;
+}
+
+#gallery ul li p{
+	margin-top : 10px;
+	font-weight : bold;
+	font-size : 14px;
+}
+
+
+/*latest 영역 CSS*/
+
+#latest{
+	padding : 40px 0;
+}
+
+#latest .title span{
+	color : #8560a8;
+	font-weight : bold;
+	background : #fff;
+	padding-right : 10px;
+}
+
+
+#latest article:after{
+	content : '';
+	clear : both;
+	display : block;
+	visibility : hidden;
+	width : 0;
+	height : 0;
+}
+
+#latest article{
+	padding-bottom: 60px;
+}
+
+#latest article>div{
+	float : left;
+}
+
+#latest article>div:first-child{
+	width : 610px;
+	margin-right : 60px;
+}
+
+#latest article>div:first-child div{
+	position : relative;
+}
+
+#latest article>div:first-child div:nth-child(2){
+	margin-bottom : 20px;
+}
+
+#latest article>div:first-child div dl{
+	position : absolute;
+	left : 180px;
+	top : 5px;
+}
+
+#latest article>div:first-child div dl dt{
+	font-weight : bold;
+	color : #000;
+	margin-bottom : 5px;
+	font-size : 14px;
+}
+
+#latest article>div:first-child div dl dd{
+	color : #000;
+	margin-bottom : 5px;
+	font-size : 12px;
+}
+
+#latest article>div:last-child{
+	width : 290px;
+}
+
+#latest article>div:last-child figure{
+	position : relative;
+}
+
+#latest article>div:last-child figure figcaption{
+	background : rgba(0,0,0,0.5);
+	padding : 10px 30px;
+	color : #fff;
+	top : 90px;
+	left : 0;
+	position : absolute;
+}
+
+/*배너영역 CSS*/
+
+#bnr{
+	background-color : #f1f1f1;
+}
+
+#bnr img{
+	display : block;
+	margin : 0 auto;
+}
+
+
+/*푸터 영역 CSS*/
+
+footer{padding : 20px 0;}
+footer a{color : #666;}
+footer span{font-weight : bold;}
+address{
+	text-decoration : none;
+	font-style : normal;
+	line-height : 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

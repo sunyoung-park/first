@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+*{
+	margin : 0;
+	padding : 0;
+	list-style :none;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+a{text-decoration : none;}
+a:link,a:visited,a:active{color : #fff;}
+
+header{
+	width :100%;
+	height : 140px;
+	margin : 20px auto;
+	border-bottom : 1px solid #d4d4d4;
+}
+
+#util_line{
+	width : 100%;
+	height : 50px;
+	background : #004795;
+	position : relative;
+}
+
+#util_wrapper{
+	width : 990px;
+	margin: 0 auto;
+	position : relative;
+}
+
+#util_left, #util_rihgt, #logo, #gnb{
+	position : absolute;
+}
+
+#util_left{
+	top : 0px;
+	left : 10px;
+}
+
+#util_left ul li{
+	text-align : center;
+	margin : 0 auto;
+	float : left;
+}
+
+#util_left ul li a{
+	padding-top: 20px; 
+	display : block;
+	width : 180px;
+	height : 50px;
+	font-size : 13px;
+	font-weight : bold;
+}
+
+#util_left>ul>li>a:hover{
+	background : #fff;
+	color : #004795;
+}
+
+#util_rihgt{	
+	top : 20px;
+	right : 10px;
+}
+
+#util_rihgt ul li{
+	float : left;
+	margin-right : 10px;
+}
+
+#util_rihgt ul li:last-child{
+	margin-right : 0px;
+}
+
+#util_rihgt ul li a{
+	display : block;
+	padding-right : 10px;
+	border-right : 1px solid #fff;
+	font-size : 11px;
+}
+
+#util_rihgt ul li:last-child a{
+	border : 0px;
+}
+
+#util_rihgt ul li a:hover{color : #00f;}
+#util_rihgt ul li a:active{color : #fff;}
+#util_rihgt ul li a:link{color : #fff;}
+#util_rihgt ul li a:visited{color : #fff;}
+
+#util_wrapper:after{
+	content : '';
+	clear : both;
+	visibility : hidden;
+	display : none;
+	width : 0;
+	height : 0;
+}
+
+
+#gnb_line{
+	width : 990px;
+	height : 90px;
+	margin : 0 auto;
+	background : f00;
+	position : relative;
+}
+
+
+#logo{	
+	top : 20px;
+	left : 10px;
+}
+
+#logo a{display : block;}
+
+#gnb{
+	top : 30px;
+	right : 10px;
+}
+
+#gnb ul li{	
+	float : left;
+	margin-right : 30px;
+}
+
+#gnb ul li:last-child{margin-right : 0;}
+
+#gnb ul li a{
+	font-size : 18px;
+	font-weight : bold;
+}
+
+#gnb>ul>li>a:hover{ color : #333;}
+#gnb ul li a:active{color : #333;}
+#gnb ul li a:link{color : #333;}
+#gnb ul li a:visited{color : #333;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
