@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>프로퍼티만 있는 객체 만드는 문법</title>
+	
+<script>
+/*
+프로퍼티만 있는 객체 만드는 문법
+
+var 객체명 = {프로퍼티 1 : 값1, 프로퍼티2 :값2......프로퍼티n : 값n}
+*/
+
+
+var sale = {
+	product : "phone",
+	count : 5,
+	price : 50000,
+	pay : function(){
+		return sale.count *  sale.price;
+	}
+}
+
+document.write("상품명 : " + sale.product + "<br />");
+document.write("수량 : " + sale.count + "<br />");
+document.write("가격 : " + sale.price + "<br />");
+document.write("상품명 : " + sale["product"] + "<br /><br />");
+
+for(x in sale){
+	document.write(sale[x] + "<hr />");
+}
+
+document.write("총금액 :"  + sale.pay() + "<br />");
+</script>
+</head>
+<body>
+
+
+</body>
+</html>

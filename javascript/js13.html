@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>switch문</title>
+<script>
+
+ /*
+ swich(조건rkqt){
+	case 값1 : 
+		조건 값1이 참일 때 실행될 구문
+	break;
+	case 값n : 
+		조건 값1이 참일 때 실행될 구문
+	break;
+ }
+ 
+ 값으로 쓰이는 것은 숫자가 일반적.
+ 최근 javascript 에서는 switch 구문 값에 문자열을 입력할 수도 있음.
+ */
+
+
+var jumsu = prompt('점수를 입력하세요');
+var mark = (jumsu - (jumsu % 10)) / 10;
+/*
+
+% 나머지값 구하기 연산자
+
+입력 값이 80일 때 
+(80-(80 % 10) /10
+= 8
+
+입력값 : 56
+(56 - (56 % 10)) / 10
+(56 - 6) / 10
+50 /10
+= 5
+
+입력값이 100
+(100-(100 % 10)) / 10
+(100-0) / 10
+= 10
+*/
+
+switch(mark){
+	case 10 :
+		document.write("A학점");
+	break;
+
+	case 9 :
+		document.write("A학점");
+	break;
+
+	case 8 :
+		document.write("B학점");
+	break;
+
+	case 7 :
+		document.write("C학점");
+	break;
+
+	case 6 :
+		document.write("D학점");
+	break;
+	
+	default : //위의 조건 값에 해당이 안되는 부분으로 if else 문에서 else와 같은 역활
+		document.write("D학점");
+}
+
+</script>
+</head>
+<body>
+
+
+</body>
+</html>

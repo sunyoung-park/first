@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>새창 열기</title>
+<script>
+function winOp(){
+	window.open('http://daum.net', "_blank", "toolbar=yes, scrollbars=no, width=400, height=200, resizable=no, top=100")
+}
+
+/*
+	window.open(url, name, specs, replae);
+		- url : 새창에 들어갈 웹페이지 주소 입력
+		- name : a 태그의 target 속성값이 들어감
+		- specs : 콤마로 구분하고, 툴바, 스크롤여부, 크기조절(픽셀단위)로 지정 가능
+		- replae : true로 지정하면 history 목록에 있는 현재 페이지의 url 새로운 페이지의 url로 대체
+		- flase로 지정하면 새로운 페이지의 url이 history 목록에 새로운 항목으로 추가되어 저장.
+*/
+</script>
+</head>
+<body>
+<button onclick="window.open('../layout/mq_orientation.html')"> 일반 새창 열기</button>
+<!--
+window.open('주소입력')
+주소부에는 상대, 절대주소 모두 가능
+-->
+<button onclick="winOp()"> 크기를 지정하여 새창 열기</button>
+
+</body>
+</html>

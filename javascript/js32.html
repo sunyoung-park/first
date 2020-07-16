@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>시간 함수</title>
+<script>
+
+/*
+Date 객체(현재시간, 날짜정보)에서 각 년, 월, 일만 추출
+*/
+
+var now = new Data();
+document.write(now.getFullYear() + "년 <br />");
+// .getFullYear() : 연도를 반환
+
+document.write(now.getMonth()+1 + "월 <br />");
+/*
+Date 객체의 경우 월(Month)은 인덱스 값인 0부터 시작함.
+현재월을 출력해주려면 +1을 해줘야함.
+1월 = 0  ~~~~12월 = 11
+*/
+
+document.write(now.getData() + "일 <br />");
+// .getDate : 일을 반환
+ 
+document.write(now.getDay() + " 요일 <br />");
+// 요일을 인덱스 값으로 반환
+
+var week = [];
+week[0] = "일요일";
+week[1] = "월요일";
+week[2] = "화요일";
+week[3] = "수요일";
+week[4] = "목요일";
+week[5] = "금요일";
+week[6] = "토요일";
+
+var wd = now.getDay(); //wd 변수에 현재 요일의 인덱스 값이들어가 있는 상태
+
+document.write(week[wd] + "<br />");
+
+document.write(now.getHours() + "시 <br />");
+document.write(now.getMinutes() + "분 <br />");
+document.write(now.getSeconds() + "초 <br />");
+
+
+
+</script>
+</head>
+<body>
+
+
+</body>
+</html>

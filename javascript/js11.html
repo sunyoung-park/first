@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>if문</title>
+	<script>
+	/*
+	if(1 < 10)
+		alert("야호");
+	실행문이 한줄일 경우 위처럼 중괄호 생략하여 쓸 수 있다.
+	*/
+	
+	var jumsu;
+	jumsu = prompt("점수를 입력하세요!");
+	
+	if(jumsu >= 90){
+	// 입력한 점수가 90점 이상이면
+		document.write("A학점입니다!<br />");
+		document.write("축하합니다!");
+		/*참일 때 실행되는 실행문*/
+	}else{		
+	// 입력한 점수가 89점 이하이면
+		document.write("공부하세요");
+		/*거짓일 때 실행되는 실행문*/
+	}
+	// 위에 조건식(if문)에 상관없이 항상 출력되는 구문
+	document.write("<br />입력한 점수 : " + jumsu);
+	
+	
+	</script>
+</head>
+<body>
+
+
+</body>
+</html>

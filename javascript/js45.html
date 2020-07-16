@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>롤오버 이미지(**)</title>
+</head>
+<body>
+<h3>롤오버 이미지</h3>
+<img src="../images/a01.jpg"  onmouseover="this.src='../images/a02.jpg'" onmouseout="this.src='../images/a01.jpg'"/> <!--이것만 인라인으로-->
+
+<h3>토글 이미지 a01 -- a02</h3>
+<img src="../images/a01.jpg" onclick="toggleImg(this)"/>
+<script>
+function toggleImg(obj){
+// obj.src = img태그의 src 경로
+alert(obj.src); // 얼럿창으로 경로 확인
+var str = obj.src; // 클릭한 이미지의 경로
+var start = str.lastIndexOf("/") + 1;
+// lastIndexOf(문자열) : 뒤에서부터 문자열과 일치하는 곳의 인덱스 값을 리턴.
+// ../images/a01.jpg  > 뒤의 하이픈(/) 을 찾는 것
+
+var src= str.substring(start);
+// src 변수에는 '/' 뒤에 있는 모든 문자열이 들어감.
+
+alert(src);
+
+if(src == "a01.jpg"){
+	//참인 값
+	obj.src="../images/a02.jpg";
+}else{
+	//모든 거짓 값
+	
+	obj.src="../images/a01.jpg";
+}
+}
+</script>
+
+<h3>토글 이미지 a02 -- a03</h3>
+<img src="../images/a02.jpg" onclick="toggleImg2(this)" />
+<script>
+var flag = false; //전역변수 : 페이지 로딩 후 어디서든 불러와서 사용할 수 있음.
+// 전역변수의 경우 페이지에서 유일한 변수명으로 사용해야함.
+
+function toggleImg2(obj){
+	flag = !flag; // 앞에 false가 있기 때문에 얘는 true(첫번째 클릭시, 두번째 클릭 시 false가 됨. 왔다갔다)
+	
+	if(flag){
+		obj.src="../images/a03.jpg"
+	}else{		
+		obj.src="../images/a02.jpg"
+	}
+}
+</script>
+
+<h3>a01 --  a02 -- a03 변경</h3>
+<img src="../images/a01.jpg" onclick="toggleImg3(this)" />
+<script>
+var i = 0;
+function toggleImg3(obj){
+i++; // 한번 클릭 시 i=1; 이 된다.
+/*
+클릭 시 마다 증가
+i = 1 => a02
+i = 2 => a03
+i = 3 => a01......
+
+*/
+
+if(i == 1){
+	obj.src="../images/a02.jpg";
+}else if(i == 2){	
+	obj.src="../images/a03.jpg";
+}else{	
+	obj.src="../images/a01.jpg";
+	i = 0; // 전역변수가 i=0이기 때문에 여기서 0으로 리셋해줘야 다시 시작할 수 있음.
+}
+}
+</script>
+<h3>a01 --  a02 -- a03 변경 나머지값 사용</h3>
+<img src="../images/a01.jpg" onclick="toggleImg4(this)" />
+<script>
+var j = 0;
+function toggleImg4(obj){
+	j++;
+	
+/*
+A(피제수) % B(제수) 연산  ( % : 나머지값)
+※ mod 연산 : Ark B보다 작으면 A가 나머지값이 됨.
+
+1 % 3 = 1
+2 % 3 = 2
+3 % 3 = 0
+4 % 3 = 1
+5 % 3 = 2
+6 % 3 = 0
+7 % 3 = 1
+*/
+
+if(j % 3 == 0){ // 3으로 나누어서 나머지값이 되는 수 3, 6, 9, 12....
+	obj.src="../images/a01.jpg";
+}else if(j % 3 == 1){
+	// 1 % 3 = 1... ---> 1, 4, 7.....10
+	obj.src="../images/a02.jpg";
+}else{
+	// 2 % 3 = 2...5, 8, 11....
+	obj.src="../images/a03.jpg";
+}
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

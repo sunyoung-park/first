@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>파일 경로 및 유효성 검사(이미지, 오피스)</title>
+</head>
+<body>
+<form name="frm">
+	<input type="file" name="strFile" />
+	<br />
+	<br />
+	<input type="button" value="이미지 파일 검사" onclick="chkFile('Img', '이미지')"/>
+	<input type="button" value="오피스 파일 검사" onclick="chkFile('Office', '오피스')"/>
+</form>
+<script>
+var arrImg = ["jpg","jpeg","gif","png"];
+var arrOffice = ["hwp","docx","xlsx","pptx","txt"];
+//전역변수이자 배열 두개 만듬
+
+function chkFile(chk, msg){
+	var strFile = document.frm.strFile.value;
+	// form 태그의 name(frm) 으로 접근 후 input의 name(strFile)로 접근해서 value(파일 선택 후) 값으로 접근(파일 선택 후 값)
+	
+	// input type="file"의 경로 및 파일 명을 strFile 변수에 저장
+	alert(strFile);
+	var ext = strFile.substring(strFile.lastIndexOf(".") + 1);
+	/*
+	전체경로에서 파일명 부분으리 마지막 점(.)의 위치를 찾은 후 잘라냄 = 확장자 부분만 ext에 들어감.
+	*/
+	for(i = 0 ; i < eval("arr" + chk).length ; i++){
+		// eval() :  문자열을 코드로 인식하게 하는 함수.
+		// 계산식이 들어갈 경우 "2+3", 5가 출력됨.
+		// eval("arr" + 받아온 인수값) = "arrImg" (문자열(string)이 되는 것임)
+		// 문자열변수.length : 선택값의 전체 개수를 리턴
+		// arrImg.length : 배열의 길이를 추출해옴.
+		
+		if(ext == eval("arr"+chk)[i]){ // 같은게 있는지 없는 지 찾는 것임
+			alert(msg + "파일입니다.");
+			return true; //루프 종료
+		}
+	}
+	alert(msg + "파일이 아닙니다.");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>자바스크립트 내장함수</title>
+<script>
+/*
+자바스크립트 내장함수
+
+	- isNaN(인수) : 인수가 숫자가 아니면 true, 숫자이면 false 리턴
+	- parseInt(숫자) : 정수 문자를 정수로 변환 (자료 형! 변환 문자숫자를 진짜 계산 가능한 숫자로) 
+		-Integer 형 정수를 담아주는 자료형
+	- parseFloat(숫자) : 실수 문자를 실수로 변환(자료 형! 변환 ) 
+		- float 형 실수를 담아주는 자료형
+	- eval(문자열) : ★★★★★ 문자열로 구성된 식을 계산해서 결과값으로 리턴
+		계산식 : 1+2+3;  => "1+2+3" 으로 나옴
+*/
+
+var num = "555ㅌㅌ";
+
+if(isNaN(num)){ //isNaN(num) : flase
+	document.write("문자임");
+}else{
+	document.write("숫자임");
+}
+
+
+num = "45"; //정수가 들어가 있는 문자열
+document.write("<br /> num + 1 = ");
+document.write(parseInt(num) + 1);
+document.write("<br />" + num + 1); // "45" + 1
+document.write("<br />" + "45" + 1); // "45" + 1
+
+document.write("<hr />num의 자료형" + typeof num);
+document.write("<hr />num의 자료형" + typeof parseInt(num));
+
+num = "10.5";
+document.write("<hr /> num + 1 = ");
+document.write(parseFloat(num)+ 1);
+
+
+num = "10%5";
+document.write("<hr /> 10*5 = ");
+document.write(eval(num));
+document.write("<br /> num 변수값 : " + num);
+
+</script>
+</head>
+<body>
+<script>
+</script>
+</body>
+</html>

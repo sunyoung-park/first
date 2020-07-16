@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>if else 나이별 입장료 예제</title>
+<script>
+
+ /*
+ */
+
+var old
+
+old = prompt("나이를 입력하세요.");
+
+if(old <= 7){
+	document.write("미취학아동");
+	document.write("<br />입장료는 <b>0</b>원입니다.");
+}else if(old <=13 ){	
+	document.write("초등학생");
+	document.write("<br />입장료는 <b>1000</b>원입니다.");
+}else if(old <=19){	
+	document.write("중,고등학생");
+	document.write("<br />입장료는 <b>1500</b>원입니다.");
+}else if(old >=20){
+	document.write("성인");
+	document.write("<br />입장료는 <b>2000</b>원입니다.");
+}else{
+	document.write("잘못 입력하셨습니다.");
+}
+
+
+</script>
+</head>
+<body>
+
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>while문</title>
+<script>
+/*
+guess != secret 
+- 입력값(guess)가 secret(7) 같지 않으면 참을 반환하는 조건식.
+*/
+	var secret = 7;
+	var cnt = 0;
+	var guess ;
+	while(guess != secret){
+		guess = prompt("1~10 사이의 숫자를 입력하세요.");
+		document.write("입력한 값 : " + guess);
+		document.write("<br />");
+		cnt++;
+	}
+	
+	document.write("<br />" + cnt + "번 만에 맞췄습니다!" );
+</script>
+</head>
+<body>
+
+
+</body>
+</html>

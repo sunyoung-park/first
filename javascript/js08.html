@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>대입연산자와 산술연산자</title>
+	<script>
+	var num1 = 7; var num2 = 3; var res;
+	
+	res = (num1 == num2);
+	document.write("num1 == num2 : " + res);
+	
+	res = (num1 != num2);
+	document.write("<br />num1 != num2 : " + res);
+	// != : 같지 않을 때 참을 반환 해줌.
+	
+	res = (num1 > num2);	
+	document.write("<br /> num1 > num2 : " + res);
+	
+	res = (num1 < num2); // 7< 3 (7 불포함)
+	document.write("<br /> num1 < num2 : " + res);
+	
+	res = (num1 <= num2);	// 7<= 3 (7 포함)
+	document.write("<br /> num1 <= num2 : " + res);
+	
+	
+	res = (num1 === "7"); // 문자열과 비교 했을 때
+	document.write("<br /> num1 === '7' : " + res);
+	
+	res = (num1 === 7); // 숫자와 비교했을 때
+	document.write("<br /> num1 === 7 : " + res);
+	
+	res = (num1 !== '7'); // 문자열과 비교 했을 때 참이 아닐 경우(!==) ture 반환
+	document.write("<br /> num1 !== '7' : " + res);
+	
+	document.write("<hr /><h3>대입연산자</h3>");
+	
+	var x, y, r;
+	
+	x = 7;
+	y = 3;
+	
+	r = x + y; // r 변수에 10이 들어가 있는 상태
+	
+	x += y; //x = x+y;
+	document.write(x);
+	
+	x = 7;
+	y = 3; //변수의 초기화
+	
+	x -= y; // x = x-y;
+	document.write("<br />" + x);
+	
+	x = 7;
+	y = 3;
+	
+	x %= y; // x = x mod y; ---> 1
+	// 7을 3으로 나눈 나머지 값 출력
+	document.write("<br />" + x);
+	
+	
+	
+	</script>
+</head>
+<body>
+
+
+</body>
+</html>

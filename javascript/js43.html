@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>버튼을 클릭하면 항목 추가</title>
+
+</head>
+<body>
+<h3>버튼을 클릭하면 항목이 추가됩니다.</h3>
+<button onclick="listFunc()">항목추가</button>
+<ul id="deviceList"><li>스마트폰</li><li>태블릿</li></ul>
+<script>
+function listFunc(){
+	var n = document.createElement("li");
+	var t = document.createTextNode("추가항목");
+	
+	n.appendChild(t);
+	//<li>추가항목</li> ---> n변수에 들어가있음.
+	
+	var l = document.getElementById("deviceList");
+	//현재 문서 내의 id가 deviceList인 것을 찾아서 l이라는 변수에 넣어줌.
+	
+	l.insertBefore(n, l.childNodes[0]);
+	// 인덱스 번호를 입력해서 추가될 위치를 지정
+	//insertBefore(새노드, 기준노드)
+	// l(ul태그)의 자식노드 중에 인덱스1에 위치한 노드에 n변수를 넣어줌.
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>버튼을 클릭 2초마다 알림창 계속 표시</title>
+<script>
+
+function aBox(){
+/*
+	setInterval(function(){
+	alert("2초가 지났습니다.")},2000);
+
+*/
+	setTimeout(function(){
+	alert("3초가 지났고 한번만 실행.")},3000);
+}
+
+/*
+setInterval(함수, 시간) : 시간의 경우 밀리초 단위로 작성함. - 뒤에 입력한 시간이 지나면 반복 실행
+setTimeout(함수, 시간) : 한번만 실행
+*/
+
+</script>
+</head>
+<body>
+<h2>버튼을 클릭하면 2초마다 알림창이 계속 표시됨.</h2>
+<button onclick="aBox()"> 클릭하면...</button>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>NEW</title>
+<script>
+function scrWin(){
+	window.scrollBy(20,20);
+}
+/*
+.scrollBy(숫자, 숫자) : 왼쪽 20, 위쪽 20
+음수값을 지정하면 오른쪽, 아래쪽으로 이동 
+※ 창 크기를 지정해 둬야 쓸 수 있다!
+-> body 가로 세로값을 준 것.
+*/
+</script>
+<style>
+	body{
+		background : yellow;
+		width : 1000px;
+		height : 1000px;
+	}
+	
+	button{
+		position : fixed;
+	}
+</style>
+</head>
+<body>
+<p>1번라인</p>
+<p>2번라인</p>
+<p>3번라인</p>
+<p>4번라인</p>
+<p>5번라인</p>
+<button onclick="scrWin()">페이지 이동</button>
+</body>
+</html>

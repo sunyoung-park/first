@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>OR 연산자 if else 문</title>
+<script>
+
+/*
+	3~5 봄 
+	6~8 여름
+	9~11 가을
+	12, 1, 2 겨울
+	
+	1~12 이외의 숫자 입력 시 잘못 입력하였습니다. 출력
+*/
+
+ var month;
+ 
+ month = prompt("1~12 사이의 숫자를 입력해주세요");
+  
+ if(month == 3 || month == 4 || month == 5){ //OR 연산으로 작성.
+	document.write("봄입니다."); 
+ }else if(month == 6 || month == 7 || month == 8){
+	document.write("여름입니다."); 
+ }else if(month == 9 || month == 10 || month == 11){
+	document.write("가을입니다."); 
+ }else if(month == 12 || month == 1 || month == 2){
+	document.write("겨울입니다."); 
+ }else{
+	document.write("잘못 입력하였습니다.");
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+</script>
+</head>
+<body>
+
+
+</body>
+</html>

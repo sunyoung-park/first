@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>switch문</title>
+<script>
+
+var animal = prompt('강아지, 고양이 , 새 중에 입력하세요');
+
+switch(animal){
+	case "강아지" :
+		document.write("[강아지]를 입력했습니다.");
+		document.write("<br /> 멍멍!");
+	break;	
+	
+	case "새" :
+		document.write("[새]를 입력했습니다.");
+		document.write("<br /> 짹짹!");
+	break;	
+	
+	case "고양이" :
+		document.write("[고양이]를 입력했습니다.");
+		document.write("<br /> 야옹!");
+	break;	
+	
+	default :
+		document.write("무엇을 입력하신거죠?");
+		document.write("<br /> "+animal);
+}
+</script>
+</head>
+<body>
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>논리연산자</title>
+<script>
+var num1 = 7;
+var num2 = 3;
+var res;
+
+res = (num1 < 10) && (num2 < 10);
+//(7 < 10) true && true(3 < 10)
+document.write("res : " + res);
+
+
+res = (num1 > 10) && (num2 < 10);
+//(7 > 10) false && true(3 < 10)
+document.write("<br />res : " + res);
+
+res = (num1 > 10) || (num2 < 10);
+document.write("<br />res : " + res);
+
+res = !(num1==num2);
+document.write("<br />res : " + res);
+/*
+num1==num2 결과는 참이지만 앞에 !(not)이 붙었기 때문에
+결과값 출력은 false가 됨.
+*/
+
+
+</script>
+</head>
+<body>
+
+
+</body>
+</html>

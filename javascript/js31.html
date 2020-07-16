@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>시간 함수</title>
+<script>
+/*
+
+*/
+
+var date_obj = new Date();
+ //Date 객체를 불러와서 date_obj 변수에 넣어줌
+ 
+ document.write(date_obj + "<br />" + Date() + "<br /><br />");
+ // 현재 년월일 요일 시분초 지역까지
+ 
+ document.write(date_obj.toDateString() + "<br />");
+ // .toDateString() : 시간을 제외하고 날짜 부분만 출력 해옴
+ 
+ document.write(date_obj.toLocaleString() + "<br />");
+ // .toLocaleString() : 접속 지역(로컬, 나라) 를 중심으로 현재의 시간을 출력
+ 
+ 
+</script>
+</head>
+<body>
+
+
+</body>
+</html>

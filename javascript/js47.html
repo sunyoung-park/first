@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Location을 통한...</title>
+</head>
+<body>
+<input type="button" value="페이지이동01" onclick="goUrl('href')" /><br /><br />
+<input type="button" value="페이지이동02" onclick="goUrl('rep')" /><br /><br />
+
+<script>
+function goUrl(chk){
+	if(chk == "href"){
+		location.href="./js46.html";
+		// 뒤로가기 있음(history에 쌓임)
+		/*
+		.href : 특정 페이지로 연결.
+		 - 히스토리(방문기록)에 내역이 쌓여서 '뒤로가기'가 가능함.
+		*/
+	}else{
+		location.replace("./js45.html")
+		// 뒤로가기 없음(history에 쌓이지 않음)
+		/*
+		.replace("주소") : 특정 페이지로 연결.
+		 - 히스토리(방문기록)에 내역이 쌓이지 않아 '뒤로가기'가 불가능.
+		*/
+	}
+}
+</script>
+<hr />
+<p onclick="goHistory('back')">뒤로가기</p>
+<p onclick="goHistory('forward')">앞으로 가기</p>
+<p onclick="goHistory('reload')">새로 고침</p>
+<script>
+function goHistory(txt){
+	if(txt == "back"){
+		history.back(); //history.go(-1)
+		//히스토리 내역에 뒤로 갈 페이지가 존재 해야 실행됨.
+	}else if(txt == "forward"){
+		history.forward(); //history.go(1)
+		// 히스토리 내역에 앞으로 갈 페이지가 존재해야 실행됨.
+	}else {
+		history.reload(); //문서 재 로딩
+	}
+}
+</script>
+<select onchange="chUrl(this.value)">
+	<option value="js40.html">js40.html로 이동</option>
+	<option value="js43.html">js43.html로 이동</option>
+	<option value="js44.html">js44.html로 이동</option>
+</select>
+
+<script>
+function chUrl(chk){
+	location.href="./" + chk;
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>클릭하면 위의 제목 내용이 바뀜</title>
+<link href="./style/.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h1 id="sample">환영합니다.</h1>
+<p>아래 버튼을 클릭하면 위의 제목 내용이 바뀝니다.</p>
+
+<button onclick="chTitle()">첫번째 버튼</button>
+<script>
+function chTitle(){
+	document.getElementById("sample").innerHTML="제목을 변경하였습니다.";
+} 
+</script>
+<button onclick="schTitle()">두번째 버튼</button>
+<script>
+function schTitle(){
+	var y = document.getElementById("sample");
+	// y라는 변수에 현재문서에서 sample이라는 아이디를 선택한 것을 넣어줌.
+	y.style.backgroundColor="red";
+} 
+
+</script>
+
+</body>
+</html>

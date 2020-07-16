@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>클릭하면 아래 이미지 변경</title>
+</head>
+<body>
+<h3>첫번째</h3>
+<h3>두번째</h3>
+<h3>세번째</h3>
+<button onclick="chaF()">h3태그의 배경색상 변경</button>
+<hr />
+<button onclick="document.getElementById('imgs').src='../images/a02.jpg'">클릭하면 아래 이미지 변경</button><br />
+<img src="../images/a01.jpg" id="imgs"/>
+<script>
+function chaF(){
+	var x = document.getElementsByTagName("h3");
+	var i ;
+	console.log(x);
+
+	for(i = 0; i < x.length ; i++){
+		x[i].style.backgroundColor="pink";
+	}
+
+}
+</script>
+</body>
+</html>

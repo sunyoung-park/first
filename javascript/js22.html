@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>배열 예제</title>
+<script>
+var group =["빨강", "주황", "노랑", "초록", "파랑", "남색", "보라"];
+
+var num = prompt("1~7 사이의 숫자를 입력하세요");
+
+/*
+기본적으로 사용자(클라이언트)는 인덱스에 대한 개념을 모릅니다.
+
+0~6
+배열에 있는 값을 인덱스 번호로 추출해 오기 위해서는 사용자가 알고 있는
+숫자값에 -1을 해주어 인덱스 번호를 불러옵니다.
+*/
+document.write("당신은 " +group[num-1]+"을(를) 선택하였습니다.");
+
+</script>
+</head>
+<body>
+
+
+</body>
+</html>

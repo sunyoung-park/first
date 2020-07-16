@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>if문 점수 입력 시 학점</title>
+<script>
+/*
+조건 : 90점 이상은 A학점(포함 . A >= 90, A > 89 )
+		80~89점 이상은 B학점
+		70~79점 이상은 C학점
+		60~69점 이상은 D 학점
+		59점 이하는 F학점
+		
+		if(조건문1){
+		조건문1이 참일 때 실행될 실행문
+		}else if(조건문2){
+		조건문2가 참일 때 실행될 실행문}
+		
+*/
+
+var j = prompt("점수를 입력하세요");
+
+if(j>=90){ // 90점 이상인 모든 숫자
+	document.write("A학점<br />입니다.");
+}else if(j>=80){	// 80~89
+	document.write("B학점<br />입니다.");
+}else if(j>=70){	// 70~79
+	document.write("C학점<br />입니다.");
+}else if(j>=60){	// 60~69
+	document.write("D학점<br />입니다.");
+}else{ // ~59
+	document.write("Fail입니다.<br />");
+	document.write("재수강하세요");
+}
+
+document.write("<br /><br /> 입력한 점수 <b>" +j+"</b>");
+
+
+</script>
+</head>
+<body>
+
+
+</body>
+</html>

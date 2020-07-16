@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>AND 연산 if else 문</title>
+<script>
+
+ /*
+ AND 연산으로 작성
+ 조건문
+ 봄 : month >= 3 && month <=5
+ 여름 : month >= 6 && month <=8 
+ 가을 : month >= 9 && month <=11
+ 겨울 : month == 12 || month == 1 || month == 2 (OR연산)
+ */
+
+var month
+
+month = prompt("월을 입력하세요.");
+
+if(month >= 3 && month <=5){
+	document.write("봄입니다.");
+}else if(month >= 6 && month <=8 ){	
+	document.write("여름입니다.");
+}else if(month >= 9 && month <=11){	
+	document.write("가을입니다.");
+}else if(month == 12 || month == 1 || month == 2){	
+	document.write("겨울입니다.");
+}else{
+	document.write("잘못 입력하셨습니다.");
+}
+
+
+</script>
+</head>
+<body>
+
+
+</body>
+</html>

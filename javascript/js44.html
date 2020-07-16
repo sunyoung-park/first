@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>버튼을 클릭하면 항목 삭제 변경</title>
+</head>
+<body>
+<h3>버튼을 클릭하면 항목이 삭제되거나 변경됩니다.</h3>
+<button onclick="delFunc()">삭제</button>
+<button onclick="chFunc()">변경</button>
+<ul id="n_list"><li>첫번째</li><li>두번째</li><li>세번째</li></ul>
+<script>
+function delFunc(){
+	var list = document.getElementById("n_list");
+	
+	list.removeChild(list.childNodes[0]);
+}
+function chFunc(){
+	var n = document.createElement("li");
+	var t = document.createTextNode("변경항목")
+	
+	n.appendChild(t); //<li>변경항목</li>
+	
+	var l = document.getElementById("n_list");
+	l.replaceChild(n, l.childNodes[1]);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>마우스 관련 이벤트</title>
+<script>
+function clickMe(){
+	alert("버튼을 눌렀습니다.");
+}
+function overMe(){
+	alert("버튼을 마우스를 올렸습니다.");
+}
+/*
+마우스 관련 이벤트
+	- clickMe
+	- dbclick
+	- onclick
+	- onmouseover
+	- mousedown
+	.................
+	
+	※ html 안에 쓰인 onclick, onmouseover 이벤트 타입이라고 함.
+	※ clickMe(), overMe() : 이벤트 속성이라고 함.
+	※ function clickMe() {...} : 이벤트 핸들러라고 함.
+*/
+function greet(){
+	alert("어서오세요");
+}
+
+function pressKey(){
+	alert("입력필드 안에서 키를 눌렀습니다.");
+}
+</script>
+</head>
+<body onload="greet()">
+<button onclick="clickMe()">한번만 눌러주세요.</button>
+<button onmouseover="overMe()">마우스 포인터를 올려주세요.</button>
+<input type-"text" onkeypress="pressKey()" />
+</body>
+</html>

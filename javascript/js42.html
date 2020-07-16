@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>추가 버튼으로 문서 내 새 버튼 생성</title>
+<script>
+
+</script>
+</head>
+<body>
+<h2>추가 버튼을 누르면 문서 내 새 버튼이 생깁니다.</h2>
+<button onclick="btnFunc()">추가</button>
+<script>
+function btnFunc(){
+	var newNode = document.createElement("button")
+	// button  태그를 만들어서 newNode라는 변수에 담아줌.
+	
+	//createElement : 태그를 생성
+	//createTextNode : 텍스트 생성
+	var textNode = document.createTextNode("새버튼")
+	// "새버튼"이라는 문자열을 textNode라는 변수에 담아줌.
+	
+	newNode.appendChild(textNode); 
+	// textNode를 newNode의 자식(하위) 노드로 추가.
+	// <button>새버튼</button> = newNode변수에 들어가  있는 상태.
+	
+	document.body.appendChild(newNode);
+	//newNode라는 변수를 문서 안에 body 태그 안 하위(자식)요소로 추가.
+	//<body><button>새버튼</button></body>
+	
+}
+</script>
+</body>
+</html>
