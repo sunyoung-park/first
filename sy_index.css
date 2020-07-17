@@ -4,7 +4,7 @@
 	margin:0; padding:0;
 	list-style:none;
 	text-align:center;
-	font-family : 'Noto sans KR'
+	font-family: 'Noto Sans KR', sans-serif;
 }
 
 a{
@@ -80,16 +80,15 @@ caption{
 	border-radius : 20px;
 }
 
-#sec01, #sec02{
+#sec01, #sec02, #sec03, #sec04{
 	color : #ffffff;
-	padding : 150px 0;
+	padding : 100px 0;
 	
 }
 
-#sec01>h2, #sec02>h2 {
+#sec01>h2, #sec02>h2, #sec03>h2, #sec04>h2 {
 	text-align : center;
 }
-
 
 
 #sec01{
@@ -98,6 +97,14 @@ caption{
 
 #sec02{
 	background-color : #E85559;
+}
+
+#sec03{
+	background-color : #42A0F6;
+}
+
+#sec04{
+	background-color : #2A3632;
 }
 
 
