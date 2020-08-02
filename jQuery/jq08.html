@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>CSS 효과(슬라이드다운, 업, 토글)</title>
+<style>
+#title, #tg{
+	background-color : #cff;
+	height : 50px;
+	width : 500px;
+	text-align : center;
+	font-size : 25px;
+	cursor : pointer;
+}
+
+#con{
+	width : 500px;
+	height : 500px;
+	background-color : #fcf;
+	display : none;
+}
+
+button{
+	padding : 20px;
+}
+
+
+
+</style>
+<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<div id="title">TOP</div>
+<div id="con">content</div>
+<div id="tg">toggle</div>
+<button id="stop">slide stop</button>
+
+<script>
+$(document).ready(function (){
+	$("#title").mouseover(function(){
+		$("#con").slideDown(4000);
+	});
+	$("#con").click(function(){
+		$(this).slideUp(6000);
+	});
+	$("#tg").click(function(){
+		$("#con").slideToggle("slow");
+	});
+	$("#stop").click(function(){
+		$("#con").stop();
+	});
+});
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>jquery blur/focus 확인하기</title>
+<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<h2>jquery blur/focus 확인하기</h2>
+<div id="frm">
+	<input type="text" />
+</div>
+<h3>결과</h3>
+<div id="res">
+
+</div>
+<script>
+$(document).ready(function(){
+	$("#frm>input[type='text']").focus(function(){
+		$("#res").html("포커스가 들어갔습니다.");
+	});
+	$("#frm>input[type='text']").blur(function(){
+		$("#res").html("포커스가 나갔습니다.");
+	});
+});
+</script>
+</body>
+</html>

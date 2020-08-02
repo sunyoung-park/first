@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>이미지 클릭시 이동 및 변경</title>
+<link href="./style/.css" rel="stylesheet" type="text/css" />
+<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<div class="pic">
+	<button id="a01">가로 100px 로 변경</button>
+	<button id="a02">가로 200px 로 변경</button>
+	<button id="a03">가로 300px 로 변경</button>
+	<button id="a04">사이즈 변경 후 이동</button>
+</div>
+<img src="../images/flower.jpg" alt="" style="position :relative;" />
+<script>
+$(document).ready(function(){
+	$("#a01").click(function(){
+		$("img"). animate({
+			width : '100px'
+		}, 3000);
+	});
+	$("#a02").click(function(){
+		$("img"). animate({
+			width : '200px'
+		}, "fast");
+	});
+	$("#a03").click(function(){
+		$("img"). animate({
+			width : '300px'
+		},"slow");
+	});
+	$("#a04").click(function(){
+		$("img"). animate({
+			left : '600px',
+			height : '300px',
+			width : '100px',
+			opacity : '0.3',
+			top : '150px'
+		});
+	});
+	/*
+		.animate({스타일, 속도}
+		
+		스타일 : 변경할 스타일(CSS) 속성과 값 입력
+		속도 : 숫자(milliseconds), "fast", "slow"
+		-> 속도 입력 안하는 경우 400이 기본값 (0.4초)
+	*/
+	
+});
+</script>
+</body>
+</html>

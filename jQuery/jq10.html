@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>onfocus, onblur </title>
+<style>
+.blue{color : #00f;}
+.red{color : #f00;}
+</style>	
+<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<div>
+<ul class="tmp"></ul>
+<input type="text" onfocus="style.backgroundColor='yellow'" />
+<script>
+$(document).ready(function(){
+	window.onblur = blurMe;
+	// window.onblur : 현재 창이 비활성화 될 때! 호출하는 이벤트
+	window.onfocus = focusMe;
+	// window onfocus : 현재 창이 활성화 될 때 호출하는 이벤트
+	
+	function blurMe(){
+		var t = new Date();
+		$("ul.tmp").append("<li class='red'> 떠난 시간" + t.getHours() + " : " + t.getMinutes() + " : " + t.getSeconds() + "</li>" );
+	}
+	
+	function focusMe(){
+		var t = new Date();
+		$("ul.tmp").append("<li class='blue'> 돌아온 시간" + t.getHours() + " : " + t.getMinutes() + " : " + t.getSeconds() + "</li>" );
+	}
+});	
+</script>
+	
+</div>
+
+</body>
+</html>

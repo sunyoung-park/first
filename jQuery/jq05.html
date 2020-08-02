@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>박스 클릭시 색상, 크기 변경</title>
+<style>
+div{
+	width : 500px;
+	height : 500px;
+	background-color : #ff0;
+	float : left;
+}
+
+.box{background-color : #fcf;}
+
+
+</style>
+<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<div>box1</div>
+<script>
+$(document).ready(function(){
+	var he = 500;
+	var wi = 500;
+	
+	$("div").click(function(){
+		$(this).width(wi).addClass('box');
+		$(this).height(he).addClass('box');
+		wi = wi-50;
+		he = he-50;
+	});
+	/*
+		width() : 선택한 요소의 가로 크기 리턴
+		height() : 선택한 요소의 세로 크기 리턴
+	*/
+});
+</script>
+
+</body>
+</html>

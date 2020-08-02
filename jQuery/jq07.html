@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>show hide fadeOut fadeIn fadeToggle fadeTo(a,b)</title>
+<style>
+.wrap{
+	background-color : #cff;
+	margin : 0 auto;
+	width : 900px;
+	height : 500px;
+	text-align : center;
+}
+
+button{
+	padding : 10px 20px;
+	background-color : teal;
+	color : #fff;
+	outline : 0;
+	border-radius : 5px;
+	border : 0;
+	margin-top : 20px;
+	cursor : podinter;
+}
+</style>
+<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+	<button id="sh">SHOW</button>
+	<button id="hi">HIDE</button>
+	<button id="out">FADEOUT</button>
+	<button id="in">FADEIN</button>
+	<button id="tg">FADETOGGLE</button>
+	<button id="ft50">FADETO50%</button>
+	<button id="ft90">FADETO90%</button>
+	<br />
+	<br />
+	<img src="../images/cupcake.png" alt="" />
+</div>
+<script>
+$(document).ready(function(){
+	$("#sh"). click(function(){
+		$("img").show(3000);
+	});
+	$("#hi"). click(function(){
+		$("img").hide(5000);
+	});
+	$("#out"). click(function(){
+		$("img").fadeOut("fast");
+	});
+	$("#in"). click(function(){
+		$("img").fadeIn("slow");
+	});
+	$("#tg"). click(function(){
+		$("img").fadeToggle(1000);
+	});
+	$("#ft50"). click(function(){
+		$("img").fadeTo("slow", 0.5);
+	});
+	$("#ft90"). click(function(){
+		$("img").fadeTo("fast", 0.9);
+	});
+	
+	/*
+	fadeTo(a,b) :
+		- a : "slow", "fast", 밀리초(1초 1000)
+		- b : 0~1사이의 소수점값(투명도)
+	*/
+});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
