@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>default page</title>
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<script src="./js/jquery-ui.min.js"></script> <!--위에꺼나 아래꺼중 1개만 있으면 됌.-->
+
+<link rel="stylesheet" href="./css/jquery-ui.css">
+<style>
+	#myslider1{
+		width : 400px;
+		margin : 40px;
+	}
+	#myslider2{
+		width : 10px;
+		margin : 40px;
+	}
+</style>
+</head>
+<body>
+<h2>jQueryUI 슬라이드바</h2>
+<div id="myslider1"></div>
+<div id="myslider2"></div>
+<div id="res"></div>
+<script>
+	$(function(){
+		$("#myslider1").slider();
+		//기본 슬라이드바 사용법
+		$("#myslider2").slider({
+			orientation : "vertical",
+			slide : function(event,ui){
+				var val = ui.value;
+				$("#res").html("숫자 : "+ val);
+			},
+			change : function(event,ui){
+				var val = ui.value;
+				$("#res").html("숫자 : "+ val + "입니다.");
+			}
+			/*
+				slide : 슬라이드 버튼을 이동시키는 동안에 값을 표기.
+				change : 슬라이드 버튼 이동을 완료 시키면(마우스에서 손을 떼면) 값을 표기.
+				
+			
+			*/
+		});
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>default page</title>
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<script src="./js/jquery-ui.min.js"></script> <!--위에꺼나 아래꺼중 1개만 있으면 됌.-->
+
+<link rel="stylesheet" href="./css/jquery-ui.css">
+</head>
+<body>
+<h2>jQueryUI 대화상자</h2>
+<div id="msg" title="타이틀 속성 필수">
+	내용 들어갈 부분
+	내용 들어갈 부분
+	내용 들어갈 부분<br />
+	내용 들어갈 부분<br /><br /><br />
+</div>
+<script>
+$(function(){
+	$("#msg").dialog({
+		position : {
+			my: "left top",
+			//위치 값 : left, center, right, top, bottom
+			at: "left+80 top+100"
+			// 위치 선정 px값으로 들어감.
+		},
+		width : 600,
+		height : 200,
+		minHeight : 80,
+		maxHeight:200,
+		minWidth: 100,
+		maxWidth:800,
+		draggable : true,
+		resizable:true
+		//대화상자 사이즈 조절(불리언값)
+	});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>default page</title>
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+<!--위에꺼나 아래꺼중 1개만 있으면 됌.-->
+
+<link rel="stylesheet" href="./css/jquery-ui.css">
+
+<style>
+	div{
+		width : 100px;
+		height : 100px;
+		background : #ffc;
+		border : 1px solid #333;
+	}
+	
+	#dropZone{
+		width : 600px; height : 600px;
+		background : #ccc;
+	}
+</style>
+</head>
+<body>
+<h2>jQuery UI 요소 드래그, 드롭 기능</h2>
+<img src="./images/0.jpg" alt="첫번째이미지" />
+<img src="./images/1.jpg" alt="두번째이미지" />
+<img src="./images/2.jpg" alt="세번째이미지" />
+
+<div id="dropZone">
+	여기로 이미지를 드롭해주세요.
+</div>
+<script>
+	$(document).ready(function(){
+		$("img").draggable();
+		//이미지를 이동(드래그)할 수 있게 만들어 줌.
+		$("#dropZone").droppable({
+		//.droppable() : 선택자에 드래그한 요소를 드롭할 수 있게 만들어 줌.
+			drop:function(evt,ui){
+				$("#dropZone").text(ui,draggable[0],alt);
+			}
+			
+			/*
+				drop : 옵션에
+				fucntion(){} 함수를 달아서(드롭하는 순간) 특정 기능을
+				사용할 수 있게 만들어 줄 수 있음.
+			*/
+		});
+	});
+</script>
+</body>
+</html>

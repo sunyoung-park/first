@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap Template</title>
+<link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src="./js/bootstrap.js"></script>
+<!--bootstrap.min.css, bootstrap.js 필수-->
+</head>
+<body>
+<div class="container"><!--container가 있어야 반응형으로 제작 가능-->
+
+<h4 class="text-primary">HTML5 기본 폼 형태</h4>
+<form>
+	<label for="Name">이름</label>
+	<input type="text" placeholder="이름을 입력하세요." />
+	<label for="emailladdr">이메일</label>
+	<input type="amail" placeholder="이메일을 입력하세요." />
+	<input type="button" value="버튼" />
+</form>
+
+<h4 class="text-primary">부트스트랩 적용 폼 형태</h4>
+<form role="form">
+	<div class="form-group">
+		<label for="Name">이름</label>
+		<input type="text" placeholder="이름을 입력하세요." class="form-control" />
+	</div>
+	<div class="form-group">
+		<label for="emailladdr">이메일</label>
+		<input type="amail" placeholder="이메일을 입력하세요." class="form-control" />
+	</div>
+	<div class="form-group">
+		<input type="button" value="버튼" />
+	</div>
+</form>
+
+<h4 class="text-primary">인라인 폼 형태</h4>
+<form role="form" class="form-inline"><!--form 태그에 class="form-inline" 달아주면 됌 -->
+	<div class="form-group">
+		<label for="Name">이름</label>
+		<input type="text" placeholder="이름을 입력하세요." class="form-control" />
+	</div>
+	<div class="form-group">
+		<label for="emailladdr" class="sr-only">이메일</label><!--label 안보이게 하고 싶으면 class="sr-only"-->
+		<input type="amail" placeholder="이메일을 입력하세요." class="form-control" />
+	</div>
+	<div class="form-group">
+		<input type="button" value="버튼" />
+	</div>
+</form>
+<hr />
+
+<h4 class="text-primary">부트스트랩 폼 형식</h4>
+<h5>textarea</h5>
+	<textarea rows="5" class="form-control"></textarea>
+<h5>checkbox, radio</h5>
+	<label>
+	<input type="checkbox" value="" />일반 체크박스
+	</label>
+	<div class="checkbox">	
+	<label>
+		<input type="checkbox" value="" />체크박스
+	</label>
+	</div>
+
+<h5 class="text-primary">인라인 체크박스</h5>
+	
+	<label class="checkbox-inline">
+		<input type="checkbox" value="" />체크박스
+	</label>
+	<label class="checkbox-inline">
+		<input type="checkbox" value="" />체크박스
+	</label>
+	<label class="checkbox-inline">
+		<input type="checkbox" value="" />체크박스
+	</label>
+
+<h5>select 박스</h5>
+
+<select class="form-control" multiple>
+	<option>1</option>
+	<option>2</option>
+	<option>3</option>
+	<option>4</option>
+</select>
+<h5>입력값에 따라 메세지 표기 가능</h5>
+<div class="form-group has-success">
+	<label class="control-label">
+		input 값이 성골적일 경우(문제가 없을 경우)
+		<input type="text" class="form-control input-sm" />
+	</label>	
+</div>
+
+<div class="form-group has-warning">
+	<label class="control-label">
+		input 값에 문제가 있어 경고를 내보낼 경우
+		<input type="text" class="form-control input-sm" />
+	</label>	
+</div>
+
+<div class="form-group has-error">
+	<label class="control-label">
+		input 값에 오류가 있을 경우
+		<input type="text" class="form-control input-lg" />
+	</label>	
+</div>
+
+
+
+
+
+<br />
+<br />
+<br />
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

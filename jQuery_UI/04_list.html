@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>default page</title>
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<script src="./js/jquery-ui.min.js"></script> <!--위에꺼나 아래꺼중 1개만 있으면 됌.-->
+
+<link rel="stylesheet" href="./css/jquery-ui.css">
+<style>
+	#selList{
+		list-style : none;
+		margin : 0;
+		padding : 0;
+		width : 20%;
+	}
+	
+	#selList li{
+		padding : 10px;
+	}
+	#selList .ui-selected{
+		background : pink;
+	}
+	#selList .ui-selecting{
+		background : green;
+	}
+</style>
+</head>
+<body>
+<h2>목록 선택</h2>
+<ol id="selList">
+	<li class="ui-widget-content">1번목록</li>
+	<li class="ui-widget-content">2번목록</li>
+	<li class="ui-widget-content">3번목록</li>
+</ol>
+<script>
+$(function(){
+	$("#selList").selectable();
+});
+</script>
+</body>
+</html>

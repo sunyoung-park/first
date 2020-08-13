@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap Template</title>
+<link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src="./js/bootstrap.js"></script>
+<!--bootstrap.min.css, bootstrap.js 필수-->
+</head>
+<body>
+<div class="container"><!--container가 있어야 반응형으로 제작 가능-->
+<h3 class="text-primary">기본 네비게이션</h3>
+<nav class="navbar navbar-default">
+	<div class="navbar-header">
+	<!--모바일 모드일 때 전체보기 버튼이 될 부분-->
+		<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a href="#" class="nav navbar-brand">로고</a>
+	</div>
+	<div class="collapse navbar-collapse navbar-ex1">
+		<ul class="nav navbar-nav">
+			<li><a href="#">1depth</a></li>
+			<li class="active"><a href="#">1depth</a></li>
+			<li><a href="#" data-toggle="dropdown">1depth<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">2depth</a></li>
+					<li><a href="#">2depth</a></li>
+					<li><a href="#">2depth</a></li>
+					<li><a href="#">2depth</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</nav>
+<div class="clearfix"></div>
+<h3 class="text-info">탭형 네비게이션</h3>
+	<ul class="nav nav-tabs">
+		<li><a href="#">대메뉴</a></li>
+		<li><a href="#">대메뉴</a></li>
+		<li class="active"><a href="#">대메뉴</a></li>
+		<li><a href="#">대메뉴</a></li>
+	</ul>
+<br />
+<br />
+
+<div class="clearfix"></div>
+<h3 class="text-info">탭형 네비게이션</h3>
+	<ul class="nav nav-tabs nav-justified">
+		<li class="active"><a href="#">대메뉴</a></li>
+		<li><a href="#">대메뉴</a></li>
+		<li><a href="#" class="active">대메뉴</a></li>
+		<li><a href="#">대메뉴</a></li>
+	</ul>
+<br />
+<br />
+
+<div class="clearfix"></div>
+<h3 class="text-info">알약형 네비게이션</h3>
+	<ul class="nav nav-pills nav-justified">
+		<li class="active"><a href="#">대메뉴</a></li>
+		<li><a href="#">대메뉴</a></li>
+		<li><a href="#" class="active">대메뉴</a></li>
+		<li><a href="#">대메뉴</a></li>
+	</ul>
+<br />
+<br />
+
+<div class="clearfix"></div>
+<h3 class="text-info">알약형 세로 네비게이션</h3>
+	<ul class="nav nav-pills nav-stacked">
+		<li class="active"><a href="#">대메뉴<span class="badge">50</span></a></li>
+		<li><a href="#">대메뉴</a></li>
+		<li><a href="#" class="active">대메뉴</a></li>
+		<li><a href="#">대메뉴<span class="badge">50</span></a></li>
+	</ul>
+<br />
+<br />
+
+<div class="clearfix"></div>
+<h2 class="text-danger">뱃지 라벨 등...</h2>
+뱃지 : <span class="badge">455</span>
+<br />
+라벨 : <span class="label label-default">default</span>
+<span class="label label-primary">primary</span>
+<span class="label label-success">success</span>
+<span class="label label-warning">warning</span>
+<span class="label label-info">info</span>
+<span class="label label-danger">danger</span>
+
+<br />
+<br />
+<br />
+오늘은 금요일<span class="label label-danger">new</span>
+<br />
+<br />
+<br />
+</div>
+</body>
+</html>

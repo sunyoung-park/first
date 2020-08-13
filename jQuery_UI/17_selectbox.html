@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>default page</title>
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<script src="./js/jquery-ui.min.js"></script> <!--위에꺼나 아래꺼중 1개만 있으면 됌.-->
+
+<link rel="stylesheet" href="./css/jquery-ui.css">
+</head>
+<body>
+<h2>핸드폰 기종 선택</h2>
+
+<select id="selbox">
+	<option value="iphone">iphone</option>
+	<option value="iPad">iPad</option>
+	<option value="android">android</option>
+</select>
+<div id="res"></div>
+<script>
+	$(function(){
+		$("#selbox").selectmenu({
+			change:function(evt,ui){
+				var v = ui.item.value;
+				// v 변수에 선택한 셀렉트 박스의 value 값을 넣어줌.
+				var n = ui.item.index;
+				// n 변수에 선택한 셀렉트 박스의 index값을 넣어줌.
+				
+				$("#res").text(n + " : " + v);
+			}
+		});
+	});
+</script>
+</body>
+</html>

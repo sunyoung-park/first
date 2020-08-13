@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap Template</title>
+<link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src="./js/bootstrap.js"></script>
+<!--bootstrap.min.css, bootstrap.js 필수-->
+</head>
+<body>
+<div class="container"><!--container가 있어야 반응형으로 제작 가능-->
+<div class="dropdown">
+<h3 class="text-primary">기본 드롭다운 메뉴</h3>
+	<a href="#" data-toggle="dropdown">클릭하세요</a>
+	<ul class="dropdown-menu" role="menu">
+		<li><a href="#">첫번쨰 메뉴</a></li>
+		<li><a href="#">두번쨰 메뉴</a></li>
+		<li><a href="#">세번쨰 메뉴</a></li>
+		<li class="divider"></li>
+		<li><a href="#">네번쨰 메뉴</a></li>
+	</ul>
+</div>
+<div class="dropdown">
+<h3 class="text-primary">드롭다운 메뉴 헤더추가</h3>
+	<a href="#" data-toggle="dropdown" class="btn btn warning">클릭하세요</a>
+	<ul class="dropdown-menu" role="menu">
+		<li><a href="#" class="dropdown-header">그룹명</a></li>
+		<li><a href="#">첫번쨰 메뉴</a></li>
+		<li><a href="#">두번쨰 메뉴</a></li>
+		<li class="divider"></li>
+		<li><a href="#" class="disabled">세번쨰 메뉴</a></li>
+		<li class="divider"></li>
+		<li><a href="#">네번쨰 메뉴<span class="glyphicon glyphicon-bullhorn"></span></a></li>
+	</ul>
+</div>
+<h3 class="text-primary">버튼 분할하여 드롭다운 메뉴 만들기</h3>
+
+<div class="btn-group">
+	<button class="btn btn-success dropdown-toggle" data-toggle="dropdown">버튼입니다.</button>
+	<button class="btn btn-success"><span class="glyphicon glyphicon-bold"></span></button>
+	<ul class="dropdown-menu">
+		<li class="dropdown-header">커피</li>
+		<li><a href="#">아메리카노</a></li>
+		<li><a href="#">카페라떼</a></li>
+		<li><a href="#">카푸치노</a></li>
+		<li class="divider"></li>
+		<li><a href="#" class="disabled">우유</a></li>
+		<li><a href="#">딸기우유<span class="glyphicon glyphicon-adjust"></span></a></li>
+		<li><a href="#" class="disabled">스무디</a></li>
+		<li><a href="#">주스</a></li>
+		<li class="divider"></li>
+		<li><a href="#">핫초코핫초코</a></li>
+		<li><a href="#">아이스초코</a></li>
+	</ul>
+</div>
+
+
+</div>
+</body>
+</html>

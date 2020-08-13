@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>default page</title>
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<script src="./js/jquery-ui.min.js"></script> <!--위에꺼나 아래꺼중 1개만 있으면 됌.-->
+
+<link rel="stylesheet" href="./css/jquery-ui.css">
+</head>
+<body>
+<h2>jQueryUI 아코디언 아이콘 변경</h2>
+<div id="ac01">
+	<h3>제목태그</h3>
+	<p>내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분</p>
+	<h3>제목태그</h3>
+	<p>내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분</p>
+	<h3>제목태그</h3>
+	<p>내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분내용부분</p>
+</div>
+<div id="ac02">
+	<p>타이틀</p>
+	<div>내용부분내용부분내용부분내용부분내용부분내용부분</div>
+	<p>타이틀</p>
+	<div>내용부분내용부분내용부분내용부분내용부분내용부분</div>
+	<p>타이틀</p>
+	<div>내용부분내용부분내용부분내용부분내용부분내용부분</div>
+	<p>타이틀</p>
+	<div>내용부분내용부분내용부분내용부분내용부분내용부분</div>
+	<p>타이틀</p>
+	<div>내용부분내용부분내용부분내용부분내용부분내용부분</div>
+	<p>타이틀</p>
+	<div>내용부분내용부분내용부분내용부분내용부분내용부분</div>
+	<p>타이틀</p>
+	<div>내용부분내용부분내용부분내용부분내용부분내용부분</div>
+	<p>타이틀</p>
+	<div>내용부분내용부분내용부분내용부분내용부분내용부분</div>
+</div>
+<script>
+$(function(){
+	$("#ac01, #ac02").accordion({
+		icons:{
+			"header":"ui-icon-caret-1-e", //접혀있을 때 아이콘 클래스명
+			"activeHeader": "ui-icon-caret-1-s"
+		}
+	});
+	/*
+	http://api.jqueryui.com.theming/icons/
+	*/
+	/*
+	.accordion() 메소드를 사용하여 아코디언을 만들면 기본적으로 ▼,▶삼각형 모양으로 아이콘이 앞쪽에 표시됨.
+	
+	.accordion()안에 매개변수를 변경.
+		{icon : {"종류":"아이콘 클래스 명"}}
+		
+		- 종류
+		 header : 접혀있을 떄
+		 activeHeader : 펼쳐져 있을 때
+	
+	*/
+});
+
+
+</script>
+</body>
+</html>

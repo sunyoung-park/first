@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap Template</title>
+<link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src="./js/bootstrap.js"></script>
+<!--bootstrap.min.css, bootstrap.js 필수-->
+</head>
+<body>
+<div class="container"><!--container가 있어야 반응형으로 제작 가능-->
+<h3 class="text-primary">부트스트랩 버튼 사용</h3>
+<button>일반버튼</button>
+<button class="btn">스타일 적용 버튼</button><!--btn 클래스로 부트스트랩 버전 버튼 스타일 적용-->
+<hr />
+
+<h3 class="text-primary">다양한 버튼 스타일</h3>
+<button class="btn btn-default">기본 모양 버튼</button>
+<button class="btn btn-primary">중요 버튼</button><!--중요버튼-->
+<button class="btn btn-success">긍정적 의미의 버튼</button>
+<button class="btn btn-warning">주의를 알리는 버튼</button>
+<button class="btn btn-info">정보 제공</button>
+<button class="btn btn-danger">위험(취소)버튼</button>
+<button class="btn btn-link">단순 링크 사용 버튼</button>
+<hr />
+
+<h3 class="text-primary">a링크를 사용한 버튼</h3>
+<a  href="#" class="btn btn-warning">링크 사용 버튼</a>
+<hr />
+
+<h3 class="text-primary">버튼 크기 조절</h3>
+<input type="button" value="큰 버튼" class="btn btn-default btn-lg"/>
+<input type="button" value="기본 버튼" class="btn btn-info"/>
+<input type="button" value="작은 버튼" class="btn btn-info btn-sm"/>
+<input type="button" value="아주 작은 버튼" class="btn btn-info btn-xs"/>
+
+<hr />
+
+
+<input type="button" value="전체 버튼" class="btn btn-info btn-block"/>
+<input type="button" value="전체 버튼" class="btn btn-info btn-block btn-block btn-lg" disabled="disabled"/>
+
+
+<hr />
+<h3 class="text-primary">버튼 그룹화하기</h3>
+<div>
+<h4>일반버튼</h4>
+<button class="btn btn-default">버튼 1</button>
+<button class="btn btn-default">버튼 2</button>
+<button class="btn btn-default">버튼 3</button>
+<button class="btn btn-default">버튼 4</button>
+<button class="btn btn-default">버튼 5</button>
+</div>
+
+<h4>그룹으로 묶은 후</h4>
+<div class="btn-group btn-group-sm">
+<button class="btn btn-default">버튼 1</button>
+<button class="btn btn-default">버튼 2</button>
+<button class="btn btn-default">버튼 3</button>
+<button class="btn btn-default">버튼 4</button>
+<button class="btn btn-default">버튼 5</button>
+</div>
+
+<h4>버튼 중첩 사용</h4>
+<div class="btn-group">
+	<button class="btn btn-success">버튼 1</button>
+	<button class="btn btn-danger">버튼 2</button>
+	<button class="btn btn-warning">버튼 3</button>
+	<div class="btn-group">
+		<button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+		버튼 4<span class="glyphicon glyphicon-gift"></span></button>
+		<ul class="dropdown-menu">
+			<li><a href="#">서브버튼1</a></li>
+			<li><a href="#">서브버튼2</a></li>
+		</ul>
+	</div>
+</div>
+
+<hr />
+
+<h4>버튼 그룹 수직 정렬하기</h4>
+<div class="btn-group-vertical">
+	<button class="btn btn-default">버튼1</button>
+	<button class="btn btn-primary">버튼2</button>
+	<button class="btn btn-danger">버튼3</button>
+	<button class="btn btn-warning">버튼4</button>
+	<button class="btn btn-info">버튼5</button>
+	<button class="btn btn-success">버튼6</button>
+</div>
+</div>
+</body>
+</html>
+
+
+
+<h4>양쪽정렬 버튼 사용하기(a태그로 만든 버튼에만 사용 가능)</h4>
+<div class="btn-group btn-group-justified">
+	<a href="#" class="btn btn-primary">a태그 버튼</a>
+	<a href="#" class="btn btn-success">a태그 버튼</a>
+	<a href="#" class="btn btn-danger">a태그 버튼</a>
+	<a href="#" class="btn btn-warning">a태그 버튼</a>
+</div>
+
+
+
+
+
+
+
+
+

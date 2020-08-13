@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>default page</title>
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<script src="./js/jquery-ui.min.js"></script> <!--위에꺼나 아래꺼중 1개만 있으면 됌.-->
+
+<link rel="stylesheet" href="./css/jquery-ui.css">
+</head>
+<body>
+<h2>진행상태바 출력</h2>
+<div id="update">
+
+</div>
+<div id="update2">
+
+</div>
+<script>
+$(function(){
+	$("#update").progressbar({
+		value:40 //0~100
+	});
+	$("#update2").progressbar({});
+	
+	var percent =0;
+	(function(){
+		$("#update2").progressbar("value",percent);
+		percent++;
+		if(percent <= 100){
+			setTimeout(arguments.callee,100);
+			//arguments.callee : 현재 실행중 함수 반환
+		}
+	})();
+});
+</script>
+</body>
+</html>

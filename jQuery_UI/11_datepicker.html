@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>default page</title>
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<script src="./js/jquery-ui.min.js"></script> <!--위에꺼나 아래꺼중 1개만 있으면 됌.-->
+
+<link rel="stylesheet" href="./css/jquery-ui.css">
+</head>
+<body>
+<h2>달력 불러오기</h2>
+<form>
+	선택1 : <input tyle="text" class="seldate" /><br />
+	선택2 : <input tyle="text" class="seldate" /><br />
+</form>
+<div>
+	Date : <div id="date_inline"></div>
+</div>
+<script>
+	$(function(){
+		$(".seldate").datepicker({
+			firstDay:0,
+			yearSuffix:"년",
+			prevText : "이전달",
+			nextText : "이전달",
+			monthNames : ["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"],
+			dayNamesMin : ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일", ]
+		});
+		$("#date_inline").datepicker();
+	});
+</script>
+</body>
+</html>

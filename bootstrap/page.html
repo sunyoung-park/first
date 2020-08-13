@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap Template</title>
+<link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src="./js/bootstrap.js"></script>
+<!--bootstrap.min.css, bootstrap.js 필수-->
+</head>
+<body>
+<div class="container"><!--container가 있어야 반응형으로 제작 가능-->
+<h3 class="text-primary">기본 페이지네이션</h3>
+<ul class="pagination pagination-sm"><!--꼭 ul을 사용해야함.-->
+<!--사이즈는 -lg, sm 두개만 있음.-->
+	<li class="disabled"><a href="#">◀</a></li>
+	<li><a href="#">1</a></li>
+	<li><a href="#">2</a></li>
+	<li class="active"><a href="#">3</a></li>
+	<li><a href="#">4</a></li>
+	<li><a href="#">5</a></li>
+	<li><a href="#">▶</a></li>
+</ul>
+
+
+<h3 class="text-primary">페이저 사용</h3>
+
+<ul class="pager">
+	<li><a href="#">이전</a></li>
+	<li class="disabled"><a href="#">다음</a></li>
+</ul>
+<ul class="pager">
+	<li class="previous"><a href="#">이전</a></li>
+	<li class="next"><a href="#">다음</a></li>
+</ul>
+
+</div>
+</body>
+</html>

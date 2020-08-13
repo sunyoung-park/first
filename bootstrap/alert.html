@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap Template</title>
+<link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src="./js/bootstrap.js"></script>
+<!--bootstrap.min.css, bootstrap.js 필수-->
+</head>
+<body>
+<div class="container"><!--container가 있어야 반응형으로 제작 가능 반드시 이 안에 모든걸 넣어서 해야함.-->
+<h2>경고창 유형 4가지</h2>
+<div class="alert alert-success">성공했을 때(전송완료)<br />성공창</div>
+<div class="alert alert-info">정보<br />정보</div>
+<div class="alert alert-warning">잘못된값<br />잘못된값</div>
+<div class="alert alert-danger">실패시<br />위험요소</div>
+
+<h2>닫기버튼이 있는 alert창</h2>
+<div class="alert alert-danger alert-dismissable">
+	<button type="button" class="close" data-dismiss="alert">X</button>
+	<h4>경고!!!</h4>
+</div>
+
+<h2>alert 이벤트 달기</h2>
+<div class="alert alert-info" id="myAlert">
+	<a href="#" class="close" data-dismiss="alert">x</a>
+	<h4>정보</h4>
+	<p>==========</p>
+	<p>==========</p>
+	<p>==========</p>
+</div>
+<script>
+	$(function(){
+		$("#myAlert").bind("closed.bs.alert",function(){
+			alert("정말 닫으시겠습니까?");
+		});
+	});
+</script>
+</div>
+</body>
+</html>

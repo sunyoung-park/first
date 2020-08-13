@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap Template</title>
+<link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src="./js/bootstrap.js"></script>
+<!--bootstrap.min.css, bootstrap.js 필수-->
+<style>
+	.box{
+		border: 1px solid teal;
+		background : #ffc;
+	}
+	
+	.inner{
+		border : 1px solid tomato;
+		background : #ccf;
+	}
+</style>
+</head>
+<body>
+<div class="container"><!--container가 있어야 반응형으로 제작 가능-->
+<h3>그리드 옵셋 적용</h3>
+	<div class="row"><!---->
+		<div class="row">
+			<div class="inner col-md-5">md5</div>
+			<div class="inner col-md-5 col-md-offset-2">md5</div>
+		</div>
+		<div class="row">
+			<div class="box col-md-3 col-md-offset-1">md3</div>
+			<div class="box col-md-7 col-md-offset-1">md7</div>
+		</div>
+	</div>
+
+</div>
+</body>
+</html>

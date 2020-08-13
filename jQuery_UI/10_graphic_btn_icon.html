@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>default page</title>
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<script src="./js/jquery-ui.min.js"></script> <!--위에꺼나 아래꺼중 1개만 있으면 됌.-->
+
+<link rel="stylesheet" href="./css/jquery-ui.css">
+</head>
+<body>
+<h2>종목을 선택하세요.</h2>
+<div>
+	<a href="#">축구</a>
+	<a href="#">농구</a>
+	<a href="#">야구</a>
+</div>
+<button id="cha">아이콘 변경</button>
+<script>
+	$(function(){
+		$("a").button({
+			icons:{
+				primary : "ui-icon-closethick"
+			},
+			iconPosition:"end"
+			//iconPosition: top, bottom, end
+		});
+		$("#cha").click(function(){
+			$("a:eq(1)").button("option","icons",{primary:"ui-icon-lightbulb"});
+		});
+	});
+</script>
+</body>
+</html>

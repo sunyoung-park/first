@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap Template</title>
+<link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src="./js/bootstrap.js"></script>
+<!--bootstrap.min.css, bootstrap.js 필수-->
+<style>
+	.row{
+		margin-bottom : 10px;
+	}
+	.con_01, .con_02, .con_03, .con_04, .con_05, .con_06, .con_07{
+		padding : 10px 20px;
+		height : 100px;
+	}
+	.con_01{background : lavender;}
+	.con_02{background : lightpink;}
+	.con_03{background : lightgreen;}
+	.con_04{background : lightcyan;}
+	.con_05{background : rosybrown;}
+	.con_06{background : powderblue;}
+	.con_07{background : bisque;}
+	header, footer{background : #ffc;}
+	
+</style>
+</head>
+<body>
+<div class="container"><!--container가 있어야 반응형으로 제작 가능-->
+<header class="row">
+	<h1>헤더영역</h1>
+</header>
+<section id="contents" class="row">
+	<div class="row">
+		<div class="col-md-2">
+			<div class="con_01">1</div>
+		</div>
+		<div class="col-md-4">
+			<div class="con_02">2</div>
+		</div>
+		<div class="col-md-3">
+			<div class="con_03">3</div>
+		</div>
+		<div class="col-md-3">
+			<div class="con_04">4</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="con_07">5</div>
+		</div>
+		<div class="col-md-4">
+			<div class="con_03">6</div>
+		</div>		
+		<div class="col-md-3 col-md-offset-1">
+			<div class="con_06">7</div>
+		</div>		
+	</div>
+	<div class="row">	
+		<div class="col-md-12">
+			<div class="con_02">8</div>
+		</div>		
+	</div>
+	<div class="row">	
+		<div class="col-md-2">
+			<div class="con_03">9</div>
+		</div>		
+		<div class="col-md-2 col-md-offset-8">
+			<div class="con_04">10</div>
+		</div>		
+	</div>
+</section>
+<footer class="row">
+	<h2>푸터영역</h2>
+</footer>
+
+</div>
+</body>
+</html>

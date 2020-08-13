@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap Template</title>
+<link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src="./js/bootstrap.js"></script>
+<!--bootstrap.min.css, bootstrap.js 필수-->
+</head>
+<body>
+<div class="container"><!--container가 있어야 반응형으로 제작 가능-->
+<h2 class="text-primary">팝오버 기능</h2>
+<div style="margin:200px auto; width:70%;">
+	<button class="btn btn-default mshow" title="팝오버의 제목이 됨." data-container="body" data-toggle="popover" data-placement="left" data-content="팝오버의 내용이 됨.">팝오버 왼쪽</button>
+	<button class="btn btn-info mdestory" title="팝오버의 제목이 됨." data-container="body" data-toggle="popover" data-placement="top" data-content="팝오버의 내용이 됨.">팝오버 위쪽</button>
+	<button class="btn btn-danger mtoggle" title="팝오버의 제목이 됨." data-container="body" data-toggle="popover" data-placement="right" data-content="팝오버의 내용이 됨.">팝오버 오른쪽</button>
+	<button class="btn btn-danger moption" title="<h4>팝오버의 제목이 됨.</h4>" data-container="body" data-toggle="popover" data-placement="bottom" data-content="<p>팝오버의 내용이 됨.</p>">팝오버 아래쪽</button>
+</div>
+
+
+<script>
+	$(function(){
+		$(".mshow").popover("show");
+		/*
+			popover 메소드 사용시 기본값은 hide임.
+			처음부터 출력되어진 상태로 보여지게 하려면 "show"를 입력해주어야함.
+		*/
+	});
+	$(function(){
+		$(".mdestory").popover("destroy");
+		//disabled와 같은 비활성화
+	});
+	$(function(){
+		$(".mtoggle").popover("toggle");
+		//기본적으로 show와 동일한 기능을 함.
+	});
+	$(function(){
+		$(".moption").popover({html:true});
+	});
+</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap Template</title>
+<link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src="./js/bootstrap.js"></script>
+<!--bootstrap.min.css, bootstrap.js 필수-->
+</head>
+<body>
+<div class="container"><!--container가 있어야 반응형으로 제작 가능-->
+<h3 class="text-primary">상태 진행 바</h3>
+<div class="progress">
+	<div class="progress-bar progress-bar-success" aria-valuenow="80" aria-vlauemin="0" aria-vlauemax="100" style="width : 80%;"></div>
+</div>
+
+<h3 class="text-primary">줄무늬 진행 바</h3>
+<div class="progress progress-striped">
+	<div class="progress-bar progress-bar-info" aria-valuenow="80" aria-vlauemin="0" aria-vlauemax="100" style="width : 80%;"></div>
+</div>
+
+<h3 class="text-primary">줄무늬 진행 바(애니메이션)</h3>
+<div class="progress progress-striped active">
+	<div class="progress-bar progress-bar-warning" aria-valuenow="80" aria-vlauemin="0" aria-vlauemax="100" style="width : 80%;"></div>
+</div>
+
+<h3 class="text-primary">진행 바 쌓기</h3>
+<div class="progress progress-striped active">
+	<div class="progress-bar progress-bar-info" aria-valuenow="30" style="width : 30%;"></div>
+	<div class="progress-bar progress-bar-success" aria-valuenow="20" style="width : 20%;"></div>
+	<div class="progress-bar progress-bar-warning" aria-valuenow="10" style="width : 10%;"></div>
+	<div class="progress-bar progress-bar-danger" aria-valuenow="30" style="width : 30%;"></div>
+</div>
+
+
+
+</div>
+</body>
+</html>

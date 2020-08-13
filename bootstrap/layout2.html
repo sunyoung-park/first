@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap Template</title>
+<link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src="./js/bootstrap.js"></script>
+<!--bootstrap.min.css, bootstrap.js 필수-->
+<style>
+	.box{border:1px solid #ccc;}
+	.bg_a,.bg_b,.bg_c,.bg_d{background:yellow;}
+	.bg_aa,.bg_bb,.bg_cc,.bg_dd{background:lightgreen;}
+</style>
+</head>
+<body>
+<div class="container"><!--container가 있어야 반응형으로 제작 가능-->
+	<h2 class="text-primary">부트스트랩 반응형 유틸리티</h2>
+		<div class="box bg_a visible-xs">
+			(모바일) 해상도가 768px 이하에서 보임
+		</div>
+		<div class="box bg_b visible-sm">
+			(태블릿) 해상도가 768px보다 크거나 같은 경우에서 보임
+		</div>
+		<div class="box bg_c visible-md">
+			(데스크탑) 해상도가 992px보다 크거나 같은 경우에서 보임
+		</div>
+		<div class="box bg_d visible-lg">
+			(데스크탑) 해상도가 1200px보다 크거나 같은 경우에서 보임
+		</div>
+		
+		<div class="box bg_aa hidden-xs">
+			(모바일) 해상도가 768px 이하에서 숨겨줌
+		</div>
+		<div class="box bg_bb hidden-sm">
+			(태블릿) 해상도가 768px보다 크거나 같은 경우에서 숨겨줌
+		</div>
+		<div class="box bg_cc hidden-md">
+			(데스크탑) 해상도가 992px보다 크거나 같은 경우에서 숨겨줌
+		</div>
+		<div class="box bg_dd hidden-lg">
+			(데스크탑) 해상도가 1200px보다 크거나 같은 경우에서 숨겨줌
+		</div>
+
+
+
+</div>
+</body>
+</html>

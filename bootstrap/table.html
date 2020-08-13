@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap Template</title>
+<link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src="./js/bootstrap.js"></script>
+<!--bootstrap.min.css, bootstrap.js 필수-->
+</head>
+<body>
+<div class="container"><!--container가 있어야 반응형으로 제작 가능-->
+<h4 class="text-primary">기본 table</h4>
+<table>
+	<thead><!--테이블 해드 꼭 있어야함!!-->
+		<tr>
+			<th>번호</th>
+			<th>제목</th>
+			<th>글쓴이</th>
+		</tr>
+	</thead>
+	<tr>
+		<td>1</td>
+		<td>홍길동</td>
+		<td>길동아</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>전우치</td>
+		<td>우치야</td>
+	</tr>
+</table>
+
+<h4 class="text-primary">table 클래스 적용</h4>
+<table class="table table-striped">
+	<thead><!--테이블 해드 꼭 있어야함!!-->
+		<tr>
+			<th>번호</th>
+			<th>제목</th>
+			<th>글쓴이</th>
+		</tr>
+	</thead>
+	<tr>
+		<td>1</td>
+		<td>홍길동</td>
+		<td>길동아</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>전우치</td>
+		<td>우치야</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>전우치</td>
+		<td>우치야</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>전우치</td>
+		<td>우치야</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>전우치</td>
+		<td>우치야</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>전우치</td>
+		<td>우치야</td>
+	</tr>
+</table>
+
+<h4 class="text-primary">table 보더와 호버효과 적용</h4>
+<table class="table table-bordered table-hover">
+	<thead><!--테이블 해드 꼭 있어야함!!-->
+		<tr>
+			<th>번호</th>
+			<th>제목</th>
+			<th>글쓴이</th>
+		</tr>
+	</thead>
+	<tr class="success"><!--해당 tr에만 색상 변경 가능 -->
+	<!--tr class :  active, success, warning, danger, info-->
+		<td>1</td>
+		<td>홍길동</td>
+		<td>길동아</td>
+	</tr>
+	<tr class="warning">
+		<td>2</td>
+		<td>전우치</td>
+		<td>우치야</td>
+	</tr>
+	<tr class="info">
+		<td>2</td>
+		<td>전우치</td>
+		<td>우치야</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>전우치</td>
+		<td>우치야</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>전우치</td>
+		<td>우치야</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>전우치</td>
+		<td>우치야</td>
+	</tr>
+</table>
+
+<h4 class="text-primary">반응형 테이블 적용</h4>
+<div class="table-responsive">
+<!-- 
+	테이블 안에 있는 내용이 길 경우 전체 tr의 높이가 변경됨.	
+	class="table-responsive"로 적용해주면 가로 스크롤이 생겨 tr 크기에 영향을 끼치지 않음.
+-->
+	<table class="table table-bordered table-hover">
+		<thead><!--테이블 해드 꼭 있어야함!!-->
+			<tr>
+				<th>번호</th>
+				<th>제목</th>
+				<th>글쓴이</th>
+			</tr>
+		</thead>
+		<tr class="success"><!--해당 tr에만 색상 변경 가능 -->
+		<!--tr class :  active, success, warning, danger, info-->
+			<td>1</td>
+			<td>홍길동</td>
+			<td>길동아</td>
+		</tr>
+		<tr class="warning">
+			<td>2</td>
+			<td>전우치ddddddddddddddddddddddddddddddddsaddsadasdasdadsadasdddd</td>
+			<td>우dsaddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd치야</td>
+		</tr>
+		<tr class="info">
+			<td>2</td>
+			<td>전우치</td>
+			<td>우치야</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>전우치</td>
+			<td>우치야</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>전우치</td>
+			<td>우치야</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>전우치</td>
+			<td>우치야</td>
+		</tr>
+	</table>
+</div>
+
+
+</div>
+</body>
+</html>
