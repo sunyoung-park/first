@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>K2</title>
+	<link href="./css/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+	<link href="./css/style.css" rel="stylesheet" type="text/css" />
+	<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+	<script src="./js/jquery.bxslider.js"></script>
+	<script src="./js/script.js"></script>
+</head>
+<body>
+<header class="wrap">
+<nav>
+	<ul class="topmenu">
+		<li><a href="#">로그인</a></li>
+		<li>|</li>
+		<li><a href="#">회원가입</a></li>
+		<li>|</li>
+		<li><a href="#">고객센터</a></li>
+	</ul>
+</nav>
+<div id="logo_bg"></div>
+<a href="#">
+	<div class="logo">
+		<img src="./images/logo.png" alt="logo">
+	</div>
+</a>
+<nav class="gnb">
+	<ul class="gnb_main">
+		<li><a href="#">MEN</a>
+			<ul class="gnb_sub">
+				<li><a href="#">자켓</a></li>
+				<li><a href="#">티셔츠&amp;셔츠</a></li>
+				<li><a href="#">베스트</a></li>
+				<li><a href="#">팬츠</a></li>
+				<li><a href="#">이너웨어</a></li>
+			</ul>
+		</li>
+		<li><a href="#">WOMEN</a>
+			<ul class="gnb_sub">
+				<li><a href="#">자켓</a></li>
+				<li><a href="#">티셔츠&amp;셔츠</a></li>
+				<li><a href="#">베스트</a></li>
+				<li><a href="#">팬츠</a></li>
+				<li><a href="#">이너웨어</a></li>
+			</ul>
+		</li>
+		<li><a href="#">SHOE</a>
+			<ul class="gnb_sub">
+				<li><a href="#">남성용</a></li>
+				<li><a href="#">여성용</a></li>
+				<li><a href="#">키즈</a></li>
+			</ul>
+		</li>
+		<li><a href="#">BAG</a>
+			<ul class="gnb_sub">
+				<li><a href="#">등산배낭</a></li>
+				<li><a href="#">일반배낭</a></li>
+			</ul>
+		</li>
+		<li><a href="#">ACCESSORY</a>
+			<ul class="gnb_sub">
+				<li><a href="#">모자</a></li>
+				<li><a href="#">장갑</a></li>
+				<li><a href="#">양말</a></li>
+				<li><a href="#">이너웨어</a></li>
+				<li><a href="#">스틱</a></li>
+				<li><a href="#">백패킹</a></li>
+				<li><a href="#">기타</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+</header>
+<div id="container">
+<section class="wrap">
+<div id="wrapper">
+	<div id="slide">
+		<div class="slide1">
+			<div class="text">
+			<!--슬라이드배너에 들어갈 텍스트
+				슬라이드 배너에 텍스트 없으면 안써도 됩니다
+			-->
+			<p><span>OSSAK 시리즈</span><br>
+			올여름,<br> 가장 COOL한 티셔츠!
+			</p>
+			<button>더 알아보기 →</button>
+			</div>
+		</div>
+		<div class="slide2">
+			<div class="text">
+			<p><span>SPRING SUMMER</span><br>
+			SPECIAL PRICE<br>신상품 특별할인!
+			</p>
+			<button>더 알아보기 →</button>
+			</div>
+		</div>
+		<div class="slide3">
+			<div class="text">
+			<p><span>SURROUND</span><br>
+			친환경 리싸이클 <br> 소재를 활용한 자켓
+			</p>
+			<button>더 알아보기 →</button>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<section class="wrap">
+<h2>FOCUS NOW</h2>
+<div class="bglink">
+	<div class="linkto">
+		<div id="m_bg"></div>
+		
+		<a href="#">
+			<figure id="focus_now01">
+				<img src="./images/focus_now01.png" alt="자켓" />
+				<figcaption>자켓</figcaption>
+			</figure>
+		</a>
+		<a href="#">
+			<figure id="focus_now02">
+				<img src="./images/focus_now02.png" alt="티셔츠" />
+				<figcaption>티셔츠</figcaption>
+			</figure>
+		</a>
+		<a href="#">
+			<figure id="focus_now03">
+				<img src="./images/focus_now03.png" alt="베스트" />
+				<figcaption>베스트</figcaption>
+			</figure>
+		</a>
+		<a href="#">
+			<figure id="focus_now04">
+				<img src="./images/focus_now04.png" alt="팬츠" />
+				<figcaption>팬츠</figcaption>
+			</figure>
+		</a>
+		<a href="#">
+			<figure id="focus_now05">
+				<img src="./images/focus_now05.png" alt="신발" />
+				<figcaption>신발</figcaption>
+			</figure>
+		</a>
+		<a href="#">
+			<figure id="focus_now06">
+				<img src="./images/focus_now06.png" alt="가방" />
+				<figcaption>가방</figcaption>
+			</figure>
+		</a>
+	</div>
+</div>
+</section>
+<section class="wrap">
+<div class="srch">
+<h2>SEARCH</h2>
+<div class="pack">
+	<form action="" method="" name="pack_frm">
+		<label for="p_code">상품명</label><br/>
+		<input type="text" id="p_code" placeholder="상품명을 입력 해주세요"/>
+		<ul id="produt_name">
+			<li><a href="#">후리스</a></li>
+			<li><a href="#">트레이닝자켓</a></li>
+			<li><a href="#">여름점퍼</a></li>
+			<li><a href="#">반팔티</a></li>
+			<li><a href="#" class="no_bar">기능성</a></li>
+		</ul>
+		<label for="cate">카테고리</label><br/>
+		<select id="cate">
+			<option value="">전체</option>
+			<option value="">남성</option>
+			<option value="">여성</option>
+			<option value="">아동</option>
+			<option value="">신발</option>
+			<option value="">용품</option>
+		</select>
+		<br/>
+		<label for="use_p">용도</label><br/>
+		<select id="use_p">
+			<option value="">등산</option>
+			<option value="">트래킹</option>
+			<option value="">캠핑</option>
+			<option value="">익스트림</option>
+		</select>
+		<br/>
+		<label for="p_color">색 상</label>
+		<ul id="p_color">
+			<li title="red"><a href="#">&nbsp;</a></li>
+			<li title="orange"><a href="#">&nbsp;</a></li>
+			<li title="yellow"><a href="#">&nbsp;</a></li>
+			<li title="green"><a href="#">&nbsp;</a></li>
+			<li title="blue"><a href="#">&nbsp;</a></li>
+			<li title="white"><a href="#">&nbsp;</a></li>
+			<li title="black"><a href="#">&nbsp;</a></li>
+		</ul>
+		<br/>
+		<p class="btn_wrap"><input type="submit" value="검색하기" name="p_sch" class="sch_btn"/></p>
+	</form>
+</div>
+</div>
+</section>
+<section class="wrap">
+	<h2>BEST PRODUCT</h2>
+<div class="best_product">
+	<a href="#">
+		<figure>
+			<img src="./images/pop/rank_01.jpg" alt="TOP01"/>
+			<figcaption>TOP1</figcaption>
+			<figcaption class="pop_nm">플라이하이크 서밋</figcaption>
+		</figure>
+	</a>
+	<a href="#">
+		<figure>
+			<img src="./images/pop/rank_02.jpg" alt="TOP02"/>
+			<figcaption>TOP2</figcaption>
+			<figcaption class="pop_nm">백두산 실사 반팔</figcaption>
+		</figure>
+	</a>
+	<a href="#">
+		<figure>
+			<img src="./images/pop/rank_03.jpg" alt="TOP03"/>
+			<figcaption>TOP3</figcaption>
+			<figcaption class="pop_nm">미니쿠퍼 차콜</figcaption>
+		</figure>
+	</a>
+	<a href="#">
+		<figure>
+			<img src="./images/pop/rank_04.jpg" alt="TOP04"/>
+			<figcaption>TOP4</figcaption>
+			<figcaption class="pop_nm">디터쳐블 메쉬</figcaption>
+		</figure>
+	</a>
+	<a href="#">
+		<figure>
+			<img src="./images/pop/rank_05.jpg" alt="TOP05"/>
+			<figcaption>TOP5</figcaption>
+			<figcaption class="pop_nm">카라코람 자켓</figcaption>
+		</figure>
+	</a>
+	<a href="#">
+		<figure>
+			<img src="./images/pop/rank_06.jpg" alt="TOP06"/>
+			<figcaption>TOP6</figcaption>
+			<figcaption class="pop_nm">오싹 라이트 집업</figcaption>
+		</figure>
+	</a>
+</div>
+</section>
+<section class="wrap">
+	<div class="banner">
+	<a href="#"><img src="./images/banner1.jpg" alt="banner1" /></a>
+	<a href="#"><img src="./images/banner2.jpg" alt="banner2" /></a>
+	</div>
+</section>
+<footer class="wrap">
+<div class="foot_nav">
+	<ul>
+		<li><a href="#">회사소개</a></li>
+		<li><a href="#">개인정보처리방침</a></li>
+		<li><a href="#">이용약관</a></li>
+		<li><a href="#">고객지원실</a></li>
+		<li><a href="#">브랜드 스토리</a></li>
+	</ul>
+</div>
+<div class="info">
+	<img src="./images/logo.png" alt="logo" />
+	<h3>케이투코리아(주)</h3>
+	<p>
+	서울특별시 강남구 자곡로 174-14. 901호(자곡동) 케이투코리아(주)<br/>
+	사업자등록번호 123-45-67891<br/>
+	통신판매업신고번호 제2050-서울강남-12345호 부가통신사업신고번호 1234 <br/><br/>
+	COPYRIGHT &copy; 2020 K2 OUTDOOR COPERATION ALL RIGHT RESERVED.
+	</p>
+</div>
+<div class="cs">
+	<div class="csimg">
+		<a href="#"><img src="./images/fb.png" alt="facebook"></a>
+		<a href="#"><img src="./images/kt.png" alt="kakaotalk"></a>
+		<a href="#"><img src="./images/blog.png" alt="naverblog"></a>
+		<a href="#"><img src="./images/insta.png" alt="instagram"></a>
+		<a href="#"><img src="./images/ks.png" alt="kakaostory"></a>
+		<a href="#"><img src="./images/youtb.png" alt="youtube"></a>
+	</div>
+	<h4>
+		고객센터 <span>1988-2626</span><br/>
+		(상담가능시간 : 월~금 9:00~20:00)
+	</h4>
+	
+</div>
+</footer>
+
+</div>
+
+</body>
+</html>

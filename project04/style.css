@@ -1,0 +1,203 @@
+@charset "utf-8";
+/*reset*/
+*{margin : 0; margin : 0;}
+ul,ol,li{list-style:none;}
+
+html{font-size : 11pt;}
+/*
+최상위 루트에 11pt  적용하여 
+하위 요소들 rem 단위로 가져다 쓸 기준으로
+ 11pt 사용.
+*/
+a{text-decoration : none;}
+a:link{color : #666;}
+a:hover{color : #cff;}
+a:active{color : #666;}
+a:visited{color : #666;}
+
+body{background-color : #f3f3f3;}
+
+#container{
+	margin : 0 auto;
+	width : 1280px;
+	padding : 0;
+	height : 100%;
+	background-color : #fff;
+}
+
+/*헤더 영역*/
+
+header{
+	width : 100%;
+	height : auto;
+	background : lightgreen;
+}
+
+header>h2, #util_section>h2,#gnb>h2,#contents>h2,footer>h2{
+	width : 0;
+	height : 0;
+	overflow : hidden;
+	display : none;
+	visibility : hidden;
+}
+
+#util_section{
+	width : 100%;
+	height : 40px; /*디자인따라 변경*/
+	background : #ff0;
+	display : flex;
+	flex-wrap : nowrap;
+	justify-content : flex-end;
+}
+
+#util_section ul li{
+	display : inline-flex;
+	align-items : center; /*세로축 정렬*/
+	height : 40px;
+	padding : 0 20px;
+}
+
+#util_section ul li:nth-of-type(1){
+	width : 25px;
+}
+
+#util_section ul li a img{
+	display : block;
+	width : 25px;
+}
+
+#logo{background : pink;}
+#gnb{
+	display : flex;
+	justify-content : space-around;
+	height : 70px;
+	width : 100%;
+	border-bottom : 2px solid #ccc;
+}
+#menu{
+	height : 70px;/*디자인 따라 변경*/
+	display : inherit; /*상위요소에서 상속받아 옴.*/
+}
+
+#menu ul li{
+	display : inline-flex;
+	align-items : center;
+	font-size : 1.2rem;
+	margin : 20px 0;
+	padding : 0 20px;
+}
+
+
+/*컨텐츠영역 CSS*/
+
+#contents{
+	display : flex;
+	flex-wrap : wrap; /*wrap 여러줄 사용*/
+	justify-content : center;
+	margin-top : 50px; /*디자인따라변경*/
+	background : tomato;
+}
+
+#contents>div{
+	width : 295px;
+	background-color : lavender;
+	margin : 10px;
+}
+
+/*안쪽 상자 사이즈 지정*/
+.inner_sbox{
+	width : 295px;
+	height : 240px;
+	color : #fff;
+	text-align : center;
+	font-size : 2rem;
+	margin-bottom : 10px;
+	border-radius : 50px;
+}
+
+.inner_mbox{
+	background : khaki;
+	text-align : center;
+	height : 490px;
+	/*(240*2) + 10*/	
+	margin-bottom : 10px;
+	border-radius : 50px;
+}
+
+#contents>div:nth-of-type(1){
+	background-image : url('./images/main_bnr.png');
+	font-size : 3rem;
+	text-align : center;
+	height : 490px;
+	width : 610px;
+	border-radius : 50px;
+}
+
+#contents>div:nth-of-type(2),
+#contents>div:nth-of-type(3){
+	width : 295px;
+	height : 490px;
+	overflow : hidden;
+}
+
+#contents>div:nth-of-type(2)>div:nth-of-type(1){
+	background-image : url('./images/con1_297x242.jpg');
+}
+
+#contents>div:nth-of-type(2)>div:nth-of-type(2){
+	background-image : url('./images/con2_297x242.jpg');
+}
+
+#program{
+	background-image : url('./images/con3_297x242.jpg');	
+}
+
+.m_clear{
+	margin-bottom : 0;
+}
+
+#contents>div:nth-of-type(4),
+#contents>div:nth-of-type(5),
+#contents>div:nth-of-type(6),
+#contents>div:nth-of-type(7){
+	width : 295px;
+	height : 740px;
+	overflow : hidden;	
+}
+
+h3{
+	font-size : 15pt;
+}
+
+#news>ul>li>a{
+	font-size : 10pt;
+}
+
+
+
+/*푸터영역*/
+
+footer{
+	width : 100%;
+	height : 300px;
+}
+
+#program{
+	background-image : url('./images/con3_297x242.jpg');	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
