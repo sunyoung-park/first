@@ -1,0 +1,475 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100,300,400,500,700,900&display=swap');
+
+
+*{
+	margin : 0;
+	padding : 0;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+a{
+	text-decoration : none;
+	color : #7d7d7d;
+}
+
+li{
+	list-style : none;
+}
+
+h2{
+	display : none;
+	width : 0;
+	height : 0;
+	text-indent : -9999px;
+	overflow : hidden;
+}
+
+h3{
+	font-size : 27px;
+	font-weight : 700;
+	margin: 100px 0 80px;
+}
+
+input{
+	width : 237px;
+	margin:0;
+	padding-top: 10px;
+	border:0;
+	border-bottom:2px solid #622f22;
+	font-size:12px;
+	vertical-align:top;
+	border-radius:0;
+	box-sizing:content-box;
+	outline : 0;
+}
+
+header{
+	width : 100%;
+	height : 180px;
+	text-align : center;
+}
+
+.wrapper{
+	width : 1118px;
+	height : 180px;
+	margin : 0 auto;
+	position : relative;
+}
+
+#util ul{
+	position : absolute;
+	right : 0;
+	top : 10px;
+}
+
+#util ul li{
+	float : left;
+	padding : 0 10px;
+	border-right : 1px solid #7d7d7d;
+	font-size : 14px;
+}
+
+#util ul li:last-child{
+	border-right : 0;
+}
+
+h1{
+	position : absolute;
+	top : 50px; 
+	left : 451px;
+	width : 217px;
+}
+
+#gnb ul{
+	position : absolute;
+	bottom : 10px;
+	left : 350px;
+}
+
+#gnb ul li{
+	float : left;
+	font-size : 20px;	
+	font-weight : 700;
+	margin-right : 102px;
+}
+
+#gnb>ul>li:last-child{
+	margin : 0;
+}
+
+#gnb ul li a{
+	color : #622f22;	
+}
+
+#menu_category{	
+	position : absolute;
+	bottom : 0px;
+	width : 158px;
+	height : 38px;
+	background : #622f22;
+	padding-top : 7px;
+}
+
+#menu_category a{
+	font-size : 20px;	
+	font-weight : 700;
+	color : #fff;	
+}
+
+.form{
+	position : absolute;
+	right : 0;
+	bottom : 0;
+	width : 295px;
+}
+
+.form a{
+	display : block;
+	width : 32px;
+	margin-bottom : 10px;
+	float : right;
+}
+
+
+
+
+
+
+
+
+
+#visual_bnr{
+	width : 100%;
+	height : 493px;
+	margin : 0px auto;
+	background : url('../img/main_bnr.jpg') no-repeat;
+	background-size : cover;
+	position : relative;
+	background-position : center;
+}
+
+
+
+
+
+#best_product{
+	width : 1118px;
+	height : 550px;
+	margin : 0 auto;	
+	text-align : center;
+	position : relative;
+}
+
+#best_product h3{
+	color : #622f22;
+	margin-bottom : 50px;
+}
+
+#best_product div ul{	
+	text-align : center;
+	padding : 30px 0;
+}
+
+#best_product div ul li{
+	float : left;
+	margin: 0 10px;
+	position : relative;
+}
+
+#best_product div ul:after, #review ul:after, .review_wrap:after, footer ul:after{
+	content : '';
+	clear : both;
+	display : block;
+	visibility : hidden;
+	width : 0;
+	height : 0;
+}
+
+#best01, #best02, #best03, #best04{
+	display : inline-block;
+	width : 230px;
+	height : 230px;
+	border : 1px solid #7d7d7d;
+	border-radius : 50%;
+}
+
+#best01{
+	background: url('../img/best_01.jpg') no-repeat center center;	
+	background-size : 230px;
+}
+
+#best02{
+	background: url('../img/best_02.jpg') no-repeat center center;	
+	background-size : 230px;
+}
+
+#best03{
+	background: url('../img/best_03.jpg') no-repeat center center;	
+	background-size : 230px;
+}
+
+#best04{
+	background: url('../img/best_04.jpg') no-repeat center center;	
+	background-size : 230px;
+}
+
+#best_product div ul li p{
+	width : 255px;
+	height : 51px;
+}
+
+.product_t{
+	font-size : 13px;
+	color : #7d7d7d;
+	font-weight : 600;
+	margin-top : 20px;
+	line-height : 18px;
+}
+
+.price{
+	font-size : 20px;
+	color : #622f22;
+	font-weight : 800;
+	margin-top : 20px;	
+}
+
+.caption{
+	width : 50px;
+	height : 40px;
+	background-color : #f18d0b;
+	border-radius : 50%;
+	text-align : center;
+	color : #fff;
+	font-weight : 700;
+	font-size : 18px;
+	padding-top : 10px;
+	position : absolute;
+	top : 10px;
+	left : 10px;
+}
+
+.prev, .next{
+	position : absolute;
+	top : 300px;
+}
+
+.prev{
+	left : -100px;
+}
+
+.next{
+	right : -100px;
+}
+
+
+
+
+
+#new{
+	width : 100%;
+	text-align : center;
+}
+
+#new h3{	
+	color : #622f22;
+}
+
+#new ul{
+	width : 1078px;
+	margin : 0 auto;
+	display : flex;
+	justify-content : space-around;
+	flex-flow : row wrap;		
+}
+
+#new ul li{
+	margin-bottom : 65px;
+}
+
+
+
+
+
+
+#review{
+	width : 1118px;
+	height : 306px;
+	margin : 0 auto;
+	margin-bottom : 100px;
+}
+
+#review hr{
+	width : 100%;
+	height : 10px;
+	border : 0;
+	background-color : #f8c06b;
+	margin-top : 135px;
+}
+
+.review_wrap{
+	float : left;
+	width : 293px;
+}
+
+#review h3{
+	color : #622f22;
+	margin-top : 41px;
+	margin-bottom : 28px;
+}
+
+#review h3, #review p, #review button{
+	margin-left : 25px;
+}
+
+#review button{
+	width : 138px;
+	height : 35px;
+	background : #622f22;
+	color : #fff;
+	border : 0;
+	margin-top : 115px;
+	font-size : 12px;
+	font-weight : 500;
+	letter-spacing : 10px;
+	text-align : center;
+}
+
+#review p{
+	font-size : 17px;
+	line-height : 25px;
+}
+
+#review ul{
+	float : right;
+	display : flex;
+	justify-content : space-around;
+	flex-flow : row wrap;	
+	margin-top : 41px;
+}
+
+#review ul li{
+	margin-right : 20px;
+}
+
+
+
+#cs{
+	width : 100%;
+	height : 456px;
+	margin : 100 auto;
+	background-image : url('../img/cs_bg.jpg');
+	text-align : center;
+	padding : 100px 0;
+}
+
+#cs h3, #cs h4, #cs p, #cs ul li a{
+	color : #fff;
+}
+
+#cs h3{
+	margin-top : 0;
+	margin-bottom : 80px;
+}
+
+#cs h4{
+	font-size : 24px;
+	margin-bottom : 44px;
+}
+
+#cs p{
+	line-height : 25px;
+}
+
+#cs strong{
+	color : #ff0;
+}
+
+.cs_flex{
+	width : 1078px;
+	margin : 0 auto;
+	display : flex;
+	justify-content : space-around;
+	flex-flow : row wrap;	
+}
+
+#cs ul{
+	margin-bottom: 65px;
+}
+
+#cs>ul:last-child{
+	margin-bottom : 0;
+}
+
+#cs>ul:last-child li{
+	width : 255px;
+	height : 82px;
+	text-align : center;
+	border : 1px solid #fff;
+	box-sizing : border-box;	
+	padding : 29px 0;
+}
+
+#cs>ul:last-child li a{
+	font-size : 21px;
+	font-weight : 300;	
+}
+
+
+
+
+
+footer{
+	width : 100%;
+	height : 330px;
+	background : #464646;
+	text-align : center;
+	margin : 0	auto;
+}
+
+footer ul{
+	display : inline-block;
+	padding : 50px 0;
+}
+
+footer ul li{
+	float : left;
+	padding : 0 10px;
+	border-right : 1px solid #fff;
+}
+
+footer ul li:last-child{
+	border-right : 0;
+}
+
+footer ul li a{
+	color : #fff;
+	font-size : 14px;
+	font-weight : 700;
+}
+
+footer p{
+	color : #fff;
+	line-height : 25px;
+	font-size : 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
