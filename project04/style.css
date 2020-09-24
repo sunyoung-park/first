@@ -1,6 +1,7 @@
 @charset "utf-8";
 /*reset*/
-*{margin : 0; margin : 0;}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100,300,400,500,700,900&display=swap');
+*{margin : 0; margin : 0; font-family: 'Noto Sans KR', sans-serif;}
 ul,ol,li{list-style:none;}
 
 html{font-size : 11pt;}
@@ -23,6 +24,7 @@ body{background-color : #f3f3f3;}
 	padding : 0;
 	height : 100%;
 	background-color : #fff;
+    overflow: hidden;
 }
 
 /*헤더 영역*/
@@ -30,7 +32,8 @@ body{background-color : #f3f3f3;}
 header{
 	width : 100%;
 	height : auto;
-	background : lightgreen;
+	/*
+	background : lightgreen;*/
 }
 
 header>h2, #util_section>h2,#gnb>h2,#contents>h2,footer>h2{
@@ -44,7 +47,6 @@ header>h2, #util_section>h2,#gnb>h2,#contents>h2,footer>h2{
 #util_section{
 	width : 100%;
 	height : 40px; /*디자인따라 변경*/
-	background : #ff0;
 	display : flex;
 	flex-wrap : nowrap;
 	justify-content : flex-end;
@@ -66,25 +68,37 @@ header>h2, #util_section>h2,#gnb>h2,#contents>h2,footer>h2{
 	width : 25px;
 }
 
-#logo{background : pink;}
+
 #gnb{
 	display : flex;
 	justify-content : space-around;
-	height : 70px;
+	height : 71px;
 	width : 100%;
 	border-bottom : 2px solid #ccc;
+	padding-left : 40px;
 }
+/*
+#logo{background : pink;}
+*/
+
 #menu{
 	height : 70px;/*디자인 따라 변경*/
 	display : inherit; /*상위요소에서 상속받아 옴.*/
+	padding : 0;
+	width : 100%;
 }
 
 #menu ul li{
 	display : inline-flex;
 	align-items : center;
 	font-size : 1.2rem;
-	margin : 20px 0;
-	padding : 0 20px;
+	margin : 20px 35px;
+}
+
+#menu ul li a{
+	font-size : 20px;
+	color : #342b64;
+	font-weight : 400;
 }
 
 
@@ -95,12 +109,10 @@ header>h2, #util_section>h2,#gnb>h2,#contents>h2,footer>h2{
 	flex-wrap : wrap; /*wrap 여러줄 사용*/
 	justify-content : center;
 	margin-top : 50px; /*디자인따라변경*/
-	background : tomato;
 }
 
 #contents>div{
 	width : 295px;
-	background-color : lavender;
 	margin : 10px;
 }
 
@@ -110,9 +122,10 @@ header>h2, #util_section>h2,#gnb>h2,#contents>h2,footer>h2{
 	height : 240px;
 	color : #fff;
 	text-align : center;
-	font-size : 2rem;
+	box-sizing : border-box;
 	margin-bottom : 10px;
 	border-radius : 50px;
+	border : 1px solid #999;
 }
 
 .inner_mbox{
@@ -131,6 +144,7 @@ header>h2, #util_section>h2,#gnb>h2,#contents>h2,footer>h2{
 	height : 490px;
 	width : 610px;
 	border-radius : 50px;
+	border : 1px solid #999;
 }
 
 #contents>div:nth-of-type(2),
@@ -148,13 +162,335 @@ header>h2, #util_section>h2,#gnb>h2,#contents>h2,footer>h2{
 	background-image : url('./images/con2_297x242.jpg');
 }
 
-#program{
-	background-image : url('./images/con3_297x242.jpg');	
+.more_btn, .more_btn_white{
+	width : 23px;
+	height : 23px;
+	position : absolute;
+	z-index : 9999;
+	right : 20px;
+	top : 58px;
 }
+
+.t_line{
+	width : 255px;
+	height : 2px;
+	background-color : #333;
+	margin-left : 18px;
+    border-style: none;
+    border-width: 0;
+}
+
+.white_line{
+	background-color : #fff;
+}
+
+.sub_tit{
+	height : 94px;
+	position : relative;
+}
+
+.sub_tit h3{
+	position : absolute;
+	top : 58px;
+	left : 18px;
+	font-size : 22px;
+	color : #342b64;
+	font-weight : 700;
+}
+
+.ed_white h3{
+	color : #fff;
+}
+
+#box02{
+	border-radius : 50px;
+	background-color : #fff;
+	border : 1px solid #999;
+}
+
+#exhibit{
+	width : 341px;
+	margin-left: 18px;
+}
+
+#exhibit div{
+	margin-top : 20px;
+	height: 98px;
+}
+
+#exhibit div:after, #today ul:after{
+	content : '';
+	clear : both;
+	display : none;
+	visibility : hidden;
+	width : 0;
+	height : 0;
+}
+
+#exhibit img{
+	float : left;
+	margin-right: 10px;
+}
+
+#exhibit div p{
+	font-size : 14px;
+	font-weight : 600;
+	margin-left: 10px;
+}
+
+#exhibit div p:first-child{
+	font-size : 16px;
+    margin-bottom: 13px;
+	margin-left: 0px;
+	font-weight : 700;
+
+}
+
+#exhibit div p:last-child{
+	font-size : 12px;
+    margin-top: 13px;
+	font-weight : 300;
+
+}
+
+#news{
+	background-color : #fff;
+	border : 1px solid #999;
+}
+
+#news ul{
+	padding : 0;
+	width : 255px;
+	margin-left : 18px;
+	margin-top : 37px;
+	text-align : left;
+}
+
+#news ul li{
+	border-bottom : 1px solid #ddd;
+	padding : 10px 0;
+}
+
+
+
 
 .m_clear{
 	margin-bottom : 0;
+	background-color : #342b64;
 }
+
+#data{
+	background-color : #fff;
+	margin-top : 10px;
+	border : 1px solid #999;
+	height : 238px;
+}
+
+#data .sub_tit h3{
+	color : #000;
+}
+
+#data ul li a img{
+	width : 50px;
+	height : 55px;
+}
+
+#data ul li p{
+	margin-top : 10px;
+	color : #000;
+	font-weight : 600;
+}
+
+#data ul li{
+	float : left;
+	margin-right : 30px;
+}
+
+#data ul li:last-child{
+	margin-right : 0px;
+}
+
+#data ul{
+	margin-top : 30px;
+	margin-left : 33px;
+	padding : 0;
+}
+
+#visit{
+	border-radius : 50px;
+	background-color : #fff;
+	border : 1px solid #999;
+}
+
+#visit ul{
+	padding : 0;
+	width : 255px;
+	margin-left : 18px;
+	margin-top : 37px;
+	text-align : left;
+}
+
+#visit ul li{
+	margin-bottom : 17px;
+}
+
+#visit ul li p{
+	margin-top : 8px;
+	font-size : 14px;
+	font-weight : 700;
+}
+
+#visit ul li img{
+	width : 250px;
+	height : 150px;
+}
+ 
+
+#program{
+	background-image : url('./images/con3_297x242.jpg');	
+	border : 1px solid #999;
+}
+
+#people{
+	background-image : url('./images/con4_297x242.jpg');	
+	border : 1px solid #999;
+}
+
+#infomation{
+	text-align : left;
+	position : relative;
+	border : 1px solid #999;
+}
+
+#infomation>p{
+	margin-left : 18px;
+	margin-top : 15px;
+}
+
+#infomation>p:first-child{
+	margin-top : 25px;
+}
+
+.reserve{
+	width : 58px;
+	height : 58px;
+	border-radius : 50%;
+	background-color : #fff;
+	position : absolute;
+	right : 20px;
+	bottom : 30px;
+}
+
+.reserve p{
+	color : #333;
+	margin-left : 15px;
+	margin-top : 10px;
+	line-height : 18px;
+}
+
+#today{
+	background-image: url('./images/today_bg.jpg');
+	border : 1px solid #999;
+
+}
+
+#today>p, #today ul li{
+	border-radius : 50%;
+	background-color : #fff;
+	text-align : center;
+}
+
+#today>p{
+	width : 96px;
+	height : 62px;
+	margin : 0 auto;
+	margin-top : 16px;
+	font-size : 36px;
+	padding : 17px 0;
+	color : #342b64;
+	font-weight : 700;
+}
+
+#today ul{
+	margin-left : 10px;
+	margin-right : 5px;
+	margin-top : 17px;
+	height : 34px;
+	padding : 0;
+}
+
+#today ul li{
+	float : left;
+	width : 34px;
+	height : 24px;
+	margin-right : 5px;
+	padding : 5px 0;
+}
+
+#storybox:before{
+	content : '';
+	clear : both;
+	display : none;
+	visibility : hidden;
+	width : 0;
+	height : 0;
+}
+
+#storybox{
+	width : 257px;
+	height : 117px;
+	background-color : #fff;
+	border : 1px solid #ddd;
+	margin : 0 auto;
+	margin-top : 17px;	
+	margin-top : 17px;	
+	padding-top : 18px;
+}
+
+#storybox p:first-child{
+	font-weight : 700;
+}
+
+#prev_btn, #next_btn{
+	margin : 0 18px;
+	margin-top : 19px;
+	height : 26px;
+}
+
+#prev_btn{
+	float : left;
+}
+
+#next_btn{
+	float : right;
+}
+
+#prev_btn p, #next_btn p{	
+	width : 50px;
+	font-weight : 700;
+}
+
+#prev_btn p{
+	float : right;
+}
+
+#next_btn p{
+	float : left;
+}
+
+#come_in{
+	text-align : left;
+	border : 1px solid #999;
+}
+#come_in>p{
+	margin-left : 18px;
+	margin-top : 15px;
+}
+
+#come_in>p:first-child{
+	margin-top : 25px;
+}
+
 
 #contents>div:nth-of-type(4),
 #contents>div:nth-of-type(5),
@@ -173,18 +509,92 @@ h3{
 	font-size : 10pt;
 }
 
+.partner{
+	border-top : 1px solid #999;
+	border-bottom : 1px solid #999;
+	display : flex;
+	justify-content : space-around;	
+    margin-top: 40px;
+}
+
+.partner div{
+	width : 200px;
+}
+
+.partner div img{
+	display : inline-block;
+	width : 80%;
+	margin: 20px 0;
+	margin-left : 20px;
+}
+
+.partner div:nth-child(1) img{
+	width : 80%;
+	margin-left : 30px;
+	margin-top : 25px;
+}
+
+.partner div:nth-child(2) img{
+	width : 80%;
+	margin-left : 30px;
+	margin-top : 15px;
+}
+
+.partner div:nth-child(3) img{
+	width : 30%;
+	margin-left : 80px;
+	margin-top : 25px;
+}
+
+.partner div:nth-child(4) img{
+	width : 80%;
+	margin-left : 25px;
+	margin-top : 35px;
+}
+
+.partner div:nth-child(5) img{
+	width : 80%;
+	margin-left : 25px;
+	margin-top : 15px;
+}
+
 
 
 /*푸터영역*/
 
 footer{
 	width : 100%;
-	height : 300px;
+	height : 200px;
+	background-color : #ddd;
 }
 
-#program{
-	background-image : url('./images/con3_297x242.jpg');	
+#addr{
+	float : left;
+	padding : 42px 0 0 24px;
 }
+
+#addr p{
+	margin-bottom : 15px;
+}
+
+#sitemap{
+	float : right;
+	padding : 42px 24px 0 0;
+	position : relative;
+}
+
+#sitemap ul li{
+	float : left;
+	margin-left : 20px;
+}
+
+#sitemap form{
+	width : 245px;
+	margin-top : 50px;
+	position : absolute;
+	right : 25px;
+}
+
 
 
 
